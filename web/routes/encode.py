@@ -1,14 +1,15 @@
 """Encode route - generate DSC test messages."""
 
+import io
+
 from fastapi import APIRouter
 from fastapi.responses import HTMLResponse, StreamingResponse
 from pydantic import BaseModel
-import io
 
-from vhf_dsc.encoder import TestMessageGenerator, DSCModulator
+from vhf_dsc.encoder import DSCModulator, TestMessageGenerator
 from vhf_dsc.io.wav import write_wav_normalized
-from vhf_dsc.protocol.symbols import SYM_NATURE_UNDESIGNATED
 from vhf_dsc.protocol.constants import INTERNAL_SAMPLE_RATE
+from vhf_dsc.protocol.symbols import SYM_NATURE_UNDESIGNATED
 
 router = APIRouter(prefix="/encode", tags=["encode"])
 

@@ -1,11 +1,9 @@
 """Decode route - file upload and decode."""
 
-from fastapi import APIRouter, UploadFile, File
+from fastapi import APIRouter, File, UploadFile
 from fastapi.responses import HTMLResponse, JSONResponse
 
 from vhf_dsc.decoder import DSCDecoderPipeline
-from vhf_dsc.io.wav import read_wav
-from vhf_dsc.io.raw import read_real
 from vhf_dsc.io.file_upload import FileUploadHandler
 
 router = APIRouter(prefix="/decode", tags=["decode"])

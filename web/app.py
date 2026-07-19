@@ -1,13 +1,12 @@
 """FastAPI application for VHF DSC web interface."""
 
 from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 
 from web.routes.decode import router as decode_router
 from web.routes.encode import router as encode_router
-from web.routes.stream import router as stream_router
 from web.routes.status import router as status_router
+from web.routes.stream import router as stream_router
 
 app = FastAPI(
     title="VHF DSC Encoder/Decoder",
