@@ -20,7 +20,7 @@ COPY web/ web/
 # Create directories
 RUN mkdir -p /app/dsc_messages /app/logs
 
-EXPOSE 6000/udp 8000
+EXPOSE 5555/udp 8000
 
 # Default command - can be overridden
-CMD ["python", "-m", "cli.monitor_server", "--port", "6000", "--sample-rate", "16000", "--save-dir", "/app/dsc_messages"]
+CMD ["python", "-m", "cli.monitor_server", "--port", "5555", "--sample-rate", "16000", "--save-dir", "/app/dsc_messages"]
