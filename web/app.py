@@ -126,13 +126,13 @@ async def index():
             const status = document.getElementById("stream-status");
             const pageProtocol = location.protocol.toLowerCase();
             const isHttps = pageProtocol === "https:";
-            const isHttp = pageProtocol === "http:" || isHttps;
+            const isHttpOrHttps = pageProtocol === "http:" || isHttps;
             const protocol = isHttps ? "wss" : "ws";
             const socketUrl = `${protocol}://${location.host}/stream/ws`;
             const MAX_RECONNECT_DELAY_MS = 10000;
             const MAX_RETRIES = 20;
             let socket = null;
-            let retries = 0;
+            let retryCount = 0;
 
             function pushLine(text) {
                 const stamp = new Date().toLocaleTimeString();
@@ -140,29 +140,28 @@ async def index():
             }
 
             function connect() {
-                if (!isHttp) {
+                if (!isHttpOrHttps) {
                     status.textContent = "Live feed unavailable for this page protocol.";
                     return;
                 }
                 socket = new WebSocket(socketUrl);
                 socket.onopen = () => {
-                    retries = 0;
+                    retryCount = 0;
                     status.textContent = "Connected to live feed.";
                     pushLine("Live feed connected.");
                 };
                 socket.onmessage = (event) => pushLine(event.data);
                 socket.onerror = () => status.textContent = "Live feed connection error.";
                 socket.onclose = () => {
-                    const attempt = retries + 1;
-                    if (attempt > MAX_RETRIES) {
+                    retryCount += 1;
+                    if (retryCount > MAX_RETRIES) {
                         status.textContent = "Live feed unavailable after repeated retries.";
                         pushLine("Live feed retry limit reached.");
                         return;
                     }
                     status.textContent = "Live feed disconnected. Reconnecting...";
                     pushLine("Live feed disconnected.");
-                    retries = attempt;
-                    const waitMs = Math.min(MAX_RECONNECT_DELAY_MS, Math.pow(2, attempt - 1) * 1000);
+                    const waitMs = Math.min(MAX_RECONNECT_DELAY_MS, Math.pow(2, retryCount - 1) * 1000);
                     setTimeout(connect, waitMs);
                 };
             }
