@@ -98,11 +98,16 @@ async def index():
                 animation: fadein 0.3s ease;
             }
             @keyframes fadein { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
-            .lf-msg.distress { border-left-color: #e53e3e; background: color-mix(in srgb, #e53e3e 6%, var(--card)); }
-            .lf-msg.urgency  { border-left-color: #d97706; background: color-mix(in srgb, #d97706 6%, var(--card)); }
-            .lf-msg.safety   { border-left-color: #059669; background: color-mix(in srgb, #059669 6%, var(--card)); }
+            .lf-msg.distress { border-left-color: #e53e3e; background: #fff5f5; }
+            .lf-msg.urgency  { border-left-color: #d97706; background: #fffbeb; }
+            .lf-msg.safety   { border-left-color: #059669; background: #f0fdf4; }
             .lf-msg.routine  { border-left-color: var(--accent); }
             .lf-msg.test     { border-left-color: #9ca3af; }
+            @media (prefers-color-scheme: dark) {
+                .lf-msg.distress { background: #1a0505; }
+                .lf-msg.urgency  { background: #1a1005; }
+                .lf-msg.safety   { background: #041a0e; }
+            }
             .lf-head { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.35rem; }
             .lf-badge {
                 display: inline-block; padding: 0.18rem 0.5rem; border-radius: 4px;

@@ -25,5 +25,7 @@ services:
       "
 
 networks:
+  # This network must exist before deploying. Create it with:
+  #   docker network create web
   web:
     external: true
