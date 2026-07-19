@@ -2,13 +2,16 @@ version: '3.8'
 
 services:
   dsc-monitor:
+    networks:
+      - web
     build:
       context: .
       dockerfile: Dockerfile.server
     container_name: dsc-monitor
     ports:
-      - "5555:5555/udp"
       - "8000:8000"
+    expose:
+      - "5555/udp"
     volumes:
       - ./dsc_messages:/app/dsc_messages
       - ./logs:/app/logs
@@ -20,6 +23,9 @@ services:
     restart: unless-stopped
     command: >
       bash -c "
-        python -m cli.monitor_server --port 5555 --sample-rate 16000 --save-dir /app/dsc_messages &
+        python -m cli.monitor_server --port 5555 --sample-rate 16000 --input-format f32le --save-dir /app/dsc_messages &
         uvicorn web.app:app --host 0.0.0.0 --port 8000
       "
+networks:
+  web:
+    external: true

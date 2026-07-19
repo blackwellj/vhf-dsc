@@ -25,15 +25,30 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+def decode_pcm_chunk(data: bytes, input_format: str) -> np.ndarray:
+    """Convert one little-endian UDP PCM chunk to normalized float32 samples."""
+    if input_format == "f32le":
+        if len(data) % 4:
+            raise ValueError("f32le UDP payload length must be divisible by 4")
+        return np.frombuffer(data, dtype="<f4").astype(np.float32, copy=True)
+    if input_format == "s16le":
+        if len(data) % 2:
+            raise ValueError("s16le UDP payload length must be divisible by 2")
+        return np.frombuffer(data, dtype="<i2").astype(np.float32) / 32768.0
+    raise ValueError(f"Unsupported UDP PCM format: {input_format}")
+
+
 class DSCMonitor:
     """Monitors UDP port for DSC audio and decodes messages."""
 
     def __init__(self, port: int = 6000, sample_rate: int = INTERNAL_SAMPLE_RATE,
-                 save_dir: str = "./dsc_messages", chunk_size: int = 48000):
+                 save_dir: str = "./dsc_messages", chunk_size: int = 48000,
+                 input_format: str = "s16le"):
         self.port = port
         self.sample_rate = sample_rate
         self.save_dir = Path(save_dir)
         self.chunk_size = chunk_size
+        self.input_format = input_format
         self.save_dir.mkdir(parents=True, exist_ok=True)
 
         self.decoder = DSCDecoderPipeline(sample_rate)
@@ -81,7 +96,7 @@ class DSCMonitor:
             chunk = bytes(self.audio_buffer[:self.chunk_size])
             self.audio_buffer = self.audio_buffer[self.chunk_size:]
 
-            samples = np.frombuffer(chunk, dtype=np.int16).astype(np.float32) / 32768.0
+            samples = decode_pcm_chunk(chunk, self.input_format)
             messages = self.decoder.process(samples)
 
             for msg in messages:
@@ -126,14 +141,21 @@ def main():
     parser.add_argument('--port', '-p', type=int, default=6000, help='UDP port to listen on')
     parser.add_argument('--sample-rate', '-r', type=int, default=INTERNAL_SAMPLE_RATE, help='Audio sample rate')
     parser.add_argument('--save-dir', '-s', default='./dsc_messages', help='Directory to save messages')
-    parser.add_argument('--chunk-size', '-c', type=int, default=48000, help='Processing chunk size')
+    parser.add_argument('--chunk-size', '-c', type=int, default=48000, help='Processing chunk size in bytes')
+    parser.add_argument(
+        '--input-format',
+        choices=('s16le', 'f32le'),
+        default='s16le',
+        help='Little-endian UDP PCM sample format',
+    )
     args = parser.parse_args()
 
     monitor = DSCMonitor(
         port=args.port,
         sample_rate=args.sample_rate,
         save_dir=args.save_dir,
-        chunk_size=args.chunk_size
+        chunk_size=args.chunk_size,
+        input_format=args.input_format,
     )
 
     monitor.start()
