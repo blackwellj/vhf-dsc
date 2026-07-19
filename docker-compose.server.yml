@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  dsc-monitor:
+    build: .
+    container_name: dsc-monitor
+    ports:
+      - "6000:6000/udp"
+      - "8000:8000"
+    volumes:
+      - ./dsc_messages:/app/dsc_messages
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+      - UDP_PORT=6000
+      - SAMPLE_RATE=16000
+      - SAVE_DIR=/app/dsc_messages
+    restart: unless-stopped
+    command: >
+      bash -c "
+        python -m cli.monitor_server --port 6000 --sample-rate 16000 --save-dir /app/dsc_messages &
+        uvicorn web.app:app --host 0.0.0.0 --port 8000
+      "
