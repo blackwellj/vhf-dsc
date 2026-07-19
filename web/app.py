@@ -154,7 +154,7 @@ async def index():
                     status.textContent = "Live feed disconnected. Reconnecting...";
                     pushLine("Live feed disconnected.");
                     retries += 1;
-                    const waitMs = Math.min(MAX_RECONNECT_DELAY_MS, Math.pow(2, retries) * 1000);
+                    const waitMs = Math.min(MAX_RECONNECT_DELAY_MS, Math.pow(2, retries - 1) * 1000);
                     setTimeout(connect, waitMs);
                 };
             }
