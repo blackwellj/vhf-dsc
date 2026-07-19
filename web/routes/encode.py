@@ -118,9 +118,7 @@ class EncodeRequest(BaseModel):
     @field_validator("mmsi", mode="before")
     @classmethod
     def normalize_mmsi(cls, value: str) -> str:
-        if not isinstance(value, str):
-            raise ValueError("MMSI must be a string")
-        normalized = value.strip()
+        normalized = str(value).strip()
         if len(normalized) != 9 or not normalized.isdigit():
             raise ValueError("MMSI must be exactly 9 digits")
         return normalized

@@ -122,10 +122,13 @@ async def index():
             </div>
         </div>
         <script>
-            const protocol = location.protocol === "https:" ? "wss" : "ws";
-            const socketUrl = `${protocol}://${location.host}/stream/ws`;
             const feed = document.getElementById("live-feed");
             const status = document.getElementById("stream-status");
+            const pageProtocol = location.protocol.toLowerCase();
+            const isHttps = pageProtocol === "https:";
+            const isHttp = pageProtocol === "http:" || isHttps;
+            const protocol = isHttps ? "wss" : "ws";
+            const socketUrl = `${protocol}://${location.host}/stream/ws`;
             const MAX_RECONNECT_DELAY_MS = 10000;
             const MAX_RETRIES = 20;
             let socket = null;
@@ -137,6 +140,10 @@ async def index():
             }
 
             function connect() {
+                if (!isHttp) {
+                    status.textContent = "Live feed unavailable for this page protocol.";
+                    return;
+                }
                 socket = new WebSocket(socketUrl);
                 socket.onopen = () => {
                     retries = 0;
@@ -146,15 +153,16 @@ async def index():
                 socket.onmessage = (event) => pushLine(event.data);
                 socket.onerror = () => status.textContent = "Live feed connection error.";
                 socket.onclose = () => {
-                    if (retries >= MAX_RETRIES) {
+                    const attempt = retries + 1;
+                    if (attempt > MAX_RETRIES) {
                         status.textContent = "Live feed unavailable after repeated retries.";
                         pushLine("Live feed retry limit reached.");
                         return;
                     }
                     status.textContent = "Live feed disconnected. Reconnecting...";
                     pushLine("Live feed disconnected.");
-                    retries += 1;
-                    const waitMs = Math.min(MAX_RECONNECT_DELAY_MS, Math.pow(2, retries - 1) * 1000);
+                    retries = attempt;
+                    const waitMs = Math.min(MAX_RECONNECT_DELAY_MS, Math.pow(2, attempt - 1) * 1000);
                     setTimeout(connect, waitMs);
                 };
             }
