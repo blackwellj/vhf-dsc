@@ -15,9 +15,15 @@ services:
       - UDP_PORT=6000
       - SAMPLE_RATE=16000
       - SAVE_DIR=/app/dsc_messages
+    networks:
+      - web
     restart: unless-stopped
     command: >
       bash -c "
         python -m cli.monitor_server --port 6000 --sample-rate 16000 --save-dir /app/dsc_messages &
         uvicorn web.app:app --host 0.0.0.0 --port 8000
       "
+
+networks:
+  web:
+    external: true
