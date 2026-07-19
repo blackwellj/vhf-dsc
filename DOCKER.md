@@ -1,10 +1,12 @@
-# Docker Development Setup
+# Docker Setup
 
-## Quick Start
+## Development (No Rebuild Needed)
+
+The `docker-compose.yml` is configured for development with volume mounting:
 
 ```bash
-# Build and run with hot-reload (no rebuild needed after code changes)
-docker-compose up --build
+# Start the web UI with hot-reload
+docker-compose up
 
 # Run tests
 docker-compose run --rm dsc python -m pytest tests/ -v
@@ -15,20 +17,15 @@ docker-compose run --rm dsc python -m cli.main encode --type distress -o test.wa
 docker-compose run --rm dsc python -m cli.main decode test.wav
 ```
 
-## Development Workflow
+**Key feature:** Source code is mounted as a volume, so code changes are picked up immediately without rebuilding the container.
 
-The `docker-compose.yml` mounts your local source code into the container, so:
-- **No rebuild needed** after code changes
-- **Hot-reload enabled** via `--reload` flag
-- Just edit files and the container picks up changes automatically
-
-## Production Build
+## Production
 
 ```bash
 # Build production image
 docker build -t vhf-dsc .
 
-# Run production container
+# Run
 docker run -p 8000:8000 vhf-dsc
 ```
 
