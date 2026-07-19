@@ -121,25 +121,36 @@ async def index():
         </div>
         <script>
             const protocol = location.protocol === "https:" ? "wss" : "ws";
-            const socket = new WebSocket(`${protocol}://${location.host}/stream/ws`);
+            const socketUrl = `${protocol}://${location.host}/stream/ws`;
             const feed = document.getElementById("live-feed");
             const status = document.getElementById("stream-status");
+            let socket = null;
+            let retries = 0;
 
             function pushLine(text) {
                 const stamp = new Date().toLocaleTimeString();
                 feed.textContent = `[${stamp}] ${text}\n` + feed.textContent;
             }
 
-            socket.onopen = () => {
-                status.textContent = "Connected to live feed.";
-                pushLine("Live feed connected.");
-            };
-            socket.onmessage = (event) => pushLine(event.data);
-            socket.onerror = () => status.textContent = "Live feed connection error.";
-            socket.onclose = () => {
-                status.textContent = "Live feed disconnected.";
-                pushLine("Live feed disconnected.");
-            };
+            function connect() {
+                socket = new WebSocket(socketUrl);
+                socket.onopen = () => {
+                    retries = 0;
+                    status.textContent = "Connected to live feed.";
+                    pushLine("Live feed connected.");
+                };
+                socket.onmessage = (event) => pushLine(event.data);
+                socket.onerror = () => status.textContent = "Live feed connection error.";
+                socket.onclose = () => {
+                    status.textContent = "Live feed disconnected. Reconnecting...";
+                    pushLine("Live feed disconnected.");
+                    retries += 1;
+                    const waitMs = Math.min(10000, retries * 1000);
+                    setTimeout(connect, waitMs);
+                };
+            }
+
+            connect();
         </script>
     </body>
     </html>

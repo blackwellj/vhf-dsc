@@ -46,7 +46,7 @@ async def encode_page():
                     </select>
                 </label>
                 <label>MMSI
-                    <input type="text" name="mmsi" value="234567890" pattern="\\d{9}" required>
+                    <input type="text" name="mmsi" value="234567890" pattern="[0-9]{9}" required>
                 </label>
                 <label>Latitude
                     <input type="number" name="lat" value="51.5074" step="0.0001">
