@@ -1,3 +1,4 @@
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -23,6 +24,7 @@ wheels/
 .venv/
 venv/
 ENV/
+env/
 
 # IDE
 .vscode/
@@ -36,8 +38,19 @@ Thumbs.db
 
 # Project
 uploads/
-tests/fixtures/*.wav
+test_suite/
 *.wav
 *.raw
 *.iq
 *.bin
+*.mp3
+
+# Docker
+.docker/
+
+# Test files (large)
+Test Files/
+doc_text/
+
+# Logs
+*.log
