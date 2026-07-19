@@ -4,7 +4,7 @@ import io
 
 from fastapi import APIRouter
 from fastapi.responses import HTMLResponse, StreamingResponse
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 from vhf_dsc.encoder import DSCModulator, TestMessageGenerator
 from vhf_dsc.io.wav import write_wav_normalized
@@ -114,6 +114,11 @@ class EncodeRequest(BaseModel):
     nature: str = "not_specified"
     channel: int = 6
     sample_rate: int = INTERNAL_SAMPLE_RATE
+
+    @field_validator("mmsi", mode="before")
+    @classmethod
+    def normalize_mmsi(cls, value: str) -> str:
+        return value.strip() if isinstance(value, str) else value
 
 
 @router.post("/generate")

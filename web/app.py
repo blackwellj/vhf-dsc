@@ -38,6 +38,7 @@ async def index():
                 --muted: #486581;
                 --accent: #0f5bd8;
                 --border: #d9e2ec;
+                --feed-bg: #030712;
             }
             @media (prefers-color-scheme: dark) {
                 :root {
@@ -47,6 +48,7 @@ async def index():
                     --muted: #9fb3c8;
                     --accent: #7fb3ff;
                     --border: #243b53;
+                    --feed-bg: #020617;
                 }
             }
             body {
@@ -80,7 +82,7 @@ async def index():
             #live-feed {
                 max-height: 280px;
                 overflow: auto;
-                background: #030712;
+                background: var(--feed-bg);
                 color: #d1fae5;
                 border-radius: 8px;
                 padding: 0.75rem;
@@ -125,6 +127,7 @@ async def index():
             const feed = document.getElementById("live-feed");
             const status = document.getElementById("stream-status");
             const MAX_RECONNECT_DELAY_MS = 10000;
+            const MAX_RETRIES = 20;
             let socket = null;
             let retries = 0;
 
@@ -143,10 +146,15 @@ async def index():
                 socket.onmessage = (event) => pushLine(event.data);
                 socket.onerror = () => status.textContent = "Live feed connection error.";
                 socket.onclose = () => {
+                    if (retries >= MAX_RETRIES) {
+                        status.textContent = "Live feed unavailable after repeated retries.";
+                        pushLine("Live feed retry limit reached.");
+                        return;
+                    }
                     status.textContent = "Live feed disconnected. Reconnecting...";
                     pushLine("Live feed disconnected.");
                     retries += 1;
-                    const waitMs = Math.min(MAX_RECONNECT_DELAY_MS, retries * 1000);
+                    const waitMs = Math.min(MAX_RECONNECT_DELAY_MS, Math.pow(2, retries) * 1000);
                     setTimeout(connect, waitMs);
                 };
             }
