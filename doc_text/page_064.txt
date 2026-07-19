@@ -1,0 +1,46 @@
+ 
+Rec.  ITU-R  M.493-16 
+63 
+ 
+Distress alert acknowledgements and distress alert relay acknowledgements should require no data 
+entry by the operator except on HF where the frequency of the DSC call may be selected. 
+Distress alert relays should only allow the entry of the addressing mode (format) and destination 
+address and on HF, the mode of subsequent communication and the frequency of the DSC call. 
+On HF the automated procedure should indicate those frequencies on which DSC calls pertinent to 
+the automated procedure have been received as the preferred choices, however the operator should 
+be allowed to choose any of the six distress frequencies. 
+3.2.3.5 
+Tuning of the radio after acknowledgment on HF 
+The automated tuning should cease upon reception or sending of a distress alert acknowledgement or 
+a distress alert relay acknowledgment addressed to multiple stations. However, the operator should 
+be provided with sufficient information to manually tune to the working frequencies of the most 
+recently received DSC message. 
+3.2.3.6 
+Handling individually addressed distress alert relays 
+The sending or receiving of individually addressed distress alert relays should initiate their own 
+automated procedure separate from the automated procedure that may be handling distress DSC 
+messages concerning the same distress event. In the case of an event triggered by MOB devices then 
+multiple alerts from different MOB devices should be handled as one event and within the same 
+automated procedure. 
+The option to send a distress alert acknowledgement should never be available during this automated 
+procedure. 
+3.2.3.7 
+Handling group addressed distress alert relays 
+In the case of an event triggered by MOB devices then multiple alerts from different MOB devices 
+should be handled as one event and within the same automated procedure. 
+3.2.3.8 
+Handling digital selective calling messages with critical errors 
+If the subsequent communication parameter of the distress information is received in error, 
+radiotelephone should be assumed and an indication that the parameter was received in error should 
+be made known to the operator. 
+3.2.3.9 
+Handling the self-addressed distress alert acknowledgement  
+If the MMSI of the sender of a distress alert acknowledgement is the same as the MMSI of the vessel 
+in distress, the automated procedure should recognize the call as an attempt to cancel the distress alert 
+and inform the operator accordingly. 
+3.2.3.10 Extended digital selective calling sentences  
+The automated procedure should be able to successfully receive and decode single frequency alert 
+attempts that have extended sentence information at the end of some or all of the individual alerts. 
+3.2.3.11 MF/HF only scanning for distress digital selective calling messages 
+The received distress automated procedure should scan all six distress DSC channels if not already 
+doing so. 

@@ -1,0 +1,46 @@
+52 
+Rec.  ITU-R  M.493-16 
+ 
+Class E equipment is intended to provide minimum facilities for MF and/or HF DSC distress, urgency 
+and safety as well as routine calling and reception, not necessarily in full accordance with 
+IMO GMDSS carriage requirements for MF/HF installations. 
+Class H handheld equipment is intended to provide minimum facilities for VHF DSC distress, 
+urgency and safety as well as routine calling and reception, not necessarily in full accordance with 
+IMO GMDSS carriage requirements for VHF installations. 
+Class M MOB device3 is intended to activate a Distress alarm on a predefined ship or for a predefined 
+group of ships (closed loop) or all ships (open loop) in the vicinity. This equipment does not provide 
+any voice capability and is not an IMO GMDSS carriage requirement. 
+Class A equipment may support the optional automatic service in accordance with Recommendations 
+ITU-R M.689, ITU-R M.1082 and Tables A1-4.10.1 and A1-4.10.2 and are encouraged to do so. 
+Class D and Class E equipment may also support the optional automatic service. 
+NOTE 1 – Class C, F and G equipment as defined in earlier versions of this Recommendation 
+(e.g. Recommendations ITU-R M.493-5 (Geneva, 1992) and ITU-R M.493-7 (Geneva, 1995)) did not provide 
+vital minimum DSC functions (transmitting and receiving distress alerts) and have therefore been withdrawn. 
+NOTE 2 – Class D Handheld as defined in Recommendation ITU-R M.493-13 (Geneva, 2009) has been 
+redefined as new VHF Handheld Class H with a clear set of functionalities to be provided.  
+NOTE 3 – Class B has been deleted because there is no demand in the market to support such equipment and 
+the scope of application was requested by the administrations in preparation of Recommendation 
+ITU-R M.493-15. 
+ 
+ 
+Annex 3 
+ 
+User interface for simplified operation of shipborne equipment 
+1 
+General 
+The user interface for operation of the DSC equipment should be so designed that it will be easy for 
+the operator onboard the ship to operate the equipment and to compose and initiate the types of DSC 
+calls provided for by the equipment. The equipment software should allow the operator to only 
+compose the types of DSC calls which are specified in Tables A1-4.1 to A1-4.11. These Tables 
+indicate which DSC messages are applicable for each class of DSC equipment, messages defined 
+in Tables A1-4.10.1 (auto VHF (optional)) and A1-4.10.2 (auto MF/HF (optional)) should not be 
+selectable from the top level menu.  
+2 
+Definitions 
+2.1 
+Automated procedure: the term given to describe the set of actions necessary to complete 
+the objective of an initiating DSC calls or non-DSC communication event. Five DSC automated 
+procedures are designed to process these.  
+ 
+3 Class M means a MOB device using VHF digital selective calling for alerting and AIS for locating are 
+AMRD Group A in accordance with Recommendation ITU-R M.2135. 

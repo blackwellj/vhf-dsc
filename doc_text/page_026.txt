@@ -1,0 +1,17 @@
+ 
+Rec.  ITU-R  M.493-16 
+25 
+ 
+16.5 
+Closed loop man overboard devices 
+Calls from and to closed loop MOB devices using VHF DSC are defined in Tables A1-4.3 and A1-4.4. 
+On initial activation, the closed loop MOB device should transmit a DSC call formatted as a distress 
+alert relay to its own vessel as specified in Table A1-4.3 with the nature of distress set to 110 (MOB) 
+and the subsequent communications field set to symbol 126 (no information). The position 
+(message 2) and time (message 3) fields in the initial DSC message should be replaced by the digits 
+9 and 8 respectively, in accordance with §§ 8.2.3 and 8.2.4. In subsequent messages these fields 
+should be filled with appropriate data. 
+When the MOB device is switch from closed loop to open loop mode it transmits a DSC message 
+coded as an all ships distress alert as specified in Table A1-4.1. The nature of distress field shall be 
+set to symbol 110 (man overboard) and the subsequent communications field set to symbol 126 
+(no information). 

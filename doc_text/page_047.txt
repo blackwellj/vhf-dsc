@@ -1,0 +1,214 @@
+46 
+Rec.  ITU-R  M.493-16 
+ 
+TABLE A1-4.9.1 (end) 
+Routine individual calls and their acknowledgements 
+Frequency 
+band 
+Type of com 
+Applicable to 
+Technical format of call sequence 
+Ship 
+station 
+Class A 
+Ship 
+station 
+Class D 
+Ship 
+station 
+Class E 
+Hand-
+held 
+Class H 
+MOB 
+Device  
+Class M 
+Open 
+and 
+Closed 
+Loop 
+Coast 
+station 
+Format 
+specifier 
+(2 identical) 
+Address 
+(5) 
+Category 
+of call 
+(1) 
+Self-ID  
+(5) 
+Message 
+EOS  
+(1) 
+ECC  
+(1) 
+EOS  
+(2 identical) 
+1 
+2 
+1st tele-
+command 
+(1) 
+2nd tele-
+command 
+(1) 
+Frequency 
+or pos 
+number 
+(6) or (8) 
+Tx Rx Tx Rx Tx Rx Tx Rx Tx Rx Tx Rx 
+MF/HF 
+J3E RT 
+⚫ ⚫  
+ ⚫ ⚫  
+ 
+ 
+ ⚫ ⚫ 
+120 
+ID 
+100 
+Self-ID 
+109 
+126 
+Frequency 
+117 
+ECC 
+117 
+J3E RT with pos number 
+⚫ —  
+ ⚫ —  
+ 
+ 
+ — ⚫ 
+120 
+ID 
+100 
+Self-ID 
+109 
+126 
+Pos2 
+117 
+ECC 
+117 
+ 
+J3E RT acknowledgement 
+⚫ ⚫  
+ ⚫ ⚫  
+ 
+ 
+ ⚫ ⚫ 
+120 
+ID 
+100 
+Self-ID 
+109 
+126 
+Frequency 
+122 
+ECC 
+122 
+ 
+F1B FEC, ARQ or data 
+⚫ ⚫  
+ — —  
+ 
+ 
+ ⚫ ⚫ 
+120 
+ID 
+100 
+Self-ID 113, 115, 106 
+126 
+Frequency 
+117 
+ECC 
+117 
+ 
+FEC, ARQ or data with pos 
+number 
+⚫ —  
+ — —  
+ 
+ 
+ — ⚫ 
+120 
+ID 
+100 
+Self-ID 113, 115, 106 
+126 
+Pos2 
+117 
+ECC 
+117 
+ 
+F1B FEC, ARQ or data 
+acknowledgement 
+⚫ ⚫  
+ — —  
+ 
+ 
+ ⚫ ⚫ 
+120 
+ID 
+100 
+Self-ID 113, 115, 106 
+126 
+Frequency 
+122 
+ECC 
+122 
+ 
+Unable to comply 
+acknowledgement 
+⚫ ⚫  
+ 
+⚫ ⚫  
+ 
+ 
+ ⚫ ⚫ 
+120 
+ID 
+100 
+Self-ID 
+104 
+100 to 109 Frequency 
+122 
+ECC 
+122 
+ 
+Polling 
+— ⚫  
+ — —  
+ 
+ 
+ ⚫ ◼ 
+120 
+ID 
+100 
+Self-ID 
+103 
+126 
+126 
+117 
+ECC 
+117 
+ 
+Polling acknowledgement 
+⚫ —  
+ — —  
+ 
+ 
+ ◼ ⚫ 
+120 
+ID 
+100 
+Self-ID 
+103 
+126 
+126 
+122 
+ECC 
+122 
+(1) See § 8.3.1. 

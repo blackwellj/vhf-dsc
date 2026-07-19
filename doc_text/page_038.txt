@@ -1,0 +1,206 @@
+ 
+Rec.  ITU-R  M.493-16 
+37 
+ 
+TABLE A1-4.3 
+Distress alert relays  
+ 
+Type of com 
+ 
+ 
+Applicable to 
+Technical format of call sequence 
+ 
+ 
+ 
+Ship 
+station 
+Class 
+A 
+Ship 
+station 
+Class 
+D 
+Ship 
+station 
+Class 
+E 
+Hand-
+held 
+Class 
+H 
+MOB 
+Device  
+Class M 
+Closed 
+Loop 
+Coast 
+station
+** 
+Format 
+specifier 
+(2 iden-
+tical) 
+Address 
+(5) 
+Cate-
+gory  
+of call 
+(1) 
+Self-
+ID 
+(5) 
+Tele-
+command 
+(1) 
+Message 
+EOS 
+(1) 
+ECC 
+(1) 
+EOS 
+(2 iden-
+tical) 
+ 
+Rec. ITU-R 
+M.821 
+expansion 
+sequence* 
+(9) 
+ 
+0 
+1 
+2 
+3 
+4 
+ 
+ 
+Distress 
+ID 
+(5) 
+Nature of 
+distress 
+(1) 
+Distress 
+coordinates 
+(5) 
+Time 
+(2) 
+Subse-
+quent 
+comm
+unica-
+tions 
+(1) 
+ 
+Frequency 
+band 
+Tx Rx Tx Rx Tx Rx Tx Rx Tx Rx Tx Rx 
+ 
+VHF 
+Individual (RT) 
+⚫ ⚫ — ⚫   — — — — ⚫ ⚫ 
+120 
+ID 
+112 
+Self-
+ID 
+112 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+100 
+117 ECC 
+117 
+ 
+expan2 
+ 
+Individual(man 
+overboard device) — ⚫ — ⚫   — — ⚫ 
+— 
+— ⚫ 
+120 
+ID** 
+112 
+Self-
+ID*** 
+112 
+Distress 
+ID*** 
+110 
+Pos1 
+UTC 
+126 
+117 ECC 
+117 
+ 
+expan2 
+ 
+Group (man 
+overboard device) — ⚫ — ⚫   — — ⚫ 
+— 
+— ⚫ 
+114 
+ID** 
+112 
+Self-
+ID*** 
+112 
+Distress 
+ID*** 
+110 
+Pos1 
+UTC 
+126 
+127 ECC 
+127 
+ 
+expan1 
+ 
+Geographic area 
+(RT) 
+— ◼ — ◼   — — — — — ◼ 
+102 
+Area 
+112 
+Self-
+ID 
+112 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+100 
+127 ECC 
+127 
+ 
+expan1 
+ 
+All ships (RT) 
+⚫ ⚫ — ⚫   — — — — ⚫ ⚫ 
+116 
+n/a 
+112 
+Self-
+ID 
+112 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+100 
+127 ECC 
+127 
+ 
+expan1 
+* 
+Expansion sequence see Table A1-4.11. 
+** MMSI of Parent Vessel or Group of ships. In exceptional circumstances the MOB may be programmed with the MMSI of the coast station in place of the parent 
+ship for operation in the closed loop mode. Otherwise, the coast station is unable to receive the closed loop distress alert relay, and the coast station would be 
+able to receive the distress alert only after 12 minutes for the open loop distress alert operation from the MOB. 
+*** In closed loop-mode to an Individual station or to a Group the “identification of the station in distress” as well as the Self ID is the ID of the man overboard 
+device. 

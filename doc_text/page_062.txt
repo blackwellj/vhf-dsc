@@ -1,0 +1,51 @@
+ 
+Rec.  ITU-R  M.493-16 
+61 
+ 
+3.1.9 
+Automated termination 
+Automated procedures should have an automated termination timer whose factory default values can 
+be changed by the operator. It should be possible to disable this timer. Unacknowledged sending 
+distress automated procedures should not have a termination timer, however after acknowledgement 
+a termination timer is optional. 
+At least 10 s prior to automatic termination, a warning with a discrete audible alarm should be 
+displayed giving the operator the opportunity to stop the termination. 
+3.2 
+Tasks specific to certain automated procedures 
+3.2.1 
+Tasks of automated procedures initiated by receiving non-distress digital selective 
+calling messages 
+3.2.1.1 
+Display of elapsed time 
+The elapsed time since receiving the initiating DSC call should be displayed or after any requested 
+acknowledgment has been sent, the elapsed time since sending the acknowledgement should be 
+displayed. Sending repeat acknowledgments should not affect the time display. 
+3.2.1.2 
+Handling acknowledgments 
+If the equipment has been set up to automatically acknowledge individually addressed polling, 
+position request, or test DSC calls, no audible indication (see § 2.3) should sound and the automated 
+procedure should self-terminate. 
+Acknowledgement options should only be made available to the operator when the received DSC call 
+requests an acknowledgement. 
+When acknowledgments are requested, the automated procedure should provide the operator with up 
+to three possible acknowledgement options based upon the received DSC call as follows: 
+Able to comply: This option should be provided if the frequencies and mode of subsequent 
+communication are provided by the received DSC call and the equipment is capable of handling the 
+requested communications, or if the received DSC call is a polling, position request, or test that has 
+not been automatically acknowledged.  
+Able to comply with a mode or frequency change: This option should be provided if the received 
+DSC call requests subsequent communications.  
+Unable to comply: This option should be provided if the received DSC call contains subsequent 
+communications or is a position request. The sending of this acknowledgement indicates a refusal 
+and should terminate the automated procedure. 
+The automated procedure should automatically compose the acknowledgement messages based 
+upon the received DSC call as shown in Fig. A1-2 and Fig. A1-3. 
+“Able to comply” acknowledgments should be composed in entirety by the automated procedure. 
+“Able to comply with a mode or frequency change” acknowledgements should only require the 
+entry/selection of a new mode and/or frequency. 
+“Unable to comply” acknowledgments to DSC calls containing subsequent communications should 
+only require the entry/selection of one of the ten telecommand 2 “reason” symbols specified in 
+Table A1-3. 
+“Unable to comply” acknowledgments to position requests if implemented should only require a 
+single action by the operator to send. The procedure should automatically place the “no information 
+symbol” in the position and time messages of the acknowledgement. 

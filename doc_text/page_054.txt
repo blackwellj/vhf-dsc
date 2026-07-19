@@ -1,0 +1,64 @@
+ 
+Rec.  ITU-R  M.493-16 
+53 
+ 
+They are:  
+– 
+the receiving of distress DSC calls,  
+– 
+the receiving of non-distress DSC calls,  
+– 
+the sending of distress DSC alert attempts  
+– 
+and the sending of non-distress DSC calls.  
+A fifth procedure is designed to handle:  
+– 
+non-DSC communication events. 
+These automated procedures are called: 
+– 
+Received distress automated procedure 
+– 
+Sending distress automated procedure 
+– 
+Received non-distress automated procedure (including ACS) 
+– 
+Sending non-distress automated procedure (including ACS) 
+– 
+Communications automated procedure. 
+2.2 
+default: a value selected or an action taken by the equipment software in the absence of any 
+operator input. 
+2.3 
+DROBOSE: distress alert relay on behalf of someone else. 
+2.4 
+engaged: the term used to indicate that the equipment is busy handling an automated 
+procedure. 
+2.5 
+factory default: a default value that is set by the manufacturer such that the field or behaviour 
+is defined prior to any operator intervention. 
+2.6 
+standby: the term used to indicate that the equipment is not handling an automated 
+procedure, either active or on hold, but is able to receive DSC messages. 
+2.7 
+top level: top level means that items, buttons, or functions are present and visible without 
+requiring any action by the operator (such as scrolling, opening up menus, or removing any obscuring 
+covers, etc.). 
+3 
+Controls 
+3.1 
+Dedicated distress button to initiate the sending of the distress alert attempt. This button 
+should have at least two independent actions. Lifting of the protective lid is considered the first action. 
+Pressing the distress button is considered as the second independent action. This button should be red 
+in colour and marked “DISTRESS”. Where a non-transparent protective lid or cover is used, it should 
+also be marked “DISTRESS”. The cover should be protected against inadvertent operation with a 
+spring loaded lid or cover permanently attached to the equipment by e.g. hinges. It should not be 
+necessary for the user to remove seals or to break the lid or cover in order to operate the distress 
+button. This button should be used only for this purpose and it should be able to perform this function 
+at all times. Use of the button without any previous operator actions to compose the alert should 
+initiate the default distress alert attempt. The “default distress alert attempt” consists of 
+“undesignated” for the nature of distress, radiotelephony for the communication mode, and on HF the 
+transmission of the attempt uses the multi-frequency method including all six bands. 
+The distress button should have priority over all DSC procedures. 
+3.2 
+Top level menu while the equipment is in standby should provide the following controls, 
+buttons or functions should be visible at the top level while the equipment is in standby: 

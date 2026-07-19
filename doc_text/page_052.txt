@@ -1,0 +1,146 @@
+ 
+Rec.  ITU-R  M.493-16 
+51 
+ 
+TABLE A1-6 
+Position information (Annex 1, § 8.3.2.3) 
+ 
+Quadrant 
+digit 
+NE = 0 
+NO = 1 
+SE = 2 
+SO = 3 
+Latitude 
+Longitude 
+Tens 
+of 
+degrees 
+Units 
+of 
+degrees 
+Tens 
+of 
+minutes 
+Units 
+of 
+minutes 
+Hundreds 
+of 
+degrees 
+Tens 
+of 
+degrees 
+Units 
+of 
+degrees 
+Tens 
+of 
+minutes 
+Units 
+of 
+minutes 
+55 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+Character 
+6 
+Character 
+5 
+Character 
+4 
+Character 
+3 
+Character 
+2 
+Character 
+1(1) 
+(1) Character 1 is the last character transmitted. 
+ 
+TABLE A1-7 
+Position type information 
+ 
+Character 6 
+Character 5 
+Character 4 
+Character 3 
+Character 2 
+Character 1 
+Note 
+Pos1 
+ 
+XX 
+XX 
+XX 
+XX 
+XX 
+Valid ship position, refer 
+to § 8.1.2 
+ 
+99 
+99 
+99 
+99 
+99 
+Invalid ship 
+position/cannot be 
+included, refer to § 8.1.2 
+Pos2 
+55 
+Pos1(1) 
+ 
+Pos3 
+126 
+126 
+126 
+126 
+126 
+126 
+Position request 
+Pos4 
+Pos1 
+126 
+Acknowledgement to a 
+position request call when 
+ship agree to the request 
+126 
+126 
+126 
+126 
+126 
+126 
+Acknowledgement to a 
+position request call when 
+ship does not agree to the 
+request 
+Pos5 
+ 
+ 
+XX 
+XX 
+XX 
+XX 
+Refer to Rec. ITU-R 
+M.821 for Enhanced 
+position resolution 
+(1) Use five symbols of Pos1. 
+ 
+ 
+Annex 2 
+ 
+Equipment classes 
+1 
+Equipment classes only apply to shipborne equipment 
+Class A equipment, which includes all the facilities defined in Annex 1, will comply with the 
+IMO GMDSS carriage requirements for MF/HF installations and/or VHF installations. 
+Class D equipment is intended to provide minimum facilities for VHF DSC distress, urgency and 
+safety as well as routing calling and reception, not necessarily in full accordance with IMO GMDSS 
+carriage requirements for VHF installations. 

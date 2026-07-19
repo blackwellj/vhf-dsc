@@ -1,0 +1,242 @@
+36 
+Rec.  ITU-R  M.493-16 
+ 
+TABLE A1-4.2 (end) 
+Distress acknowledgements 
+Frequency 
+band 
+Type of 
+com 
+Applicable to 
+Technical format of call sequence 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Message 
+ 
+ 
+ 
+ 
+ 
+Ship 
+station 
+Class A 
+Ship 
+station 
+Class D 
+Ship 
+station 
+Class E 
+Hand- 
+held 
+Class H 
+MOB  
+Device 
+Class M 
+open loop 
+Coast 
+station 
+ 
+ 
+ 
+ 
+0 
+1 
+2 
+3 
+4 
+ 
+ 
+ 
+ 
+ 
+Format 
+specifier 
+(2 iden-
+tical) 
+Cate-
+gory  
+of call 
+(1) 
+Self-
+ID 
+(5) 
+Tele-
+command 
+(1) 
+Distress 
+ID 
+(5) 
+Nature of 
+distress 
+(1) 
+Distress 
+coordi-
+nates 
+(5) 
+Time 
+(2) 
+Subse-
+quent 
+commu-
+nications 
+(1) 
+EOS 
+(1) 
+ECC 
+(1) 
+EOS 
+(2 iden-
+tical) 
+ 
+Rec. ITU-R 
+M.821 
+expansion 
+sequence* 
+(9) 
+Tx Rx Tx 
+Rx 
+Tx 
+Rx Tx Rx Tx Rx 
+Tx Rx 
+ 
+MF 
+Distress 
+acknowl-
+edgement 
+(RT) 
+⚫ 
+⚫ 
+ 
+ 
+— 
+⚫ 
+ 
+ 
+ 
+ 
+⚫ 
+⚫ 
+116 
+112 Self-
+ID 
+110 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+109 
+127 ECC 
+127 
+ 
+expan1 
+ 
+Distress 
+self-
+cancel 
+⚫ 
+⚫ 
+ 
+ 
+⚫ 
+⚫ 
+ 
+ 
+ 
+ 
+— 
+⚫ 
+116 
+112 Self-
+ID 
+110 
+Self-ID 
+100 to 110 
+Pos1 
+UTC 
+109 
+127 ECC 
+127 
+ 
+expan1 
+HF 
+Distress 
+acknowl-
+edgement 
+(RT) 
+— ⚫ 
+ 
+ 
+— 
+⚫ 
+ 
+ 
+ 
+ 
+⚫ 
+⚫ 
+116 
+112 Self-
+ID 
+110 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+109 
+127 ECC 
+127 
+ 
+expan1 
+ 
+Distress 
+self- 
+cancel 
+⚫ 
+⚫ 
+ 
+ 
+⚫ 
+⚫ 
+ 
+ 
+ 
+ 
+— 
+⚫ 
+116 
+112 Self-
+ID 
+110 
+Self-ID 
+100 to 110 
+Pos1 
+UTC 
+109 
+127 ECC 
+127 
+ 
+expan1 
+( 
+The message should match the received distress alert information, 
+except for manually generated distress acknowledgements by coast 
+stations. 
+* 
+Expansion sequence see Table A1-4.11. 

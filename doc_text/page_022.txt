@@ -1,0 +1,48 @@
+ 
+Rec.  ITU-R  M.493-16 
+21 
+ 
+Automatic switching to a subsequent communications channel on receipt of a DSC call might in some 
+cases disrupt important ongoing communications. Where such capability exists, a means for disabling 
+that function should therefore be provided for all calls other than individual station calls of category 
+distress or urgency. The DSC equipment should provide visual indication that the automatic 
+switching function is disabled. 
+12.6 
+Data interface 
+DSC equipment should be provided with facilities for exchange of data from shipborne navigational 
+equipment or systems, or other shipborne equipment as necessary in accordance with IEC 61162 
+series for purposes including automatic position updating.  
+12.7 
+Position updating 
+DSC equipment should accept valid IEC 61162 position information including the time at which 
+the position was determined, from an external source utilizing the data interface described in § 12.6, 
+for automatic update of own ship’s DSC position. 
+The DSC Class D and E Equipment should, and the DSC Class A equipment may also be provided 
+with an integral global navigation satellite system (GNSS) receiver. In which case, the DSC 
+equipment should automatically switch to the internal source if the external IEC 61162 position 
+information is not valid or not available. Antennas for integral GNSS receiver should be mounted 
+externally, such that they are provided with an unobstructed view of the sky. 
+If the automatic position update is not available, a displayed and audible reminder to manually update 
+the position should occur when a) no position information is provided during start up and b) before 
+the position information is 4 hours old. The displayed reminder should remain until position updating 
+has been carried out. Any position information not updated for more than 23½ hours should 
+automatically be erased. 
+Own ship’s DSC position information and the source of that information (external, internal, or 
+manually entered) should be displayed on the DSC equipment. 
+12.8 
+Geographic area entry 
+DSC equipment should be provided with means for transforming a geographical area specified by the 
+user as a centre point and a range to the corresponding Mercator area call format specified in § 5.3. 
+The centre point should default to the ships position information and the range should default to 
+500 NM (926 km). The transformation of the entered range and centre-point should result in 
+the minimum rectangular area that encompasses the entered data. 
+12.9 
+Medical transport and neutral ships and aircraft 
+The capability of using second telecommands “Ships and aircraft of States not parties to an armed 
+conflict” and “Medical Transports” should not be available by default but only after changing relevant 
+parameters in the setup menu. 
+12.10 
+Group calls (Ships having common interest)/individual call  
+When the MMSI in the menu for an individual call starts with “0” followed by the three digits of 
+an MID the format specifier for individual call 120 should/may change to a group call specifier 114 
+automatically, as well as the settings of the call. 

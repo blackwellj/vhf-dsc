@@ -1,0 +1,48 @@
+ 
+Rec.  ITU-R  M.493-16 
+17 
+ 
+8.3.2.2.2 VHF channels 
+If the HM digit is 9, this indicates that the number represented by the values of the digits M, H, T and 
+U is the VHF working channel number. If the M digit is 1, this indicates that the ship stations 
+transmitting frequency is being used as a simplex channel frequency for both ship and coast stations. 
+If the M digit is 2, this indicates that the coast stations transmitting frequency is being used as a 
+simplex channel frequency for both ship and coast stations. 
+8.3.2.3 
+Ship’s position information 
+For MF/HF calls, message 2 may contain the ship’s position, consisting of the digit 5 repeated two 
+times and ten digits (five characters) indicating this position, coded in accordance with § 8.1.2 
+(see Table A1-6). 
+For position requests message 2 consists of 6 no information symbols (symbol No. 126). 
+In acknowledgements to a call requesting ship’s position (see Fig. 3d)) message 2 consists of six 
+symbols. The first five transmitted symbols are the 10 digits position numbers coded into the symbols 
+according to § 8.1.2, the following one symbol is No. 126 (No information), if the requested ship 
+agree to the request. And if the requested ship does not agree to the request, message 2 consists of 
+6 characters filled with symbol No. 126. 
+8.3.3 
+Message 3 
+Message 3 follows message 2 in this case and contains the time (UTC) when the coordinates were 
+valid, coded as indicated in § 8.1.3. 
+Message 3 follows message 2 when using the DSC system for calls initiated by ship stations requiring 
+a automatic connection (see Tables A1-4.10.1 and A1-4.10.2) and contains the public switched 
+network number (e.g. telephone number). In this case the format specifier used is symbol No. 123. 
+This number is coded by up to nine symbols in a manner similar to that shown in Table A1-2, except 
+that the first character transmitted should be either symbol No. 105 or No. 106 to indicate whether 
+the network number contains an odd or even number of significant digits. As an example, the 
+number 0012345 would be coded as symbol numbers 105 00 01 23 45 whereas the number 00123456 
+should be coded as symbol numbers 106 00 12 34 56. 
+8.4 
+Distress alert relay 
+For “distress alert relay” including shore-to-ship alerts, “distress alert relay acknowledgement” and 
+“distress acknowledgement” calls, the message formats are indicated in Tables A1-4.3, A1-4.4 and 
+A1-4.2 respectively. 
+When sending a distress alert on behalf of another ship which is unable to send its own alert, and 
+where the identity of the station in distress is unknown, the distress alert relay call should contain the 
+symbol No. 126 transmitted five times for the “identification of the station in distress”. 
+When a “distress alert relay” is sent by a man overboard device in closed loop-mode to an Individual 
+station or to a Group, the “identification of the station in distress” to be used is the ID of the man 
+overboard device. 
+8.5 
+Test calls 
+Test calls on the distress and safety frequencies for MF and HF and VHF channel 70 may be 
+conducted using the test call sequence in Table A1-4.7. 

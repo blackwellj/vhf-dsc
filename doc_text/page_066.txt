@@ -1,0 +1,58 @@
+ 
+Rec.  ITU-R  M.493-16 
+65 
+ 
+The operator should be provided with the appropriate text for the voice cancel at the time of the voice 
+cancel. 
+The self-cancel operation should be able to be repeated on any band but a warning should be provided 
+that the cancel has already been done on this band. 
+3.2.4.5 
+Special considerations for MF/HF 
+The status of each of the bands should be displayed; 
+Once one band is cancelled the option to end the self-cancel procedure should not be available until 
+ALL utilized bands are cancelled; 
+When the self-cancel procedure is completed, the sending distress automated procedure should be 
+considered acknowledged and the fact that a cancel was performed should be displayed.  
+3.2.4.6 
+MF/HF only scanning for distress alert acknowledgements 
+The sending distress automated procedure should scan all six distress DSC channels if not already 
+doing so. 
+3.2.5 
+Radiotelephone communications automated procedure 
+The equipment should also be provided with a communications function for radiotelephony that is 
+compatible with the DSC automated procedures described in this Annex. This automated procedure 
+should have: 
+– 
+the ability to switch between being active or being on hold at the discretion of the operator, 
+– 
+the ability to be terminated at the discretion of the operator, 
+– 
+the ability to select the channels for the communications 
+3.2.6 
+Other non-digital selective calling automated procedures 
+Any other non-DSC functionality that is included in the equipment should: 
+– 
+be able to be activated or placed on hold at the discretion of the operator, 
+– 
+never control the watch receiver such that DSC automated procedures, either active or on 
+hold, are unable to receive DSC calls on the watch receiver, 
+– 
+be able to be terminated by the operator. 
+3.3 
+Tasks concerning multiple automated procedures  
+3.3.1 
+Number of simultaneous automated procedures 
+Facilities should be provided to handle a minimum of seven simultaneous automated procedures 
+including a reserve of one. The initiation of the reserve automated procedure should: 
+– 
+warn the operator that the equipment cannot handle another automated procedure and that 
+one automated procedure should be terminated, 
+– 
+prevent the operator from initiating any new automated procedures except for the sending of 
+a distress alert and, 
+– 
+warn the operator that the reception of an additional DSC message that would initiate 
+an automated procedure if the equipment were in standby will result in the automatic and 
+immediate termination of an inactive automated procedure where, 
+– 
+the automatic and immediate termination should be based upon age and priority. 

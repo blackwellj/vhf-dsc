@@ -1,0 +1,49 @@
+64 
+Rec.  ITU-R  M.493-16 
+ 
+3.2.4 
+Tasks of automated procedures initiated by sending a distress alert attempt 
+3.2.4.1 
+Display of elapsed time 
+The time remaining to the sending of the next distress alert attempt should be displayed prior to 
+acknowledgment by DSC. 
+The elapsed time since acknowledgement should be displayed after acknowledgment by DSC. 
+Receiving repeat acknowledgments should not affect the time display. 
+3.2.4.2 
+Resending of the distress alert attempt 
+The unacknowledged distress alert attempt should be automatically resent after a 3.5 to 4.5 min wait. 
+The automatic resending of the distress alert attempt should automatically terminate after 
+acknowledgement by DSC. 
+Resent distress alert attempts should contain updated position and time of position information. 
+3.2.4.3 
+Determining operator options 
+The option to manually resend the distress alert attempt at any time should remain available until the 
+distress alert has been acknowledged by DSC. 
+On HF the operator should have the option to change the frequencies of the distress alert attempt and 
+the option to select between the single frequency or multi-frequency method. 
+The option to pause the countdown to the next distress alert attempt should be available prior to 
+acknowledgement by DSC. 
+The option to cancel the distress alert should be available prior to acknowledgement by DSC. 
+The option to terminate the procedure should only be available after acknowledgment by DSC. 
+3.2.4.4 
+The distress alert self-cancel procedure 
+The self-cancel procedure consists of the self-cancel operation on all bands utilized by the distress 
+alert attempts (on VHF and MF there is only one cancel operation whereas on MF/HF there may be 
+up to six). The self-cancel operation consists of a DSC cancel message (a self-addressed distress alert 
+acknowledgement) followed by a voice cancel on the corresponding frequency of subsequent 
+communication. The phrase “voice cancel” refers to the part of the cancel done over the subsequent 
+communication frequencies whether it is by radiotelephony or on MF and MF/HF by data. 
+Upon selection of the cancel option the sending distress automated procedure should provide an 
+explanation of the self-cancel procedure to the operator and provide the option to either continue or 
+return and not do the cancel. 
+If the operator selects to proceed with the self-cancel procedure the sending distress automated 
+procedure should pause the countdown to the next automated sending of the distress alert attempt and 
+wait (if necessary) until any alert within an attempt is transmitted to completion before allowing the 
+operator to initiate the first self-cancel operation. 
+The operator options during the self-cancel procedure should be to terminate the cancel procedure 
+and to start the self-cancel operation.  
+If the self-cancel procedure is terminated before the first self-cancel operation is started, the sending 
+distress automated procedure should resume from where it left off. However, once the self-cancel 
+operation is started, the option to terminate the cancel procedure should not be available until the 
+self-cancel procedure is completed. 
+The status of the self-cancel procedure should be displayed. 

@@ -1,0 +1,162 @@
+ 
+Rec.  ITU-R  M.493-16 
+33 
+ 
+TABLE A1-4.0 
+Reference for Tables A1-4.1 – A1-4.11 
+ 
+Frequency 
+band 
+Type of 
+com. 
+Applicable to 
+Technical format of call sequence 
+  
+Ship 
+station 
+Class A 
+Ship 
+station 
+Class D 
+Ship 
+station 
+Class E 
+Hand- 
+held 
+Class H 
+MOB 
+Device 
+Class M 
+Open 
+loop 
+Coast 
+station 
+Format 
+specifier 
+(2 identical) 
+Self-
+ID 
+ 
+(5) 
+Message 
+EOS 
+(1) 
+ECC 
+(1) 
+EOS 
+(2 identical) 
+ 
+Rec. ITU-R 
+M.821 
+expansion 
+sequence 
+(9) 
+1 
+2 
+3 
+4 
+Nature of 
+distress 
+(1) 
+Distress 
+coordinates 
+(5) 
+Time 
+(2) 
+Subsequent 
+commu-
+nications 
+(1) 
+Tx Rx Tx Rx Tx Rx Tx Rx 
+ 
+Tx 
+ 
+Rx Tx Rx 
+ 
+VHF 
+Distress 
+(RT) 
+⚫ ⚫ ⚫ ⚫  
+ 
+⚫ ⚫ ⚫ — — ⚫ 112 
+Self-
+ID 
+100 to 110 Pos1 
+UTC 
+100** 
+127 
+ECC 127 
+ expan1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+MF/HF 
+Distress 
+(RT) 
+⚫ ⚫  
+ 
+⚫ ⚫  
+ 
+ 
+ 
+— ⚫ 112 
+Self-
+ID 
+100 to 110 Pos1 
+UTC 
+109 
+127 
+ECC 127 
+ expan1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+See Fig. A1-1 construction of call 
+sequence 
+See Legend for Tables A1-4.1 to A1-4.11 
+See Table A1-4.11 
+See Table A1-3 
+See Annex 2 Type of equipment 
+See Fig. A1-3 for detailed information 

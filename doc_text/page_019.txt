@@ -1,0 +1,58 @@
+18 
+Rec.  ITU-R  M.493-16 
+ 
+8.6 
+Distress self-cancel operation 
+Distress acknowledgments where the transmitting ID and ship in distress ID are the same, 
+the message should be interpreted as a self-cancel operation. This should be displayed on all receiving 
+stations. 
+9 
+End of sequence 
+The “end of sequence” (EOS) character is transmitted three times in the DX position and once in the 
+RX position (see Fig. A1-1b)). It is one of the three unique characters corresponding to 
+symbol Nos. 117, 122 and 127 as follows: 
+– 
+symbol No. 117 if the call requires acknowledgement (Acknowledge RQ), used for 
+individual and automatic calls only; 
+– 
+symbol No. 122 if the sequence is an answer to a call that requires acknowledgement 
+(Acknowledge BQ), used for individual and automatic calls and all distress alert relay 
+acknowledgements; 
+– 
+symbol No. 127 for all other calls. 
+10 
+Error-check character 
+10.1 
+The error-check character (ECC) is the final character transmitted and it serves to check the 
+entire sequence for the presence of errors which are undetected by the ten-unit error-detecting code 
+and the time diversity employed. 
+10.2 
+The seven information bits of the ECC shall be equal to the least significant bit of 
+the modulo-2 sums of the corresponding bits of all information characters (i.e. even vertical parity). 
+The format specifier and the EOS characters are considered to be information characters. The phasing 
+characters and the retransmission (RX) characters shall not be considered to be information 
+characters. Only one format specifier character and one EOS character should be used in constructing 
+the ECC. The ECC shall also be sent in the DX and RX positions. 
+10.3 
+Automatic acknowledgement transmissions should not start unless the ECC is received and 
+decoded correctly. A received ECC which does not match that calculated from the received 
+information characters may be ignored if this was due to an error detected in the ten-unit 
+error-detecting code of the information characters which was correctable by use of the time diversity 
+code. 
+10.4 
+The receiver decoder should provide maximum utilization of the received signal, including 
+use of the error-check character. 
+11 
+Distress alert attempt 
+11.1 
+Distress alerts may be transmitted as a single frequency or a multi-frequency call attempt 
+preceded by a dot pattern. MF/HF equipment should be capable of using both single and multi-
+frequency call attempts. Where a distress alert attempt contains more than one consecutive distress 
+alert on the same frequency (see Recommendation ITU-R M.541), these consecutive alerts should be 
+transmitted with no gap between the end of one call and the start of the dot pattern of the following 
+call to enable bit synchronization to be maintained (see Fig. 1c)). Multi-frequency call attempts 
+should always include at least the MF and HF 8 MHz band DSC distress and safety frequencies. 
+11.2 
+A distress alert should be activated only by means of a dedicated distress button which should 
+be clearly identified and be protected against inadvertent operation. For a fixed station the protection 
+should be a spring loaded lid or cover. For a handheld VHF the protection should be a cover or a lid 

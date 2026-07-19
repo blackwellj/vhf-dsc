@@ -1,0 +1,62 @@
+ii 
+Rec.  ITU-R  M.493-16 
+ 
+Foreword 
+The role of the Radiocommunication Sector is to ensure the rational, equitable, efficient and economical use of the radio-
+frequency spectrum by all radiocommunication services, including satellite services, and carry out studies without limit 
+of frequency range on the basis of which Recommendations are adopted. 
+The regulatory and policy functions of the Radiocommunication Sector are performed by World and Regional 
+Radiocommunication Conferences and Radiocommunication Assemblies supported by Study Groups. 
+Policy on Intellectual Property Right (IPR) 
+ITU-R policy on IPR is described in the Common Patent Policy for ITU-T/ITU-R/ISO/IEC referenced in Resolution 
+ITU-R 1. Forms to be used for the submission of patent statements and licensing declarations by patent holders are 
+available from http://www.itu.int/ITU-R/go/patents/en where the Guidelines for Implementation of the Common Patent 
+Policy for ITU-T/ITU-R/ISO/IEC and the ITU-R patent information database can also be found.  
+ 
+ 
+Series of ITU-R Recommendations  
+(Also available online at https://www.itu.int/publ/R-REC/en) 
+Series 
+Title 
+BO 
+Satellite delivery 
+BR 
+Recording for production, archival and play-out; film for television 
+BS 
+Broadcasting service (sound) 
+BT 
+Broadcasting service (television) 
+F 
+Fixed service 
+M 
+Mobile, radiodetermination, amateur and related satellite services 
+P 
+Radiowave propagation 
+RA 
+Radio astronomy 
+RS 
+Remote sensing systems 
+S 
+Fixed-satellite service 
+SA 
+Space applications and meteorology 
+SF 
+Frequency sharing and coordination between fixed-satellite and fixed service systems 
+SM 
+Spectrum management 
+SNG 
+Satellite news gathering 
+TF 
+Time signals and frequency standards emissions 
+V 
+Vocabulary and related subjects 
+ 
+ 
+Note: This ITU-R Recommendation was approved in English under the procedure detailed in Resolution ITU-R 1. 
+ 
+ 
+Electronic Publication 
+Geneva, 2024 
+ 
+© ITU 2024 
+All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without written permission of ITU. 

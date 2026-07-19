@@ -1,0 +1,64 @@
+58 
+Rec.  ITU-R  M.493-16 
+ 
+2.6 
+default: a value selected or an action taken by the equipment software in the absence of any 
+operator input. 
+2.7 
+distress digital selective calling message: A DSC message or acknowledgement containing 
+the distress information. 
+2.8 
+distress event: a unique distress situation identified by two (VHF) or three (MF/HF) 
+parameters of the distress information; the MMSI of the vessel in distress and the nature of distress 
+and on MF/HF the mode of subsequent communication. If a MOB device triggered the distress event 
+then multiple distress alerts from different MOB devices should be handled as one event and within 
+the same automated procedure. 
+2.9 
+distress information: the symbols within a DSC call describing a distress situation 
+consisting of the MMSI of the vessel in distress, the nature of distress, the position of the vessel in 
+distress, the UTC time of that position, and the mode of subsequent communication. 
+2.10 
+DROBOSE: distress alert relay on behalf of someone else. 
+2.11 
+DX/RX: a notation used to describe the time diversity structure of DSC calls (see Fig. A1-1). 
+One has to be careful not to confuse the “RX” notation when used to indicate the symbol position in 
+the DSC call structure (as in § 4.1 of Annex 1) with its use to indicate reception (as in § 8.3.2 of 
+Annex 1). 
+2.12 
+engaged: the term used to indicate that the equipment is busy handling an automated 
+procedure. 
+2.13 
+factory default: A default value that is set by the manufacturer such that the field or 
+behaviour is defined prior to any operator intervention. 
+2.14 
+general receiver: this unit is the receiver part of the transceiver used for the reception of all 
+subsequent communications and on HF the reception of non-distress DSC acknowledgements. It is 
+important to distinguish this unit from the watch receiver (see below). 
+2.15 
+identical: a set of information characters is considered identical to another set of information 
+characters if all pairs of corresponding information characters are equal or, if a pair of corresponding 
+information characters is not equal, one of the pair is in error. 
+2.16 
+information characters: the set of symbols in the DSC call that contain the items of interest 
+for the recipient and is used to compute the ECC symbol that terminates the message. These symbols 
+are repeated in the DX/RX time diversity pattern. 
+2.17 
+initial digital selective calling message: the DSC message that starts an automated 
+procedure. 
+2.18 
+non-distress digital selective calling message: DSC messages and acknowledgments that 
+do not contain the distress information. 
+2.19 
+objective: when in reference to a DSC message or automated procedure it is the goal or intent 
+of the item; usually this goal or intent is to establish subsequent communications or request 
+information. 
+2.20 
+on hold: the term used to describe an automated procedure which does not have access to the 
+transmitter and general receiver and therefore cannot engage in subsequent communications and is 
+only able to receive DSC messages on the watch receiver. 
+2.21 
+operator options: are any choices the operator can make while the automated procedure is 
+engaged. 
+2.22 
+parallel event handling: the background process of handling a received DSC message that 
+is not pertinent to the active automated procedure. 

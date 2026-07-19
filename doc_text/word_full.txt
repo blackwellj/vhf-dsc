@@ -1,0 +1,875 @@
+P0: 
+P1: 
+P2: Recommendation ITU-R M.493-16
+P3: (12/2023)
+P4: M Series: Mobile, radiodetermination, amateur
+and related satellite services
+P5: Digital selective-calling system for use in the maritime mobile service
+P6: 
+P7: 
+P8: 
+P9: Foreword
+P10: The role of the Radiocommunication Sector is to ensure the rational, equitable, efficient and economical use of the radio-frequency spectrum by all radiocommunication services, including satellite services, and carry out studies without limit of frequency range on the basis of which Recommendations are adopted.
+P11: The regulatory and policy functions of the Radiocommunication Sector are performed by World and Regional Radiocommunication Conferences and Radiocommunication Assemblies supported by Study Groups.
+P12: Policy on Intellectual Property Right (IPR)
+P13: ITU-R policy on IPR is described in the Common Patent Policy for ITU-T/ITU-R/ISO/IEC referenced in Resolution ITU-R 1. Forms to be used for the submission of patent statements and licensing declarations by patent holders are available from http://www.itu.int/ITU-R/go/patents/en where the Guidelines for Implementation of the Common Patent Policy for ITU-T/ITU-R/ISO/IEC and the ITU-R patent information database can also be found. 
+P14: 
+P15: 
+P16: 
+P17: 
+P18: 
+P19: 
+P20: Electronic Publication
+P21: , 2024
+P22: 
+P23:  ITU 2024
+P24: All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without written permission of ITU.
+P25: 
+P26: RECOMMENDATION  ITU-R  M.493-16
+P27: Digital selective-calling system for use in the maritime mobile service
+P28: (1974-1978-1982-1986-1990-1992-1994-1995-1997-1997-2000-2004-2007-2009-2015-2019-2023)
+P29: Scope
+P30: This Recommendation describes the digital selective-calling (DSC) system for use in the maritime mobile service covering general purpose and simplified versions of DSC equipment. A description of a generalized user interface as well as an automated procedure for the operation of shipborne equipment are also included.
+P31: Keywords
+P32: Alert, announcement, class, digital selective calling, distress, global maritime distress and safety system, maritime
+P33: Abbreviations/Glossary
+P34: ACS	Automatic connection system
+P35: AIS	Automatic identification system
+P36: ARQ	Automatic repeat request
+P37: DSC	Digital selective calling
+P38: ECC	Error check character
+P39: EOS	End of sequence
+P40: FEC	Forward error correction
+P41: GNSS	Global navigation satellite system
+P42: GMDSS	Global maritime distress and safety system
+P43: HF	High frequency (band number 7, 3-30 MHz)
+P44: IEC	International Electrotechnical Commission
+P45: IMO	International Maritime Organization
+P46: MF	Medium frequency (band number 6; 300-3 000 kHz)
+P47: MID	Maritime identification digits 
+P48: MMSI	Maritime mobile service identity
+P49: MOB	Man overboard
+P50: MSC	Maritime safety committee
+P51: n/a	This field is not included in this call
+P52: NM	Nautical mile (1 NM = 1852 m)
+P53: RT	Radiotelephony
+P54: RX	Retransmission
+P55: Rx	Receive
+P56: SOLAS	International Convention for the Safety of Life at Sea
+P57: TP	Telephony
+P58: TTY	Direct Printing
+P59: Tx	Transmit
+P60: UTC	Coordinated universal time 
+P61: VHF	Very high frequency (band number 8, 30-300 MHz)
+P62: Related ITU Recommendations, Reports
+P63: Recommendation ITU-R M.541 – Operational procedures for the use of digital selective-calling equipment in the maritime mobile service
+P64: Recommendation ITU-R M.585 – Assignment and use of identities in the maritime mobile service
+P65: Recommendation ITU-R M.586 – Automated VHF/UHF maritime mobile telephone system
+P66: Recommendation ITU-R M.625 – Direct-printing telegraph equipment employing automatic identification in the maritime mobile service
+P67: Recommendation ITU-R M.689 – International maritime VHF radiotelephone system with automatic facilities based on DSC signalling format
+P68: Recommendation ITU-R M.821 – Optional expansion of the digital selective-calling system for use in the maritime mobile service
+P69: Recommendation ITU-R M.822 – Calling-channel loading for digital selective calling (DSC) for the maritime mobile service
+P70: Recommendation ITU-R M.825 – Characteristics of a transponder system using digital selective calling techniques for use with vessel traffic services and ship-to-ship identification
+P71: Recommendation ITU-R M.1081 – Automatic HF facsimile and data system for maritime mobile users
+P72: Recommendation ITU-R M.1082 – International maritime MF/HF radiotelephone system with automatic facilities based on digital selective calling signalling format
+P73: Recommendation ITU-R M.1084 – Interim solutions for improved efficiency in the use of the band 156-174 MHz by stations in the maritime mobile service
+P74: Recommendation ITU-R M.1371 – Technical characteristics for an automatic identification system using time-division multiple access in the VHF maritime mobile band
+P75: Report ITU-R M.1159 – Characteristics of an automatic identification system for VHF and UHF transmitting stations in the maritime mobile service
+P76: Report ITU-R M.1161 – Use of MF/HF DSC for automatic connection of calls in the maritime-mobile service MF and HF bands to the public switched network
+P77: 
+P78: The ITU Radiocommunication Assembly,
+P79: considering
+P80: a)	that selective-calling in the shore-to-ship, ship-to-ship and ship-to-shore directions would expedite the handling of traffic in the maritime mobile service;
+P81: b)	that the International Maritime Organization (IMO) has listed a number of operational requirements that should be taken into account when designing a general purpose selective-calling system;
+P82: c)	that Chapter IV of the International Convention for the Safety of Life at Sea (SOLAS), 1974, as amended, requires the use of digital selective calling (DSC) for distress alerting and safety calling in the global maritime distress and safety system (GMDSS);
+P83: d)	that the narrow-band direct printing systems should comply with Recommendation ITU-R M.625;
+P84: e)	that the DSC system should be applicable to the maritime mobile service, both for international and national needs;
+P85: f)	that it is desirable that the DSC system fulfils the requirements of all types of vessels desiring to use it;
+P86: g)	that after experience gained, a need exists to reduce unnecessary alarms and simplify operation of shipborne equipment;
+P87: h)	that in certain applications there may be a need to disable DSC automatic channel switching when there is a requirement for vessels to maintain continuous radio watch on a specific radio telephony channel (e.g. port traffic control, bridge-to-bridge communications),
+P88: recommends
+P89: 1	that devices or equipment which use DSC channels/frequencies should be in full compliance with one of the defined classes within this Recommendation;
+P90: 2	that the operator should only be able to compose the types of DSC messages which are specified in Tables A1-4.1 through A1-4.11 as indicated for each class of equipment;
+P91: 3	that DSC equipment should be designed in response to the operational requirements specified within Recommendation ITU-R M.541;
+P92: 4	that all DSC systems (Class A, Class D, Class E, Class H, Class M as well as coast-stations) defined in this Recommendation should be designed in accordance with the characteristics given in Annex 1;
+P93: 5	that shipborne DSC equipment should be designed to provide a simplified user interface, following the examples of good practice set out in Annexes 3 and 4; 
+P94: 6	that in a GMDSS coast radio station installation, sufficient geographical separation should be provided between the DSC distress channel receiver antennas and any transmitting antennas within the installation. This is to avoid any de-sensitization of the DSC distress channel receivers if any transmitter is used at full power on any designated transmit frequency other than the DSC distress frequencies.
+P95: 
+P96: TABLE OF CONTENTS
+P97: Page
+P98: 1	General		5
+P99: 2	Technical format of a call sequence		10
+P100: 3	Dot pattern and phasing		10
+P101: 4	Format specifier		11
+P102: 5	Address		11
+P103: 6	Category of call		12
+P104: 7	Self-identification		13
+P105: 8	Messages		13
+P106: 9	End of sequence		18
+P107: 10	Error-check character		18
+P108: 11	Distress alert attempt		18
+P109: 12	Shipborne human machine interface		19
+P110: 13	Handheld human machine interface		22
+P111: 14	Handheld VHF digital selective calling equipment with electronic position fixing systems (Class H)		23
+P112: 15	Position request operation for Class D, Class E and Class H		24
+P113: 16	Man overboard devices using VHF digital selective calling (Class M)		24
+P114: 1	Equipment classes only apply to shipborne equipment		51
+P115: 1	General		52
+P116: 2	Definitions		52
+P117: 3	Controls		53
+P118: 4	Display of messages in plain language		54
+P119: 5	Transmission of digital selective calling messages		54
+P120: 1	General		56
+P121: 2	Definitions		57
+P122: 3	Tasks of automated procedures		59
+P123: Annex 1
+
+General purpose equipment characteristics
+P124: 1	General
+P125: 1.1	The system is a synchronous system using characters composed from a ten-bit error-detecting code as listed in Table A1-1.
+P126: 1.1.1	The first seven bits of the ten-bit code of Table A1-1 are information bits. Bits 8, 9 and 10 indicate, in the form of a binary number, the number of B elements that occur in the seven information bits, a Y element being a binary number 1 and a B element a binary number 0. For example, a BYY sequence for bits 8, 9 and 10 indicates 3 (0  4  1  2  1  1) B elements in the associated seven information bit sequence; and a YYB sequence indicates 6 (1  4  1  2  0  1) B elements in the associated seven information bit sequence. The order of transmission for the information bits is least significant bit first but for the check bits it is most significant bit first.
+P127: 1.2	Time diversity is provided in the call sequence as follows:
+P128: 1.2.1	Apart from the phasing characters, each character is transmitted twice in a time-spread mode; the first transmission (DX) of a specific character is followed by the transmission of four other characters before the re-transmission (RX) of that specific character takes place, allowing for a time-diversity reception interval of:
+P129: –	400 ms for HF and MF channels, and
+P130: –	33⅓ ms for VHF radio-telephone channels.
+P131: 1.3	The classes of emission, frequency shifts and modulation rates are as follows:
+P132: 1.3.1	F1B or J2B 170 Hz and modulation rate of 100 (bit/s) * (1 ± 30 * 10−6) for use on HF and MF DSC calling channels. When frequency-shift keying is effected by applying audio signals to the input of single-sideband transmitters (J2B), the centre of the audio-frequency spectrum offered to the transmitter is 1 700 Hz. When a DSC call is transmitted on HF and MF working channels for public correspondence, the class of emission is J2B. In this case, audio tones with frequencies 1 700 Hz  85 Hz and modulation rate 100 (bit/s) * (1 ± 30 * 10−6) are used in order for the DSC call to be transmitted.
+P133: 1.3.2	Frequency modulation with a pre-emphasis of 6 dB/octave (phase modulation) with frequency-shift of the modulating sub-carrier for use on VHF channels:
+P134: –	frequency-shift between 1 300 and 2 100 Hz; the sub-carrier being at 1 700 Hz;
+P135: –	the frequency tolerance of the 1 300 and 2 100 Hz tones is  10 Hz;
+P136: –	the modulation rate is 1 200 (bit/s) * (1 ± 30 * 10−6);
+P137: –	the index of modulation is 2.0  10%.
+P138: 1.3.3	The radio-frequency tolerances of new designs of both transmitters and receivers in the MF and HF bands should be:
+P139: –	coast station:  10 Hz,
+P140: –	ship station:  10 Hz,
+P141: –	receiver bandwidth: should not exceed 300 Hz.
+P142: 1.4	The higher frequency corresponds to the B-state and the lower frequency corresponds to the Y-state of the signal elements.
+P143: 1.5	The information in the call is presented as a sequence of seven-bit combinations constituting a primary code.
+P144: 1.5.1	The seven information bits of the primary code express a symbol number from 00 to 127, as shown in Table A1-1, and where:
+P145: –	the symbols from 00 to 99 are used to code two decimal figures according to Table A1-2;
+P146: –	the symbols from 100 to 127 are used to code service commands (see Table A1-3).
+P147: 1.6	Where the distress alert repetitions described in § 11 apply, the following conditions are considered necessary:
+P148: 1.6.1	the transmitter encoder must provide repetitive transmission of the call sequence in accordance with § 11; and
+P149: 1.6.2	the receiver decoder should provide maximum utilization of the received signal, including use of the error-check character and by using an iterative decoding process with adequate memory provision.
+P150: 1.7	When the transmission of a DSC distress alert is automatically repeated, ships’ DSC equipment must be capable of automatically receiving a subsequent distress acknowledgement (see Recommendation ITU-R M.541).
+P151: TABLE A1-1
+P152: Ten-bit error-detecting code
+P153: 
+P154: 
+P155: TABLE A1-2
+P156: Packing table for decimal numbers into ten-bit characters
+P157: 
+P158: TABLE A1-3
+P159: Use of symbol Nos 100 to 127
+P160: 
+P161: TABLE A1-3 (end)
+P162: 
+P163: 2	Technical format of a call sequence
+P164: 2.1	The technical format of the call sequence is:
+P165: 
+P166: 
+P167: 2.2	Examples of typical call sequences and the construction of the transmission format are given in Figs A1-1 to A1-3.
+P168: 2.3	The flow charts illustrating the operation of the DSC system are shown in Figs A1-4 and A1-5.
+P169: 3	Dot pattern and phasing
+P170: 3.1	The phasing sequence provides information to the receiver to permit correct bit phasing and unambiguous determination of the positions of the characters within a call sequence (see Note 1).
+P171: NOTE 1 – Acquisition of character synchronization should be achieved by means of character recognition rather than, for example, by recognizing a change in the dot pattern, in order to reduce false synchronization caused by a bit error in the dot pattern.
+P172: 3.2	The phasing sequence consists of specific characters in the DX and RX positions transmitted alternatively. Six DX characters are transmitted.
+P173: 3.2.1	The phasing character in the DX position is symbol No. 125 of Table A1-1.
+P174: 3.2.2	The phasing characters in the RX position specify the start of the information sequence (i.e. the format specifier) and consist of the symbol Nos. 111, 110, 109, 108, 107, 106, 105 and 104 of Table A1-1, consecutively.
+P175: 3.3	Phasing is considered to be achieved when two DXs and one RX, or two RXs and one DX, or three RXs in the appropriate DX or RX positions, respectively, are successfully received. These three phasing characters may be detected in either consecutive or non-consecutive positions but in both cases all bits of the phasing sequence should be examined for a correct 3-character pattern. A call should be rejected only if a correct pattern is not found anywhere within the phasing sequence.
+P176: 3.4	To provide appropriate conditions for earlier bit synchronization and to allow for scanning methods to monitor several HF and MF frequencies by ship stations, the phasing sequence should be preceded by a dot pattern (i.e. alternating B-Y or Y-B sequence bit synchronization signals) with duration of:
+P177: 3.4.1	200 bits
+P178: At HF and MF for:
+P179: –	distress alerts;
+P180: –	distress acknowledgements;
+P181: –	distress alert relays addressed to a geographic area;
+P182: –	distress alert relay acknowledgements addressed to all ships;
+P183: –	ACS calls;
+P184: –	ACS responses;
+P185: –	all calls addressed to a ship station, a group of ship stations or ship stations in a specific geographic area other than those specified in § 3.4.2.
+P186: 3.4.2	20 bits
+P187: At HF and MF for:
+P188: –	all acknowledgements to individual calls having format specifiers 120 and 123 except ACS responses;
+P189: –	all calling to coast stations except ACS calls.
+P190: At VHF for all calls.
+P191: 4	Format specifier
+P192: 4.1	The format specifier characters which are transmitted twice in both the DX and RX positions (see Fig. A1-1) are:
+P193: –	symbol No. 112 for a “distress” alert; or
+P194: –	symbol No. 116 for an “all ships” call; or
+P195: –	symbol No. 114 for a selective call to a group of ships having a common interest (e.g. belonging to one particular country, or to a single ship owner, etc.); or
+P196: –	symbol No. 120 for a selective call to a particular individual station; or
+P197: –	symbol No. 102 for a selective call to a group of ships in a particular geographic area; or
+P198: –	symbol No. 123 for a selective call to a particular individual station using the automatic service.
+P199: 4.2	It is considered that receiver decoders must detect the format specifier character twice for “distress” alerts and “all ships” calls to effectively eliminate false alerting. For other calls, the address characters provide additional protection against false alerting and, therefore, single detection of the format specifier character is considered satisfactory (see Table A1-3).
+P200: 5	Address
+P201: 5.1	“Distress” alerts and “all ships” calls do not have addresses since these calls are implicitly addressed to all stations (ship stations and coast stations).
+P202: 5.2	For a selective call directed to an individual ship, to a coast station or to a group of stations having a common interest, the address consists of the characters corresponding to the station’s maritime identity as defined in Recommendation ITU-R M.585. The sequence consists of characters coded in accordance with Table A1-2 (see Note 1).
+P203: NOTE 1 – According to Recommendation ITU-R M.585 and RR Article 19, maritime mobile service identities are formed of a series of nine digits, consisting of three digits of the maritime identification digits (MID) and six more digits.
+P204: These identities are included in the address and self-identification parts of the call sequence and are transmitted as five characters C5C4C3C2C1, comprising the ten digits of:
+P205: 
+P206: 		(X1, X2) (X3, X4) (X5, X6) (X7, X8) and (X9, X10)
+P207: 
+P208: respectively, whereas digit X10 is always the digit 0 unless the equipment is also designed in accordance with Recommendation ITU-R M.1080.
+P209: Example:
+P210: MID X4 X5 X6 X7 X8 X9 being the ship station identity is transmitted by the DSC equipment as:
+P211: 
+P212: 		(M, I) (D, X4) (X5, X6) (X7, X8) (X9, 0)
+P213: 
+P214: 5.3	For a selective call directed to a group of ships in a particular geographic area a numerical geographic coordinates address consisting of ten digits (i.e. 5 characters), is constructed as follows (see Fig. A1-6 and Note 1):
+P215: NOTE 1 – In order to comply with commonly accepted practice, the order of entry and read-out should be: first latitude and then longitude.
+P216: 1	the designated geographic area will be a rectangle in Mercator projection;
+P217: 2	the upper left-hand (i.e. North-West) corner of the rectangle is the reference point for the area;
+P218: 3	the first digit indicates the azimuth sector in which the reference point is located, as follows:
+P219: –	quadrant NE is indicated by the digit “0”,
+P220: –	quadrant NW is indicated by the digit “1”,
+P221: –	quadrant SE is indicated by the digit “2”,
+P222: –	quadrant SW is indicated by the digit “3”;
+P223: 4	the second and third digits indicate the latitude of the reference point in tens and units of degrees;
+P224: 5	the fourth, fifth and sixth digits indicate the longitude of the reference point in hundreds, tens and units of degrees;
+P225: 6	the seventh and eighth digits indicate the vertical (i.e. North-to-South) side of the rectangle, , in tens and units of degrees;
+P226: 7	the ninth and tenth digits indicate the horizontal (i.e. West-to-East) side of the rectangle, , in tens and units of degrees.
+P227: 6	Category of call
+P228: The “category of call” information is coded as shown in Table A1-3 and defines the degree of priority of the call sequence.
+P229: 6.1	For a “distress” alert the priority is defined by the format specifier and no category of call information is included in the call sequence.
+P230: For distress alert relays, distress alert relay acknowledgements and distress acknowledgements the category is distress.
+P231: 6.2	For safety related calls, the “category of call” information specifies:
+P232: 	–	urgency; or
+P233: 	–	safety.
+P234: 6.3	For other calls, the “category of call” information specifies:
+P235: 	–	routine; or
+P236: 	–	ACS.
+P237: 7	Self-identification
+P238: 7.1	The maritime identity as defined in Recommendation ITU-R M.585, coded as indicated in § 5.2 and its Note 1, is used for self-identification.
+P239: 8	Messages
+P240: The messages that are included in a call sequence contain the following message elements, which are listed in the order in which they would appear in each message. All message formats are explicitly defined in Tables A1-4.1 through A1-4.11. The procedure to compose digital selective calling message should comply to § 3.2.3.4 of Annex 4.
+P241: 8.1	For a “distress” alert (see Table A1-4.1) the distress information is contained in four messages in the following order:
+P242: 8.1.1	Message 1
+P243: Message 1 is the “nature of distress” message, coded as shown in Table A1-3, i.e.:
+P244: –	100	fire, explosion;
+P245: –	101	flooding;
+P246: –	102	collision;
+P247: –	103	grounding;
+P248: –	104	listing, in danger of capsizing;
+P249: –	105	sinking;
+P250: –	106	disabled and adrift;
+P251: –	107	undesignated distress;
+P252: –	108	abandoning ship;
+P253: –	109	piracy/armed robbery attack;
+P254: –	110	man overboard.
+P255: 8.1.2	Message 2 
+P256: Message 2 is the “distress coordinates” message, consisting of ten digits indicating the location of the vessel in distress, coded on the principles described in Table A1-2, in pairs starting from the first and second digits (see Note 1 in § 5.3):
+P257: –	The first digit indicates the quadrant in which the incident has occurred, as follows:
+P258: •	quadrant NE is indicated by the digit “0”,
+P259: •	quadrant NW is indicated by the digit “1”,
+P260: •	quadrant SE is indicated by the digit “2”,
+P261: •	quadrant SW is indicated by the digit “3”.
+P262: –	The next four figures indicate the latitude in degrees and minutes (the first two digits indicate the degrees and the last two digits indicate the minutes of the latitude).
+P263: –	The next five figures indicate the longitude in degrees and minutes (the first three digits indicate the degrees and the last two digits indicate the minutes of the longitude).
+P264: –	If “distress coordinates” cannot be included, or if the position information has not been updated for 23½ h, the 10 digits following the “nature of distress” should be automatically transmitted as the digit 9 repeated 10 times.
+P265: 8.1.3	Message 3
+P266: Message 3 is the time indication coordinated universal time (UTC) when the coordinates were valid consisting of four digits coded on the principles described in Table A1-2, in pairs starting from the first and second digits.
+P267: –	The first two digits indicate the time in hours.
+P268: –	The third and fourth digits indicate the part of the hours in minutes.
+P269: –	If the time cannot be included the four time indicating digits should be transmitted automatically as “8 8 8 8”.
+P270: 8.1.4	Message 4 
+P271: Message 4 is a single character to indicate the type of communication (telephone or FEC teleprinter) which is preferred by the station in distress for subsequent exchange of distress traffic. This character is coded as shown in Table A1-3 first telecommand.
+P272: 8.2	Distress alert relay, distress alert relay acknowledgement, distress acknowledgement
+P273: For a distress alert relay, distress alert relay acknowledgement, distress acknowledgement (see Tables A1-4.2, A1-4.3 and A1-4.4) the distress information is contained in five messages in the following order:
+P274: 8.2.1	Message 0
+P275: Message 0 is the maritime identity of the unit in distress as defined in Recommendation ITU-R M.585.
+P276: 8.2.2	Message 1
+P277: Message 1 is the “nature of distress” message, coded as shown in Table A1-3, i.e.:
+P278: –	100	fire, explosion;
+P279: –	101	flooding;
+P280: –	102	collision;
+P281: –	103	grounding;
+P282: –	104	listing, in danger of capsizing;
+P283: –	105	sinking;
+P284: –	106	disabled and adrift;
+P285: –	107	undesignated distress;
+P286: –	108	abandoning ship;
+P287: –	109	piracy/armed robbery attack;
+P288: –	110	man overboard.
+P289: 8.2.3	Message 2
+P290: Message 2 is the “distress coordinates” message, consisting of ten digits indicating the location of the vessel in distress, coded on the principles described in Table A1-2, in pairs starting from the first and second digits (see Note 1 to § 5.3):
+P291: –	The first digit indicates the quadrant in which the incident has occurred, as follows:
+P292: –	quadrant NE is indicated by the digit “0”,
+P293: –	quadrant NW is indicated by the digit “1”,
+P294: –	quadrant SE is indicated by the digit “2”,
+P295: –	quadrant SW is indicated by the digit “3”.
+P296: –	The next four figures indicate the latitude in degrees and minutes (the first two digits indicate the degrees and the last two digits indicate the minutes of the latitude).
+P297: –	The next five figures indicate the longitude in degrees and minutes (the first three digits indicate the degrees and the last two digits indicate the minutes of the longitude).
+P298: If “distress coordinates” cannot be included, or if the position information has not been updated for 23½ h, the 10 digits following the “nature of distress” should be automatically transmitted as the digit 9 repeated 10 times.
+P299: 8.2.4	Message 3
+P300: Message 3 is the time indication (UTC) when the coordinates were valid consisting of four digits coded on the principles described in Table A1-2, in pairs starting from the first and second digits.
+P301: –	The first two digits indicate the time in hours.
+P302: –	The third and fourth digits indicate the part of the hours in minutes.
+P303: –	If the time cannot be included the four time indicating digits should be transmitted automatically as “8 8 8 8”.
+P304: 8.2.5	Message 4
+P305: Message 4 is a single character to indicate the type of communication (radiotelephone) which is preferred by the station in distress for subsequent exchange of distress traffic. This character is coded as shown in Table A1-3 first telecommand.
+P306: 8.3	Other types of calls 
+P307: For other types of calls (see Table A1-4.5 through A1-4.11 and Figs 3 and 4) messages are included in the following order:
+P308: 8.3.1	Message 1
+P309: Message 1 is the “telecommand” information and consists of two characters (first and second telecommand) coded as shown in Table A1-3:
+P310: –	if no information additional to that conveyed by the first telecommand character is required, then the second telecommand signal should be symbol No. 126 (no information) (see Table A1-3);
+P311: –	if no telecommand information is used, symbol No. 126 is transmitted twice;
+P312: –	if the telecommand 1 is “F3E/G3E duplex TP” (symbol 101) in a request, which can be complied with, the telecommand 1 “F3E/G3E all modes TP” (symbol 100) should be used in the acknowledgement;
+P313: –	in ACS call sequence, if the first telecommand is a request, the second telecommand signal should be symbol No. 120 to 125 in accordance with number of remaining ACS sequential transmission (see Table A1-4.9.2).
+P314: 8.3.2	Message 2
+P315: Message 2 may contain two “channel or frequency message” elements, each of which basically consists of three characters, “character 1”, “character 2” and “character 3”, indicating the proposed working frequency (in the F1B/J2B mode the assigned frequency should be used) in multiples of 100 Hz or the channel number (coded in accordance with Table A1-5) or the ship’s position. The first frequency element (the Rx field) in the call indicates the called station receive frequency and the second frequency element (the Tx field) indicates the called station transmit frequency. In acknowledgements the Rx and Tx fields indicate the receive and transmit frequency of the acknowledging station respectively (see also Fig. A1-2 and Note 1).
+P316: NOTE 1 – If only one channel or frequency message element is used, this indicates the called station receive channel or frequency or a two-frequency (paired) channel. A second channel or frequency message element may be used to designate the called station transmit channel or frequency. If the calling station indicates only the called station receive frequency (for broadcast mode transmissions) then the symbol No. 126 repeated three times (see Note 2) should be transmitted instead of the called station transmit channel or frequency message element. If no “channel or frequency message” elements are used, the symbol No. 126 is transmitted six times. For calls using the automatic VHF service (see Table A1-4.10.1) then only one “channel or frequency message” element is transmitted which indicates the paired channel number. In the absence of this element the symbol No. 126 should be transmitted three times.
+P317: NOTE 2 – In the F1B/J2B mode (FEC or ARQ), if using seven-digit frequency as the working frequency, Message 2 may contain two frequency message elements as mentioned above, but each of which consists of four characters, “character 0”, “character 1”, “character 2” and “character 3” in multiples of 10 Hz (coded in accordance with Table A1-5). Additionally if the calling station indicates only the called station receive frequency of seven-digit (for broadcast mode transmissions) then the symbol No. 126 repeated four times should be transmitted instead of the called station transmit frequency message element.
+P318: 8.3.2.1	Frequency information
+P319: The frequency (in the F1B/J2B mode the assigned frequency should be used) in multiples of 100 Hz or 10 Hz (see Note 2 above) may only be indicated as such when the frequency is below 30 MHz. The three characters provide for the required six decimal digits. Character 1 represents the units (U) and tens (T) of 100 Hz, character 2 the hundreds (H) and thousands (M) and character 3 the tens of thousands (TM) and hundreds of thousands (HM) of 100 Hz. For MF/HF DSC, use frequency selection mode, vice channel selection mode, to ensure international interoperability. Also, when using seven-digit frequencies, the four characters provide for the required seven decimal digits. Character 0 represents the units (U1) and tens (T1) of 10 Hz, character 1 the units (U) and tens (T) of 1 kHz, character 2 the hundreds (H) and thousands (M) and character 3 the tens of thousands (TM) of 1 kHz. However note that this four-characters information is only for use of seven-digit frequencies in the F1B/J2B, i.e. it does not affect the messages for the J3E TP mode and for the F1B/J2B mode using six-digit frequencies to ensure interoperability.
+P320: 8.3.2.2	Channel information
+P321: 8.3.2.2.1	HF and MF channels
+P322: If the HM digit is 3, this indicates that the number represented by the digits TM, M, H, T, U, T1 and U1 is the HF/MF working channel number (either single frequency or two frequency channels). This mode should only be used for decoding received calls, to ensure interoperability with older equipment.
+P323: 8.3.2.2.2	VHF channels
+P324: If the HM digit is 9, this indicates that the number represented by the values of the digits M, H, T and U is the VHF working channel number. If the M digit is 1, this indicates that the ship stations transmitting frequency is being used as a simplex channel frequency for both ship and coast stations. If the M digit is 2, this indicates that the coast stations transmitting frequency is being used as a simplex channel frequency for both ship and coast stations.
+P325: 8.3.2.3	Ship’s position information
+P326: For MF/HF calls, message 2 may contain the ship’s position, consisting of the digit 5 repeated two times and ten digits (five characters) indicating this position, coded in accordance with § 8.1.2 (see Table A1-6).
+P327: For position requests message 2 consists of 6 no information symbols (symbol No. 126).
+P328: In acknowledgements to a call requesting ship’s position (see Fig. 3d)) message 2 consists of six symbols. The first five transmitted symbols are the 10 digits position numbers coded into the symbols according to § 8.1.2, the following one symbol is No. 126 (No information), if the requested ship agree to the request. And if the requested ship does not agree to the request, message 2 consists of 6 characters filled with symbol No. 126.
+P329: 8.3.3	Message 3
+P330: Message 3 follows message 2 in this case and contains the time (UTC) when the coordinates were valid, coded as indicated in § 8.1.3.
+P331: Message 3 follows message 2 when using the DSC system for calls initiated by ship stations requiring a automatic connection (see Tables A1-4.10.1 and A1-4.10.2) and contains the public switched network number (e.g. telephone number). In this case the format specifier used is symbol No. 123.
+P332: This number is coded by up to nine symbols in a manner similar to that shown in Table A1-2, except that the first character transmitted should be either symbol No. 105 or No. 106 to indicate whether the network number contains an odd or even number of significant digits. As an example, the number 0012345 would be coded as symbol numbers 105 00 01 23 45 whereas the number 00123456 should be coded as symbol numbers 106 00 12 34 56.
+P333: 8.4	Distress alert relay
+P334: For “distress alert relay” including shore-to-ship alerts, “distress alert relay acknowledgement” and “distress acknowledgement” calls, the message formats are indicated in Tables A1-4.3, A1-4.4 and A1-4.2 respectively.
+P335: When sending a distress alert on behalf of another ship which is unable to send its own alert, and where the identity of the station in distress is unknown, the distress alert relay call should contain the symbol No. 126 transmitted five times for the “identification of the station in distress”.
+P336: When a “distress alert relay” is sent by a man overboard device in closed loop-mode to an Individual station or to a Group, the “identification of the station in distress” to be used is the ID of the man overboard device.
+P337: 8.5	Test calls
+P338: Test calls on the distress and safety frequencies for MF and HF and VHF channel 70 may be conducted using the test call sequence in Table A1-4.7.
+P339: 8.6	Distress self-cancel operation
+P340: Distress acknowledgments where the transmitting ID and ship in distress ID are the same, the message should be interpreted as a self-cancel operation. This should be displayed on all receiving stations.
+P341: 9	End of sequence
+P342: The “end of sequence” (EOS) character is transmitted three times in the DX position and once in the RX position (see Fig. A1-1b)). It is one of the three unique characters corresponding to symbol Nos. 117, 122 and 127 as follows:
+P343: –	symbol No. 117 if the call requires acknowledgement (Acknowledge RQ), used for individual and automatic calls only;
+P344: –	symbol No. 122 if the sequence is an answer to a call that requires acknowledgement (Acknowledge BQ), used for individual and automatic calls and all distress alert relay acknowledgements;
+P345: –	symbol No. 127 for all other calls.
+P346: 10	Error-check character
+P347: 10.1	The error-check character (ECC) is the final character transmitted and it serves to check the entire sequence for the presence of errors which are undetected by the ten-unit error-detecting code and the time diversity employed.
+P348: 10.2	The seven information bits of the ECC shall be equal to the least significant bit of the modulo-2 sums of the corresponding bits of all information characters (i.e. even vertical parity). The format specifier and the EOS characters are considered to be information characters. The phasing characters and the retransmission (RX) characters shall not be considered to be information characters. Only one format specifier character and one EOS character should be used in constructing the ECC. The ECC shall also be sent in the DX and RX positions.
+P349: 10.3	Automatic acknowledgement transmissions should not start unless the ECC is received and decoded correctly. A received ECC which does not match that calculated from the received information characters may be ignored if this was due to an error detected in the ten-unit error-detecting code of the information characters which was correctable by use of the time diversity code.
+P350: 10.4	The receiver decoder should provide maximum utilization of the received signal, including use of the error-check character.
+P351: 11	Distress alert attempt
+P352: 11.1	Distress alerts may be transmitted as a single frequency or a multi-frequency call attempt preceded by a dot pattern. MF/HF equipment should be capable of using both single and multi-frequency call attempts. Where a distress alert attempt contains more than one consecutive distress alert on the same frequency (see Recommendation ITU-R M.541), these consecutive alerts should be transmitted with no gap between the end of one call and the start of the dot pattern of the following call to enable bit synchronization to be maintained (see Fig. 1c)). Multi-frequency call attempts should always include at least the MF and HF 8 MHz band DSC distress and safety frequencies.
+P353: 11.2	A distress alert should be activated only by means of a dedicated distress button which should be clearly identified and be protected against inadvertent operation. For a fixed station the protection should be a spring loaded lid or cover. For a handheld VHF the protection should be a cover or a lid which should be rapidly self-closing when unattended. The initiation of a distress alert should at least require two independent actions.
+P354: 11.3	Calls with format specifier “distress” or category of call “distress”, “urgency” and “safety” should be initiated manually only. This applies also for ships equipped for automatic DSC operation. For automatic repetition of distress alerts see Recommendation ITU-R M.541.
+P355: 11.4	Immediately following a distress alert a DSC expansion message giving enhanced position resolution according to Recommendation ITU-R M.821 should be transmitted in the following manner.
+P356: For a single frequency distress alert attempt the expansion message should be transmitted immediately after the last of five consecutive distress alerts.
+P357: For a multi-frequency distress alert attempt the expansion message should be transmitted immediately after each distress alert.
+P358: The resending of the distress alert attempt should comply to § 3.2.4.
+P359: 12	Shipborne human machine interface 
+P360: 12.1	Shipborne audible digital selective calling alarm and audible indication
+P361: 12.1.1	Shipborne DSC alarms should start softly and increase in volume if not silenced by the operator. This will give the operator the opportunity to confirm the reception of the alarm without interrupting the ship’s current communications by silencing the alarm sound DSC calls received which are not of the category of call distress and urgency should sound an audible indication (see § 2.3) to inform the operator of the reception.
+P362: 12.1.2	Category of distress calls, which consists out of distress alert, distress acknowledgement, distress alert relay and the distress alert relay acknowledgement.
+P363: –	The DSC distress alert, and distress alert relay should have an alarm consisting of a repetition of the 2 200 Hz tone for 250 ms followed by a 1 300 Hz tone for 250 ms (two-tone alarm).
+P364: –	DSC distress alert acknowledgement and DSC distress alert relay acknowledgement should initiate an alarm consisting of a repetition of the 2 200 Hz tone for 500 ms followed by a 1 300 Hz tone for 500 ms (two-tone acknowledgement alarm).
+P365: These alarms occurs at the initiation of the received distress DSC automated procedure. The characteristics of this alarm should not be able to be altered.
+P366: 12.1.3 	Category of urgency calls which consists out of urgency and urgency acknowledgement.
+P367: –	The DSC urgency alarm consisting of a repetition of the 2 200 Hz tone for 250 ms followed by 250 ms period of silence.
+P368: –	The DSC urgency acknowledgement alarm consisting of a repetition of the 2 200 Hz tone for 500 ms followed by a 500 ms period of silence.
+P369: These alarms occur at the initiation of the received non-distress DSC automated procedure when the category of call of the initiating DSC message is “urgency”. The characteristics of this alarm should not be able to be altered.
+P370: 12.1.4	Normally only the first occurrence of a received DSC Distress as well as DSC Urgency calls.
+P371: The display should be updated in accordance with the actual reported position, but this change of information should not initiate a repetition of the original alert.
+P372: 12.1.5 	All received DSC calls that do not sound a DSC distress or DSC urgency alarm as specified in A4-3.1.1 should sound a brief, audible indication (see § 2.3) to inform the operator of the reception.
+P373: 12.1.6	For HF and MF distress calls, the DSC distress alarms should activate only when a call of category of distress is received and the reported position of distress is within 500 NM (926 km) of the receiving vessel’s position, or if the distress position is in the polar areas (latitude greater than 70 N or 70 S). The alarm should also activate when the call is received and the distance between the vessel in distress and the receiving vessel cannot be determined. 
+P374: 12.1.7	For geographic area calls, the DSC distress as well as DSC urgency alarms appropriate to the category of call it should activate when the receiving station’s position is within the area specified by the call or the receiving station’s position is not known. 
+P375: 12.1.8	The DSC distress alarm should not be activated where duplicate distress alert relay calls are received within one hour. A duplicate distress alert relay call is one having format specifier all ships or geographic area that contains identical message information, as defined in § 8.1 and an identical distress maritime mobile service identity (MMSI).
+P376: 12.2	Inactivity timer
+P377: During normal operation, the equipment should include an inactivity timer to return the DSC system display to default or standby mode if the operator is in a menu where DSC call reception is disabled and does not make any selections or changes for 10 min.
+P378: 12.3	Display
+P379: The presentation of information on the display should support readability from typical user positions when operating the equipment under all ambient light conditions and operational requirements likely to be experienced on the bridge of a ship. 
+P380: It should have the means to display, in plain language, the information contained in the received call. For Class A DSC equipment, the display should have a minimum of 160 characters in two or more lines.
+P381: 12.4	Maritime mobile service identity
+P382: DSC equipment should not transmit any DSC call until own ship’s MMSI allocated to the ship by the relevant administration has been configured and stored in the DSC equipment. Once stored, it should only be possible for an authorised user to change the MMSI with cooperation from the manufacturer or the authorized entity.
+P383: The DSC equipment should display own ship’s MMSI on start-up unless the MMSI has not been configured. If the MMSI has not been configured, the equipment will display a warning that the unit will not transmit any DSC calls until own ship’s MMSI is entered. The equipment should stay in this state until the operator confirms he has read the display and input own ship’s MMSI.
+P384: The MMSI should be readily displayed on the human machine interface when the DSC equipment is on.
+P385: 12.5	Automatic channel switching function on VHF
+P386: Automatic switching to a subsequent communications channel on receipt of a DSC call may be implemented on VHF equipment. Prior to an automatic switch to the proposed frequency or channel, the user should accept the change, which should be carried out after the acknowledgement.
+P387: Automatic switching to a subsequent communications channel on receipt of a DSC call might in some cases disrupt important ongoing communications. Where such capability exists, a means for disabling that function should therefore be provided for all calls other than individual station calls of category distress or urgency. The DSC equipment should provide visual indication that the automatic switching function is disabled.
+P388: 12.6	Data interface
+P389: DSC equipment should be provided with facilities for exchange of data from shipborne navigational equipment or systems, or other shipborne equipment as necessary in accordance with IEC 61162 series for purposes including automatic position updating. 
+P390: 12.7	Position updating
+P391: DSC equipment should accept valid IEC 61162 position information including the time at which the position was determined, from an external source utilizing the data interface described in § 12.6, for automatic update of own ship’s DSC position.
+P392: The DSC Class D and E Equipment should, and the DSC Class A equipment may also be provided with an integral global navigation satellite system (GNSS) receiver. In which case, the DSC equipment should automatically switch to the internal source if the external IEC 61162 position information is not valid or not available. Antennas for integral GNSS receiver should be mounted externally, such that they are provided with an unobstructed view of the sky.
+P393: If the automatic position update is not available, a displayed and audible reminder to manually update the position should occur when a) no position information is provided during start up and b) before the position information is 4 hours old. The displayed reminder should remain until position updating has been carried out. Any position information not updated for more than 23½ hours should automatically be erased.
+P394: Own ship’s DSC position information and the source of that information (external, internal, or manually entered) should be displayed on the DSC equipment.
+P395: 12.8	Geographic area entry
+P396: DSC equipment should be provided with means for transforming a geographical area specified by the user as a centre point and a range to the corresponding Mercator area call format specified in § 5.3. The centre point should default to the ships position information and the range should default to 500 NM (926 km). The transformation of the entered range and centre-point should result in the minimum rectangular area that encompasses the entered data.
+P397: 12.9	Medical transport and neutral ships and aircraft
+P398: The capability of using second telecommands “Ships and aircraft of States not parties to an armed conflict” and “Medical Transports” should not be available by default but only after changing relevant parameters in the setup menu.
+P399: 12.10	Group calls (Ships having common interest)/individual call 
+P400: When the MMSI in the menu for an individual call starts with “0” followed by the three digits of an MID the format specifier for individual call 120 should/may change to a group call specifier 114 automatically, as well as the settings of the call.
+P401: 12.11	Automatic connection system function on MF/HF (Class A and Class E)
+P402: ACS aims to establish a communication link between ship station and ship/coast station by automatically selecting a working frequency.
+P403: DSC equipment should be provided with a visual indication that automatic frequency switching by ACS function is enabled.
+P404: 12.12	Implementation of the distress self-cancel procedure 
+P405: After activation a distress alert the equipment should provide on top level an option to initiate the transmission of a distress self-cancel message as specified in Table A1-4.1 in case that the distress alert has been initiated by mistake.
+P406: The action of switching off a DSC equipment that has previously sent a distress alert as specified in Table A1-4.1 and that has not been acknowledged, shall cause the DSC equipment to transmit the distress self-cancel message.
+P407: The equipment should use the distress alert self-cancel procedure as described in § 3.2.4.4.
+P408: 13	Handheld human machine interface
+P409: 13.1	Audible digital selective calling alarms and audible indications
+P410: 13.1.1	All calls to the handheld VHF should activate an audible alarm.
+P411: 13.1.2	Category of distress calls which consists out of distress alert, distress acknowledgement, distress alert relay and the distress alert relay acknowledgement. 
+P412: –	The DSC distress alert, and distress alert relay should have an alarm consisting of a repetition of the 2 200 Hz tone for 250 ms followed by a 1 300 Hz tone for 250 ms (two-tone alarm). 
+P413: –	DSC distress alert acknowledgement and DSC distress alert relay acknowledgement should initiate an alarm consisting of a repetition of the 2 200 Hz tone for 500 ms followed by a 1 300 Hz tone for 500 ms (two-tone acknowledgement alarm). 
+P414: These alarms occur at the initiation of the received distress DSC automated procedure. The characteristics of this alarm should not be able to be altered.
+P415: 13.1.3	Category of urgency calls which consists out of urgency and urgency acknowledgement.
+P416: –	The DSC urgency alarm consisting of a repetition of the 2 200 Hz tone for 250 ms followed by 250 ms period of silence. 
+P417: –	The DSC urgency acknowledgement alarm consisting of a repetition of the 2 200 Hz tone for 500 ms followed by a 500 ms period of silence. 
+P418: These alarms occur at the initiation of the received non-distress DSC automated procedure when the category of call of the initiating DSC call is “urgency”. The characteristics of this alarm should not be able to be altered.
+P419: 13.1.4 	Only the first occurrence of a received DSC distress or DSC urgency call should sound the alarms.
+P420: The display should be updated in accordance with the actual reported position but this change of information should not initiate a repetition of the original alert.
+P421: 13.1.5 	All received DSC calls that do not sound an alarm as specified in § 3.1.1 should sound an audible indication (see § 2.3) to inform the operator of the reception.
+P422: DSC calls received which are not of the category of call distress and urgency should sound an audible indication (see § 2.3) to inform the operator of the reception.
+P423: 13.2	Inactivity timer
+P424: During normal operation, the handheld equipment should include an inactivity timer to return the DSC system display to default or standby mode if the operator is in a menu where DSC call reception is disabled and does not make any selections or changes for a number of minutes. The range of minutes should be adjustable from 1 to 10 in the configuration of the handheld VHF.
+P425: 13.3	Display
+P426: The presentation of information on the display of the handheld VHF should support readability from typical user positions under all ambient light conditions and operational requirements. It should have the means to display, in plain language, the information contained in the received call.
+P427: 13.4	Maritime mobile service identity/maritime identity
+P428: Handheld DSC equipment should not transmit any DSC call until the MMSI or maritime identity allocated to the handheld VHF by the relevant administration has been configured and stored in the DSC equipment. Once stored, it should not be possible for the user to reprogram the identifier without cooperation from the manufacturer or authorised entity.
+P429: The DSC equipment should display the identifier on start-up unless an identifier has not been configured. If the identifier has not been configured, the equipment will display a warning that the unit will not transmit any DSC calls until an identifier is entered. The equipment should stay in this state until the operator confirms he has read the display and input an identifier.
+P430: The identifier should be displayed in standby mode and available to be displayed in the menu system of the handheld VHF.
+P431: 13.5	Automatic channel switching
+P432: Automatic switching to a subsequent communications channel on receipt of a DSC call may be implemented on VHF equipment. Prior to an automatic switch to the proposed frequency or channel, the user should accept the change, which should be carried out after the acknowledgement.
+P433: Automatic switching to a subsequent communications channel on receipt of a DSC call might in some cases disrupt important ongoing communications. Where such capability exists, a means for disabling that function should therefore be provided for all calls.
+P434: The handheld VHF should revert to automatic channel switching after a power off and power ON sequence has been carried out.
+P435: 14	Handheld VHF digital selective calling equipment with electronic position fixing systems (Class H)
+P436: The DSC equipment must provide an internal GNSS receiver and use those capabilities. 
+P437: 15	Position request operation for Class D, Class E and Class H
+P438: The Position Request Acknowledgement function should be capable of being deactivated by the user in order to ensure privacy. However, after transmission of a distress alert, the position request acknowledgment of that particular radio should be activated automatically and then stay active until reset by the user. The Position Request Acknowledgement should be sent automatically by the equipment if requested. This would ensure that search and rescue entities are able to request the position of the vessel in distress even after a Distress Acknowledgement has been received by the equipment. 
+P439: 16	Man overboard devices using VHF digital selective calling (Class M)
+P440: Man overboard (MOB) devices using VHF digital selective calling (Class M) are Group A autonomous maritime radio devices. These devices incorporate DSC as well as AIS functionality. The functionalities of the operational procedures of the devices are described in Recommendation ITU-R M.2135. The related DSC functionality is described in the following sections.
+P441: 16.1	Open and closed loop operation
+P442: MOB devices using VHF DSC is capable of operating as an open loop/all station device (see § 16.4) or as a closed loop/designated station device (see § 16.5) only, as described in this Recommendation. 
+P443: 16.2	Distress self-cancel operation
+P444: MOB devices using VHF digital selective calling (Class M) should be capable of transmitting a distress self-cancel message, as described in § 8.6 and Table A1-4.2.
+P445: 16.3	Action on receipt of acknowledgment messages
+P446: If after activation the MOB device receives a DSC distress alert acknowledgement message, formatted in accordance with Table A1-4.2, or a DSC distress alert relay acknowledgment message, formatted in accordance with Table A1-4.4 as response to the related alerting, the DSC transmitter shall be switched off and provide an indication of the reception of the acknowledgment message.
+P447: 16.4	Open loop man overboard devices 
+P448: Calls from and to open loop MOB devices using VHF DSC are defined in Tables A1-4.1 and A1-4.2. On initial activation, the open loop MOB device transmits a DSC call formatted as a distress alert as specified in Table A1-4.1. The appropriate acknowledgement is in accordance with Table A1-4.2. The nature of distress field shall be set to symbol 110 (man overboard) and the subsequent communications field set to symbol 126 (no information). The position (message 2) and time (message 3) fields in the initial DSC message is filled by the digits 9 and 8 respectively, in accordance with §§ 8.2.3 and 8.2.4. In subsequent messages these fields should be filled with appropriate data.
+P449: 16.5	Closed loop man overboard devices
+P450: Calls from and to closed loop MOB devices using VHF DSC are defined in Tables A1-4.3 and A1-4.4.
+P451: On initial activation, the closed loop MOB device should transmit a DSC call formatted as a distress alert relay to its own vessel as specified in Table A1-4.3 with the nature of distress set to 110 (MOB) and the subsequent communications field set to symbol 126 (no information). The position (message 2) and time (message 3) fields in the initial DSC message should be replaced by the digits 9 and 8 respectively, in accordance with §§ 8.2.3 and 8.2.4. In subsequent messages these fields should be filled with appropriate data.
+P452: When the MOB device is switch from closed loop to open loop mode it transmits a DSC message coded as an all ships distress alert as specified in Table A1-4.1. The nature of distress field shall be set to symbol 110 (man overboard) and the subsequent communications field set to symbol 126 (no information).
+P453: figure A1-1
+P454: Construction of call sequence
+P455: 
+P456: FIGURE A1-2
+P457: Examples of a calling sequence and reply sequences for typical individual calls
+P458: 
+P459: FIGURE A1-3
+P460: Calling sequences and reply sequences for polling and shipʼs position
+P461: 
+P462: FIGURE A1-4
+P463: 
+P464: FIGURE A1-5
+P465: Example of call composition flow chart
+P466: 
+P467: FIGURE A1-6
+P468: Geographic coordinates
+P469: 
+P470: Legend for Tables A1-4.1 to A1-4.11
+P471: 
+P472: 
+P473: 
+P474: TABLE A1-4.0
+P475: Reference for Tables A1-4.1 – A1-4.11
+P476: 
+P477: 
+P478: TABLE A1-4.1
+P479: Distress alerts
+P480: * 	Expansion sequence see Table A1-4.11.
+P481: **	For Class M (see § 16), this field is set to 126; for other cases, this field is set to 100.
+P482: 
+P483: TABLE A1-4.2
+P484: Distress acknowledgements
+P485: * 	Expansion sequence see Table A1-4.11.
+P486: ** 	For Class M (see § 16), this field is set to 126; for other cases, this field is set to 100.
+P487: 
+P488: TABLE A1-4.2 (end)
+P489: Distress acknowledgements
+P490: *	Expansion sequence see Table A1-4.11.
+P491: TABLE A1-4.3
+P492: Distress alert relays 
+P493: *	Expansion sequence see Table A1-4.11.
+P494: **	MMSI of Parent Vessel or Group of ships. In exceptional circumstances the MOB may be programmed with the MMSI of the coast station in place of the parent ship for operation in the closed loop mode. Otherwise, the coast station is unable to receive the closed loop distress alert relay, and the coast station would be able to receive the distress alert only after 12 minutes for the open loop distress alert operation from the MOB.
+P495: ***	In closed loop-mode to an Individual station or to a Group the “identification of the station in distress” as well as the Self ID is the ID of the man overboard device.
+P496: TABLE A1-4.3 (end)
+P497: Distress alert relays
+P498: *	Expansion sequence see Table A1-4.11.
+P499: TABLE A1-4.4
+P500: Distress alert relay acknowledgements
+P501: *	Expansion sequence see Table A1-4.11.
+P502: 
+P503: TABLE A1-4.5
+P504: Urgency and safety calls – All ships
+P505: (1)	See § 8.3.1.
+P506: (2) 	See Table A1-3 Footnote (9).
+P507: (3)	See Table A1-3 Footnote (8).
+P508: 
+P509: TABLE A1-4.6
+P510: Urgency and safety – Geographic area calls
+P511: (1)	See Table A1-3 Footnote (9).
+P512: (2) 	See Table A1-3 Footnote (8).
+P513: 
+P514: TABLE A1-4.7
+P515: Urgency and safety – Individual calls and their acknowledgements
+P516: * 	Expansion sequence see Table A1-4.11.
+P517: 
+P518: TABLE A1-4.7 (end)
+P519: Urgency and safety – Individual calls and their acknowledgements
+P520: (1)	See § 8.3.1.
+P521: *	Expansion sequence see Table A1-4.11.
+P522: TABLE A1-4.8
+P523: Routine group calls
+P524: (1)	See § 8.3.1.
+P525: 
+P526: TABLE A1-4.9.1
+P527: Routine individual calls and their acknowledgements
+P528: 
+P529: TABLE A1-4.9.1 (end)
+P530: Routine individual calls and their acknowledgements
+P531: (1)	See § 8.3.1.
+P532: TABLE A1-4.9.2
+P533: Automatic connection system individual calls and their acknowledgements
+P534: 
+P535: 
+P536: TABLE A1-4.10.1
+P537: Auto VHF (optional)
+P538: (1)	Upon call completion the coast station may send the end of call acknowledgement without a request from the ship station. The EOS symbol being 127.
+P539: NOTE 1 – See Recommendation ITU-R M.689.
+P540: NOTE 2 – For Class D symbol 123 does not need to be displayed.
+P541: TABLE A1-4.10.2
+P542: Auto MF/HF (optional)
+P543: (1)	This call involves signal strength testing. The ship requests call by sending the coast station its position. Once the ship or coast station is able to comply the ship station sends test DSCs on the working frequency. If the coast station acknowledges with a new working frequency, the ship station sends a test DSC on the new frequency. When the coast station acknowledges with an unchanged frequency, the subsequent communication may begin.
+P544: (2)	Upon call completion the coast station may send the end of call acknowledgement without a request from the ship station. The EOS symbol being 127.
+P545: NOTE 1 – See Recommendation ITU-R M.1082.
+P546: NOTE 2 – For Class E symbol 123 does not need to be displayed.
+P547: 
+P548: 
+P549: TABLE A1-4.11
+P550: Expansion sequences
+P551: 
+P552: TABLE A1-5
+P553: Frequency or channel information
+P554: 
+P555: TABLE A1-6
+P556: Position information (Annex 1, § 8.3.2.3)
+P557: 
+P558: TABLE A1-7
+P559: Position type information
+P560: 
+P561: 
+P562: Annex 2
+
+Equipment classes
+P563: 1	Equipment classes only apply to shipborne equipment
+P564: Class A equipment, which includes all the facilities defined in Annex 1, will comply with the IMO GMDSS carriage requirements for MF/HF installations and/or VHF installations.
+P565: Class D equipment is intended to provide minimum facilities for VHF DSC distress, urgency and safety as well as routing calling and reception, not necessarily in full accordance with IMO GMDSS carriage requirements for VHF installations.
+P566: Class E equipment is intended to provide minimum facilities for MF and/or HF DSC distress, urgency and safety as well as routine calling and reception, not necessarily in full accordance with IMO GMDSS carriage requirements for MF/HF installations.
+P567: Class H handheld equipment is intended to provide minimum facilities for VHF DSC distress, urgency and safety as well as routine calling and reception, not necessarily in full accordance with IMO GMDSS carriage requirements for VHF installations.
+P568: Class M MOB device is intended to activate a Distress alarm on a predefined ship or for a predefined group of ships (closed loop) or all ships (open loop) in the vicinity. This equipment does not provide any voice capability and is not an IMO GMDSS carriage requirement.
+P569: Class A equipment may support the optional automatic service in accordance with Recommendations ITU-R M.689, ITU-R M.1082 and Tables A1-4.10.1 and A1-4.10.2 and are encouraged to do so.
+P570: Class D and Class E equipment may also support the optional automatic service.
+P571: NOTE 1 – Class C, F and G equipment as defined in earlier versions of this Recommendation (e.g. Recommendations ITU-R M.493-5 (Geneva, 1992) and ITU-R M.493-7 (Geneva, 1995)) did not provide vital minimum DSC functions (transmitting and receiving distress alerts) and have therefore been withdrawn.
+P572: NOTE 2 – Class D Handheld as defined in Recommendation ITU-R M.493-13 (Geneva, 2009) has been redefined as new VHF Handheld Class H with a clear set of functionalities to be provided. 
+P573: NOTE 3 – Class B has been deleted because there is no demand in the market to support such equipment and the scope of application was requested by the administrations in preparation of Recommendation ITU-R M.493-15.
+P574: 
+P575: 
+P576: Annex 3
+
+User interface for simplified operation of shipborne equipment
+P577: 1	General
+P578: The user interface for operation of the DSC equipment should be so designed that it will be easy for the operator onboard the ship to operate the equipment and to compose and initiate the types of DSC calls provided for by the equipment. The equipment software should allow the operator to only compose the types of DSC calls which are specified in Tables A1-4.1 to A1-4.11. These Tables indicate which DSC messages are applicable for each class of DSC equipment, messages defined in Tables A1-4.10.1 (auto VHF (optional)) and A1-4.10.2 (auto MF/HF (optional)) should not be selectable from the top level menu. 
+P579: 2	Definitions
+P580: 2.1	Automated procedure: the term given to describe the set of actions necessary to complete the objective of an initiating DSC calls or non-DSC communication event. Five DSC automated procedures are designed to process these. 
+P581: They are: 
+P582: –	the receiving of distress DSC calls, 
+P583: –	the receiving of non-distress DSC calls, 
+P584: –	the sending of distress DSC alert attempts 
+P585: –	and the sending of non-distress DSC calls. 
+P586: A fifth procedure is designed to handle: 
+P587: –	non-DSC communication events.
+P588: These automated procedures are called:
+P589: –	Received distress automated procedure
+P590: –	Sending distress automated procedure
+P591: –	Received non-distress automated procedure (including ACS)
+P592: –	Sending non-distress automated procedure (including ACS)
+P593: –	Communications automated procedure.
+P594: 2.2	default: a value selected or an action taken by the equipment software in the absence of any operator input.
+P595: 2.3	DROBOSE: distress alert relay on behalf of someone else.
+P596: 2.4	engaged: the term used to indicate that the equipment is busy handling an automated procedure.
+P597: 2.5	factory default: a default value that is set by the manufacturer such that the field or behaviour is defined prior to any operator intervention.
+P598: 2.6	standby: the term used to indicate that the equipment is not handling an automated procedure, either active or on hold, but is able to receive DSC messages.
+P599: 2.7	top level: top level means that items, buttons, or functions are present and visible without requiring any action by the operator (such as scrolling, opening up menus, or removing any obscuring covers, etc.).
+P600: 3	Controls
+P601: 3.1	Dedicated distress button to initiate the sending of the distress alert attempt. This button should have at least two independent actions. Lifting of the protective lid is considered the first action. Pressing the distress button is considered as the second independent action. This button should be red in colour and marked “DISTRESS”. Where a non-transparent protective lid or cover is used, it should also be marked “DISTRESS”. The cover should be protected against inadvertent operation with a spring loaded lid or cover permanently attached to the equipment by e.g. hinges. It should not be necessary for the user to remove seals or to break the lid or cover in order to operate the distress button. This button should be used only for this purpose and it should be able to perform this function at all times. Use of the button without any previous operator actions to compose the alert should initiate the default distress alert attempt. The “default distress alert attempt” consists of “undesignated” for the nature of distress, radiotelephony for the communication mode, and on HF the transmission of the attempt uses the multi-frequency method including all six bands.
+P602: The distress button should have priority over all DSC procedures.
+P603: 3.2	Top level menu while the equipment is in standby should provide the following controls, buttons or functions should be visible at the top level while the equipment is in standby:
+P604: 3.2.1	Distress function for composing distress alert attempts other than the default distress alert attempt where the operator is able to:
+P605: –	select the nature of distress (the factory default should be undesignated distress);
+P606: –	on MF and HF the communication mode (should be telephone);
+P607: –	on MF and HF select the method and frequencies of transmission (the factory default should be the multi-frequency method on all six bands);
+P608: –	check the content of the position and time of position information and to manually enter this information if not correct;
+P609: prior to initiating the sending of the distress alert attempt with the dedicated distress button.
+P610: 3.2.2	Call function for composing non-distress DSC calls.
+P611: 3.2.3	Distress alert relay on behalf of someone else function for composing and relaying the occurrence of a distress event obtained by non-DSC means.
+P612: 3.2.4	Cancel/esc/exit/or equivalent for returning to a previous menu level from any state of the equipment.
+P613: 3.2.5	Enter/accept/next/touch/press or equivalent for
+P614: accepting a menu item; or
+P615: going to the next step.
+P616: 4	Display of messages in plain language
+P617: The headings and content of messages should be shown in plain language, for example: 
+P618: –	“radiotelephone” instead of J3E;
+P619: –	“busy” instead of “telecommand 2: 102”.
+P620: 5	Transmission of digital selective calling messages
+P621: 5.1	Digital selective calling call composition features
+P622: The facilities for choosing and composing DSC calls should be so arranged that it is possible for the operator quickly and precisely to:
+P623: compose the content of the DSC call;
+P624: review and correct, if needed, the content before transmitting the DSC call.
+P625: 5.2	Operational guidance to the operator
+P626: The operator should only be able to compose the types of DSC calls which are specified in Tables A1-4.1 through A1-4.11 as indicated for each class of equipment. 
+P627: The equipment should automatically propose the next step for composing the DSC call, for example, when pressing the enter/accept/next/touch/press button or equivalent, if not visible from the context or on the display.
+P628: 5.3	Defaults
+P629: Where options for the items in the DSC call exist (see Annex 1, Tables A1-4.1 to A1-4.11), the factory default values should be as follows:
+P630: After the operator selects the option to compose a non-distress DSC call:
+P631: –	if the operator has the option to select a format (destination address) the default format should be “individual (120)”;
+P632: –	if the format (destination address) is either individual (120), a group of ships (114), or an automatic phone call (123), the default MMSI should be some internal indicator that the MMSI is invalid and needs to be entered before transmission can occur;
+P633: –	if the format (destination address) is an area (102), the default area should be a circle of radius 500 nautical miles centred on the ship;
+P634: –	if the operator has the option to select a category of call (priority) the default category of call should be “routine” unless the routine priority is not allowed (such as in an area or all-ships DSC call) in which case it should be “safety”;
+P635: –	if the operator has the option to select the type of subsequent communication the default value should be radiotelephony;
+P636: –	if the operator has the option to select a frequency or channel for the subsequent communication the default value should be a non-distress frequency or channel consistent with the means of subsequent communication and on MF/HF in the same band as the DSC call transmission;
+P637: •	on MF/HF if the operator has the option to select the frequency of the DSC transmission, default value should be 2 177 kHz;
+P638: •	on MF if the operator has the option to select the frequency of the DSC transmission, default value should be 2 177 kHz;
+P639: •	on HF if the operator has the option to select the frequency of the DSC transmission, default value should be in the 8 MHz band;
+P640: –	all other parameters, for example the position, self ID, time of position, and end of sequence character, should be automatically entered by the equipment;
+P641: –	the category of call should not be “remembered” when the call composition option is selected at a later time but should be reset to the factory default; this requirement does not mean the equipment is unable to provide the operator with the option to send pre-composed, customized DSC calls with a single action;
+P642: –	for example, if there is only a single “call” button, menu selection, or equivalent for initiating a non-distress DSC call, the default DSC message should have format “individual” and category of call “routine”.
+P643: After the operator selects the option to compose a distress alert relay on behalf of someone else (DROBOSE):
+P644: –	if the operator has the option to select a format (destination address) the default format should be “individual (120)”;
+P645: –	if the format (destination address) is individual (120), the default MMSI should be some internal indicator that the MMSI is invalid and needs to be entered before transmission can occur;
+P646: –	if the format (destination address) is an area (102), the default area should be a circle of radius 500 nautical miles centred on the ship;
+P647: –	the default nature of distress should be “undesignated (107)”;
+P648: –	the default MMSI for the vessel in distress should be “unknown (five 126 s)”;
+P649: –	the default position and time of position should be unknown;
+P650: –	the default means of subsequent communication should be radiotelephony:
+P651: •	on MF/HF the default band of the DSC transmission should be on the 2 MHz band;
+P652: •	on MF the default band of the DSC transmission should be on the 2 MHz band;
+P653: •	on HF the default band of the DSC transmission should be on the 8 MHz band;
+P654: –	all other parameters, for example, the self- ID, the distress alert relay telecommand 1 parameter, the category (distress), and end of sequence character should be automatically entered by the equipment;
+P655: –	the format, MMSI of the vessel in distress, the nature of distress, the position and time of position should not be “remembered” when the DROBOSE composition option is selected at a later time but should be reset to the defaults.
+P656: 5.4	Other items
+P657: If the called station is a ship station or a group of ship stations the equipment should request input of a channel number (frequency in case of MF). The equipment should assist the operator by suggesting a suitable inter-ship channel; on VHF for example channel 6.
+P658: Automated HF subsequent communication channel selection for non-distress DSC messages. There is a simplex set and duplex set (contains the distress channels) for HF for both voice (3 000 Hz) and data (500 Hz) communication modes. Selection of the appropriate channel from these sets should follow the following steps:
+P659: –	The band of the communication channel should be the band of the DSC call.
+P660: –	The telecommand 1 parameter determines the choice of voice or data channels.
+P661: –	DSC calls directed to a coast station (i.e. MMSI commencing 00) should let the coast station decide.
+P662: –	All other DSC calls should select a channel from the simplex frequencies.
+P663: Use of the distress channels should be avoided and for routine communications use of the distress channels should not be allowed.
+P664: 
+P665: Annex 4
+
+Automated procedures for simplified operation in shipborne equipment
+P666: 1	General
+P667: The equipment software should allow the operator to only compose the types of DSC calls which are specified in Tables A1-4.1 to A1-4.11. These tables indicate which DSC calls are applicable for each class of DSC equipment. 
+P668: Automated procedures are the incorporation of ITU-R recommended DSC operational procedures into equipment software.
+P669: The equipment should initiate (start) one of five automated procedures whenever the equipment becomes engaged in a new communication event. Four of these automated procedures handle events initiated by sent and received DSC calls and the fifth automated procedure handles radiotelephony established by non-DSC means. One of these five automated procedures is initiated by:
+P670: a)	sending a distress alert,
+P671: b)	receiving a DSC message containing distress information,
+P672: c)	sending an individually addressed distress alert relay containing distress information,
+P673: d)	sending distress alert relay on behalf of someone else,
+P674: e)	sending a DSC message containing no distress information,
+P675: f)	receiving a DSC message containing no distress information,
+P676: g)	engaging in traffic initiated by non-DSC means.
+P677: NOTE – ACS sending and receiving are included in e) and f).
+P678: Once initiated by any of the events listed in a)-g), the automated procedure should handle all the tasks required to satisfy the objectives of the initiating event. These tasks should include the handling of any subsequent DSC messages that may be pertinent (relevant) to the objectives of the automated procedure and appropriately updating the automated procedure, providing the operator with any possible options, and keeping the operator informed of the progress until either the operator terminates the automated procedure or conditions warrant that the automated procedure self terminates. Automated procedures should be able to be run in parallel. Whereas all DSC automated procedures continuously monitor the watch receiver only one active automated procedure has control of the transmitter and general receiver. The reception of any DSC message not pertinent to an automated procedure should not disrupt that procedure but should be appropriately allocated to the appropriate ongoing automated procedure or initiate a new automated procedure.
+P679: 2	Definitions
+P680: 2.1	acknowledged: when used to describe an automated procedure it indicates that the objective of the initial DSC call has been achieved.
+P681: 2.2 	active: the term used to describe an automated procedure which has control of the general receiver and transmitter and is thus able to engage in subsequent communications and receive DSC calls on both the watch receiver and general receiver.
+P682: 2.3	audible indication: the term used to describe a brief self-terminating sound which is repeated once every 30 seconds until confirmation or self-terminating after 5 minutes indicating the reception of a DSC call of a category other than distress or urgency or a repetition of a call of categories distress or urgency already received.
+P683: 2.4	automated procedure: the term given to describe the set of actions necessary to complete the objective of an initiating DSC call or non-DSC communication event. Four DSC automated procedures are designed to process these. They are the receiving of distress DSC calls, the receiving of non-distress DSC calls, the sending of distress DSC alert attempts and the sending of non-distress DSC calls. In addition a fifth procedure is designed to handle non-DSC communication events.
+P684: These automated procedures are called:
+P685: –	Received distress automated procedure
+P686: –	Sending distress automated procedure
+P687: –	Received non-distress automated procedure
+P688: –	Sending non-distress automated procedure
+P689: –	Communications automated procedure.
+P690: 2.5	critical errors: a set of information characters obtained from one or more received DSC calls is considered to have critical errors if the automated procedure needs information characters from that set in order to proceed or perform any task, but the required information characters are in error (for example, an acknowledgement cannot be composed to an individual DSC call that has errors in the sender’s MMSI).
+P691: 2.6	default: a value selected or an action taken by the equipment software in the absence of any operator input.
+P692: 2.7	distress digital selective calling message: A DSC message or acknowledgement containing the distress information.
+P693: 2.8	distress event: a unique distress situation identified by two (VHF) or three (MF/HF) parameters of the distress information; the MMSI of the vessel in distress and the nature of distress and on MF/HF the mode of subsequent communication. If a MOB device triggered the distress event then multiple distress alerts from different MOB devices should be handled as one event and within the same automated procedure.
+P694: 2.9	distress information: the symbols within a DSC call describing a distress situation consisting of the MMSI of the vessel in distress, the nature of distress, the position of the vessel in distress, the UTC time of that position, and the mode of subsequent communication.
+P695: 2.10	DROBOSE: distress alert relay on behalf of someone else.
+P696: 2.11	DX/RX: a notation used to describe the time diversity structure of DSC calls (see Fig. A1-1). One has to be careful not to confuse the “RX” notation when used to indicate the symbol position in the DSC call structure (as in § 4.1 of Annex 1) with its use to indicate reception (as in § 8.3.2 of Annex 1).
+P697: 2.12	engaged: the term used to indicate that the equipment is busy handling an automated procedure.
+P698: 2.13	factory default: A default value that is set by the manufacturer such that the field or behaviour is defined prior to any operator intervention.
+P699: 2.14	general receiver: this unit is the receiver part of the transceiver used for the reception of all subsequent communications and on HF the reception of non-distress DSC acknowledgements. It is important to distinguish this unit from the watch receiver (see below).
+P700: 2.15	identical: a set of information characters is considered identical to another set of information characters if all pairs of corresponding information characters are equal or, if a pair of corresponding information characters is not equal, one of the pair is in error.
+P701: 2.16	information characters: the set of symbols in the DSC call that contain the items of interest for the recipient and is used to compute the ECC symbol that terminates the message. These symbols are repeated in the DX/RX time diversity pattern.
+P702: 2.17	initial digital selective calling message: the DSC message that starts an automated procedure.
+P703: 2.18	non-distress digital selective calling message: DSC messages and acknowledgments that do not contain the distress information.
+P704: 2.19	objective: when in reference to a DSC message or automated procedure it is the goal or intent of the item; usually this goal or intent is to establish subsequent communications or request information.
+P705: 2.20	on hold: the term used to describe an automated procedure which does not have access to the transmitter and general receiver and therefore cannot engage in subsequent communications and is only able to receive DSC messages on the watch receiver.
+P706: 2.21	operator options: are any choices the operator can make while the automated procedure is engaged.
+P707: 2.22	parallel event handling: the background process of handling a received DSC message that is not pertinent to the active automated procedure.
+P708: 2.23	pertinent to the automated procedure: an expression used primarily with reference to DSC messages to indicate that the message has something to do with the procedure and is therefore “handled” by the procedure. A DSC message is pertinent to an automated procedure if the set of information characters in the DSC message has the correct values.
+P709: 2.24	standby: the term used to indicate that the equipment is not handling an automated procedure, either active or on hold, but is able to receive DSC calls.
+P710: 2.25	two-tone alarm: an alarm consisting of a repetition of the 2 200 Hz tone for 250 ms followed by a 1 300 Hz tone for 250 ms. This alarm occurs at the initiation of the received distress DSC automated procedure. The characteristics of this alarm should not be able to be altered.
+P711: 2.26	urgency alarm: an alarm consisting of a repetition of the 2 200 Hz tone for 250 ms followed by 250 ms period of silence. This alarm occurs at the initiation of the received non-distress DSC automated procedure when the category of the initiating DSC message is “urgency”. The characteristics of this alarm should not be able to be altered.
+P712: 2.27	watch receiver: this unit is the separate receiver in DSC radios that continuously monitors the DSC distress frequencies on MF/HF, 2 187.5 kHz on MF, and channel 70 on VHF. On MF/HF it is sometimes referred to as the scanning receiver.
+P713: 3	Tasks of automated procedures
+P714: 3.1	Tasks common to all automated procedures handling digital selective calling calls
+P715: 3.1.1	Handling alarms or audible indications
+P716: The sounding of any DSC alarm or audible indication (see § 2.3) should simultaneously display the reason for the alarm as well as for the audible indication and the means to silence it.
+P717: Alarms should sound appropriate to the automated procedure when a received category of DSC call either initiates or acknowledges the automated procedure with the two-tone alarm and respective DSC acknowledgement alarm being reserved for the initiation of the received distress procedure. The DSC urgency alarm and urgency acknowledgement alarm sound being reserved for the initiation of the received non-distress procedure when the category of call of the initiating DSC message is “urgency” and respectively for “urgency acknowledgement”.
+P718: For each incident, only the first occurrence of a respective received DSC call should sound the alarms.
+P719: All received DSC calls that do not sound an alarm as specified in § 3.1.1 should sound an audible indication (see § 2.3) to inform the operator of the reception.
+P720: 3.1.2	Displaying stages of the automated procedure
+P721: The automated procedure should display the stages and/or activity in order to indicate the progress of the procedure.
+P722: 3.1.3	Tuning the radio
+P723: Tuning of the general receiver and transmitter for reception or transmission of required acknowledgments, repeat transmissions, distress alert relays, or subsequent communications should be handled automatically.
+P724: Any automated tuning action that could potentially disrupt ongoing subsequent communications should provide the operator with at least a 10 s warning. The operator should then be provided with the opportunity to pause the action. In the absence of operator intervention the automated action should proceed.
+P725: 3.1.4	Displaying operator options
+P726: Options should only be provided at those times the option is appropriate.
+P727: 3.1.5	Handling digital selective calling calls not pertinent to the active procedure
+P728: The received DSC call is either allocated to the correct automated procedure running in the background on hold or initiates a new automated procedure on hold. 
+P729: 3.1.6	Displaying warnings
+P730: Warnings should be displayed when the operator attempts to do anything that does not follow the guidelines given by ITU and IMO. The operator should have the option to go back to the stage of the automated procedure where the action was taken that caused the warning.
+P731: 3.1.7	Handling digital selective calling calls containing errors 
+P732: A DSC call with errors is problematic to an automated procedure if the set of information characters in the DSC call is identical as defined in the “definitions” section to the set of information characters normally used to determine the usage and correct them as appropriate.
+P733: Automated procedures initiated by DSC calls with critical errors should sound the same alarm or audible indication (see §2.3) they would sound if the DSC call were received error free but the alarm should self-terminate. 
+P734: Automated procedures are encouraged to utilize subsequent DSC calls pertinent to the automated procedure to reduce the number of receive errors in the set of information characters that are important to the automated procedure. In no case should the reception of subsequent DSC calls increase the number of errors in the set of information characters important to the automated procedure.
+P735: No automated procedure should allow the transmission of further DSC calls with errors.
+P736: If critical errors prevent an automated procedure from setting up an operator option or performing any automated action, that option should be disabled or that action not performed.
+P737: Automated procedures should not be considered acknowledged until all the critical errors in the set of acknowledgement information characters have been received correctly or corrected by repeat reception.
+P738: Information that is normally displayed that contains errors should be displayed to the full extent possible; for example, digits in the MMSI or position information that are received correctly should be displayed in their correct positions and those that are not should be indicated by some special error symbol.
+P739: 3.1.8	Transmission of digital selective calling messages
+P740: Transmission of DSC calls should use a prioritized wait scheme. If the channel is not free, and the DSC call is a distress alert, the alert should be transmitted as soon as the channel becomes free or after 10 s on MF or HF or 1 s on VHF, whichever occurs first. For all other DSC calls, the automated procedure should wait for the channel to become free and then delay transmission of the DSC call for a specified wait time. Distress DSC calls (except for alerts), urgency, safety, routine and test DSC calls should wait one, two, three, and four “fixed” units of time plus a random addition described below, respectively, before attempting to transmit. Transmission occurs if and only if the channel is still free after this wait time has elapsed, otherwise the process is repeated. The fixed “unit” of time should be 100 ms on MF and HF and 50 ms on VHF. The randomly generated component should be some positive integer with resolution in milliseconds between zero and the fixed interval. On MF/HF the channel is considered free if the receiver hardware or DSP software is unable to recognize the DSC tones. 
+P741: 3.1.9	Automated termination
+P742: Automated procedures should have an automated termination timer whose factory default values can be changed by the operator. It should be possible to disable this timer. Unacknowledged sending distress automated procedures should not have a termination timer, however after acknowledgement a termination timer is optional.
+P743: At least 10 s prior to automatic termination, a warning with a discrete audible alarm should be displayed giving the operator the opportunity to stop the termination.
+P744: 3.2	Tasks specific to certain automated procedures
+P745: 3.2.1	Tasks of automated procedures initiated by receiving non-distress digital selective calling messages
+P746: 3.2.1.1	Display of elapsed time
+P747: The elapsed time since receiving the initiating DSC call should be displayed or after any requested acknowledgment has been sent, the elapsed time since sending the acknowledgement should be displayed. Sending repeat acknowledgments should not affect the time display.
+P748: 3.2.1.2	Handling acknowledgments
+P749: If the equipment has been set up to automatically acknowledge individually addressed polling, position request, or test DSC calls, no audible indication (see § 2.3) should sound and the automated procedure should self-terminate.
+P750: Acknowledgement options should only be made available to the operator when the received DSC call requests an acknowledgement.
+P751: When acknowledgments are requested, the automated procedure should provide the operator with up to three possible acknowledgement options based upon the received DSC call as follows:
+P752: Able to comply: This option should be provided if the frequencies and mode of subsequent communication are provided by the received DSC call and the equipment is capable of handling the requested communications, or if the received DSC call is a polling, position request, or test that has not been automatically acknowledged. 
+P753: Able to comply with a mode or frequency change: This option should be provided if the received DSC call requests subsequent communications. 
+P754: Unable to comply: This option should be provided if the received DSC call contains subsequent communications or is a position request. The sending of this acknowledgement indicates a refusal and should terminate the automated procedure.
+P755: The automated procedure should automatically compose the acknowledgement messages based upon the received DSC call as shown in Fig. A1-2 and Fig. A1-3.
+P756: “Able to comply” acknowledgments should be composed in entirety by the automated procedure.
+P757: “Able to comply with a mode or frequency change” acknowledgements should only require the entry/selection of a new mode and/or frequency.
+P758: “Unable to comply” acknowledgments to DSC calls containing subsequent communications should only require the entry/selection of one of the ten telecommand 2 “reason” symbols specified in Table A1-3.
+P759: “Unable to comply” acknowledgments to position requests if implemented should only require a single action by the operator to send. The procedure should automatically place the “no information symbol” in the position and time messages of the acknowledgement.
+P760: The operator should be able to resend a duplicate of the first acknowledgement in automated procedures that have subsequent communications.
+P761: 3.2.2	Tasks of automated procedures initiated by sending a non-distress digital selective calling call
+P762: 3.2.2.1	Display of elapsed time
+P763: The elapsed time since sending the initial DSC call should be displayed or after the automated procedure has received a requested acknowledgment, the elapsed time since acknowledgement should be displayed. Receiving repeat acknowledgments should not affect the time display.
+P764: 3.2.2.2	Resending the initial digital selective calling call
+P765: If no acknowledgement is requested the option to resend the initial DSC call should remain available until the procedure is terminated.
+P766: If an acknowledgement is requested the option to resend the initial DSC call should remain available until the acknowledgment has been received.
+P767: 3.2.2.3	Handling the reception of a delayed acknowledgement
+P768: If an acknowledgement appropriate to this automated procedure is received but the operator has terminated the automated procedure prematurely, the appropriate automated procedure should be reconstructed based on the acknowledgement and the operator informed of the situation.
+P769: 3.2.3	Tasks of automated procedures initiated by receiving a distress digital selective calling call or sending a distress alert relay on behalf of someone else
+P770: 3.2.3.1	Display of elapsed time
+P771: The elapsed time since receiving the initial DSC call should be displayed or after the automated procedure has been acknowledged, the elapsed time since acknowledgement should be displayed. Receiving repeat acknowledgments should not affect the time display.
+P772: 3.2.3.2	Determining operator options
+P773: On HF the operator should have the option to set the general receiver and transmitter to any one of the six distress frequencies of subsequent communication.
+P774: The option to send a distress alert relay should always be available until the automated procedure is terminated.
+P775: 3.2.3.3	Distress alert acknowledgments and distress alert relay acknowledgement options
+P776: These options should not be made available until a DSC call has been received that can respond to the acknowledgement.
+P777: These options should be available immediately after reception of the appropriate DSC calls and not wait until certain conditions for their use, such as time limits, are fulfilled.
+P778: Once these options are available, they should remain available until the automated procedure is terminated.
+P779: 3.2.3.4	Digital selective calling call composition
+P780: The automated procedure should automatically compose distress alert relays, distress alert acknowledgments and distress alert relay acknowledgments based upon the received DSC calls.
+P781: The distress information should be taken from the distress DSC call which has the latest UTC time stamp.
+P782: Distress alert acknowledgements and distress alert relay acknowledgements should require no data entry by the operator except on HF where the frequency of the DSC call may be selected.
+P783: Distress alert relays should only allow the entry of the addressing mode (format) and destination address and on HF, the mode of subsequent communication and the frequency of the DSC call.
+P784: On HF the automated procedure should indicate those frequencies on which DSC calls pertinent to the automated procedure have been received as the preferred choices, however the operator should be allowed to choose any of the six distress frequencies.
+P785: 3.2.3.5	Tuning of the radio after acknowledgment on HF
+P786: The automated tuning should cease upon reception or sending of a distress alert acknowledgement or a distress alert relay acknowledgment addressed to multiple stations. However, the operator should be provided with sufficient information to manually tune to the working frequencies of the most recently received DSC message.
+P787: 3.2.3.6	Handling individually addressed distress alert relays
+P788: The sending or receiving of individually addressed distress alert relays should initiate their own automated procedure separate from the automated procedure that may be handling distress DSC messages concerning the same distress event. In the case of an event triggered by MOB devices then multiple alerts from different MOB devices should be handled as one event and within the same automated procedure.
+P789: The option to send a distress alert acknowledgement should never be available during this automated procedure.
+P790: 3.2.3.7	Handling group addressed distress alert relays
+P791: In the case of an event triggered by MOB devices then multiple alerts from different MOB devices should be handled as one event and within the same automated procedure.
+P792: 3.2.3.8	Handling digital selective calling messages with critical errors
+P793: If the subsequent communication parameter of the distress information is received in error, radiotelephone should be assumed and an indication that the parameter was received in error should be made known to the operator.
+P794: 3.2.3.9	Handling the self-addressed distress alert acknowledgement 
+P795: If the MMSI of the sender of a distress alert acknowledgement is the same as the MMSI of the vessel in distress, the automated procedure should recognize the call as an attempt to cancel the distress alert and inform the operator accordingly.
+P796: 3.2.3.10	Extended digital selective calling sentences 
+P797: The automated procedure should be able to successfully receive and decode single frequency alert attempts that have extended sentence information at the end of some or all of the individual alerts.
+P798: 3.2.3.11	MF/HF only scanning for distress digital selective calling messages
+P799: The received distress automated procedure should scan all six distress DSC channels if not already doing so.
+P800: 3.2.4	Tasks of automated procedures initiated by sending a distress alert attempt
+P801: 3.2.4.1	Display of elapsed time
+P802: The time remaining to the sending of the next distress alert attempt should be displayed prior to acknowledgment by DSC.
+P803: The elapsed time since acknowledgement should be displayed after acknowledgment by DSC. Receiving repeat acknowledgments should not affect the time display.
+P804: 3.2.4.2	Resending of the distress alert attempt
+P805: The unacknowledged distress alert attempt should be automatically resent after a 3.5 to 4.5 min wait.
+P806: The automatic resending of the distress alert attempt should automatically terminate after acknowledgement by DSC.
+P807: Resent distress alert attempts should contain updated position and time of position information.
+P808: 3.2.4.3	Determining operator options
+P809: The option to manually resend the distress alert attempt at any time should remain available until the distress alert has been acknowledged by DSC.
+P810: On HF the operator should have the option to change the frequencies of the distress alert attempt and the option to select between the single frequency or multi-frequency method.
+P811: The option to pause the countdown to the next distress alert attempt should be available prior to acknowledgement by DSC.
+P812: The option to cancel the distress alert should be available prior to acknowledgement by DSC.
+P813: The option to terminate the procedure should only be available after acknowledgment by DSC.
+P814: 3.2.4.4	The distress alert self-cancel procedure
+P815: The self-cancel procedure consists of the self-cancel operation on all bands utilized by the distress alert attempts (on VHF and MF there is only one cancel operation whereas on MF/HF there may be up to six). The self-cancel operation consists of a DSC cancel message (a self-addressed distress alert acknowledgement) followed by a voice cancel on the corresponding frequency of subsequent communication. The phrase “voice cancel” refers to the part of the cancel done over the subsequent communication frequencies whether it is by radiotelephony or on MF and MF/HF by data.
+P816: Upon selection of the cancel option the sending distress automated procedure should provide an explanation of the self-cancel procedure to the operator and provide the option to either continue or return and not do the cancel.
+P817: If the operator selects to proceed with the self-cancel procedure the sending distress automated procedure should pause the countdown to the next automated sending of the distress alert attempt and wait (if necessary) until any alert within an attempt is transmitted to completion before allowing the operator to initiate the first self-cancel operation.
+P818: The operator options during the self-cancel procedure should be to terminate the cancel procedure and to start the self-cancel operation. 
+P819: If the self-cancel procedure is terminated before the first self-cancel operation is started, the sending distress automated procedure should resume from where it left off. However, once the self-cancel operation is started, the option to terminate the cancel procedure should not be available until the self-cancel procedure is completed.
+P820: The status of the self-cancel procedure should be displayed.
+P821: The operator should be provided with the appropriate text for the voice cancel at the time of the voice cancel.
+P822: The self-cancel operation should be able to be repeated on any band but a warning should be provided that the cancel has already been done on this band.
+P823: 3.2.4.5	Special considerations for MF/HF
+P824: The status of each of the bands should be displayed;
+P825: Once one band is cancelled the option to end the self-cancel procedure should not be available until ALL utilized bands are cancelled;
+P826: When the self-cancel procedure is completed, the sending distress automated procedure should be considered acknowledged and the fact that a cancel was performed should be displayed. 
+P827: 3.2.4.6	MF/HF only scanning for distress alert acknowledgements
+P828: The sending distress automated procedure should scan all six distress DSC channels if not already doing so.
+P829: 3.2.5	Radiotelephone communications automated procedure
+P830: The equipment should also be provided with a communications function for radiotelephony that is compatible with the DSC automated procedures described in this Annex. This automated procedure should have:
+P831: –	the ability to switch between being active or being on hold at the discretion of the operator,
+P832: –	the ability to be terminated at the discretion of the operator,
+P833: –	the ability to select the channels for the communications
+P834: 3.2.6	Other non-digital selective calling automated procedures
+P835: Any other non-DSC functionality that is included in the equipment should:
+P836: –	be able to be activated or placed on hold at the discretion of the operator,
+P837: –	never control the watch receiver such that DSC automated procedures, either active or on hold, are unable to receive DSC calls on the watch receiver,
+P838: –	be able to be terminated by the operator.
+P839: 3.3	Tasks concerning multiple automated procedures 
+P840: 3.3.1	Number of simultaneous automated procedures
+P841: Facilities should be provided to handle a minimum of seven simultaneous automated procedures including a reserve of one. The initiation of the reserve automated procedure should:
+P842: –	warn the operator that the equipment cannot handle another automated procedure and that one automated procedure should be terminated,
+P843: –	prevent the operator from initiating any new automated procedures except for the sending of a distress alert and,
+P844: –	warn the operator that the reception of an additional DSC message that would initiate an automated procedure if the equipment were in standby will result in the automatic and immediate termination of an inactive automated procedure where,
+P845: –	the automatic and immediate termination should be based upon age and priority.
+P846: 3.3.2	Sending distress automated procedure
+P847: When initiating a sending distress automated procedure, automatic immediate termination of all other automated procedures (if any) is encouraged but not required.
+P848: 3.3.3	Operator options
+P849: The operator should be able to freely navigate between the automated procedures except when engaged in an unacknowledged sending distress automated procedure.
+P850: When the operator makes any one of the automated procedures on hold active, the automated procedure that was active (if any) should automatically go on hold.
+P851: 3.3.4	Unacknowledged poll, test, or position request automated procedures received on hold
+P852: If any of these automated procedures is set to automatically acknowledge, it should automatically acknowledge and self-terminate as soon as all remaining automated procedures are on hold.
+P853: 3.4	Warnings
+P854: Warnings should be provided when the operator attempts to do the following:
+P855: –	send a distress alert relay before three minutes have elapsed since the automated procedure started,
+P856: –	send a non-individually addressed distress alert relay,
+P857: –	send a distress alert acknowledgement (requires coast station permission),
+P858: –	send an all stations (116 format) distress alert relay acknowledgement (should be sent by coast station only),
+P859: –	send an acknowledgement to a DSC message containing no distress information that is not individually addressed, 
+P860: –	cancel a distress alert,
+P861: –	send any DSC message after the objective of the automated procedure has been obtained,
+P862: –	terminate the automated procedure before the objective has been reached,
+P863: –	terminate the automated procedure if engaged in subsequent communications.
+P864: 
+P865: 

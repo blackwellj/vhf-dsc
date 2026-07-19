@@ -1,0 +1,68 @@
+ 
+Rec.  ITU-R  M.493-16 
+11 
+ 
+3.4 
+To provide appropriate conditions for earlier bit synchronization and to allow for scanning 
+methods to monitor several HF and MF frequencies by ship stations, the phasing sequence should be 
+preceded by a dot pattern (i.e. alternating B-Y or Y-B sequence bit synchronization signals) with 
+duration of: 
+3.4.1 
+200 bits 
+At HF and MF for: 
+– 
+distress alerts; 
+– 
+distress acknowledgements; 
+– 
+distress alert relays addressed to a geographic area; 
+– 
+distress alert relay acknowledgements addressed to all ships; 
+– 
+ACS calls; 
+– 
+ACS responses; 
+– 
+all calls addressed to a ship station, a group of ship stations or ship stations in a specific 
+geographic area other than those specified in § 3.4.2. 
+3.4.2 
+20 bits 
+At HF and MF for: 
+– 
+all acknowledgements to individual calls having format specifiers 120 and 123 except ACS 
+responses; 
+– 
+all calling to coast stations except ACS calls. 
+At VHF for all calls. 
+4 
+Format specifier 
+4.1 
+The format specifier characters which are transmitted twice in both the DX and RX positions 
+(see Fig. A1-1) are: 
+– 
+symbol No. 112 for a “distress” alert; or 
+– 
+symbol No. 116 for an “all ships” call; or 
+– 
+symbol No. 114 for a selective call to a group of ships having a common interest 
+(e.g. belonging to one particular country, or to a single ship owner, etc.); or 
+– 
+symbol No. 120 for a selective call to a particular individual station; or 
+– 
+symbol No. 102 for a selective call to a group of ships in a particular geographic area; or 
+– 
+symbol No. 123 for a selective call to a particular individual station using the automatic 
+service. 
+4.2 
+It is considered that receiver decoders must detect the format specifier character twice for 
+“distress” alerts and “all ships” calls to effectively eliminate false alerting. For other calls, the address 
+characters provide additional protection against false alerting and, therefore, single detection of the 
+format specifier character is considered satisfactory (see Table A1-3). 
+5 
+Address 
+5.1 
+“Distress” alerts and “all ships” calls do not have addresses since these calls are implicitly 
+addressed to all stations (ship stations and coast stations). 
+5.2 
+For a selective call directed to an individual ship, to a coast station or to a group of stations 
+having a common interest, the address consists of the characters corresponding to the station’s 

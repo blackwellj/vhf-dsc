@@ -1,0 +1,83 @@
+ 
+Rec.  ITU-R  M.493-16 
+13 
+ 
+For distress alert relays, distress alert relay acknowledgements and distress acknowledgements the 
+category is distress. 
+6.2 
+For safety related calls, the “category of call” information specifies: 
+ 
+– 
+urgency; or 
+ 
+– 
+safety. 
+6.3 
+For other calls, the “category of call” information specifies: 
+ 
+– 
+routine; or 
+ 
+– 
+ACS. 
+7 
+Self-identification 
+7.1 
+The maritime identity as defined in Recommendation ITU-R M.585, coded as indicated 
+in § 5.2 and its Note 1, is used for self-identification. 
+8 
+Messages 
+The messages that are included in a call sequence contain the following message elements, which are 
+listed in the order in which they would appear in each message. All message formats are explicitly 
+defined in Tables A1-4.1 through A1-4.11. The procedure to compose digital selective calling 
+message should comply to § 3.2.3.4 of Annex 4. 
+8.1 
+For a “distress” alert (see Table A1-4.1) the distress information is contained in four 
+messages in the following order: 
+8.1.1 
+Message 1 
+Message 1 is the “nature of distress” message, coded as shown in Table A1-3, i.e.: 
+– 
+100 
+fire, explosion; 
+– 
+101 
+flooding; 
+– 
+102 
+collision; 
+– 
+103 
+grounding; 
+– 
+104 
+listing, in danger of capsizing; 
+– 
+105 
+sinking; 
+– 
+106 
+disabled and adrift; 
+– 
+107 
+undesignated distress; 
+– 
+108 
+abandoning ship; 
+– 
+109 
+piracy/armed robbery attack; 
+– 
+110 
+man overboard. 
+8.1.2 
+Message 2  
+Message 2 is the “distress coordinates” message, consisting of ten digits indicating the location of the 
+vessel in distress, coded on the principles described in Table A1-2, in pairs starting from the first and 
+second digits (see Note 1 in § 5.3): 
+– 
+The first digit indicates the quadrant in which the incident has occurred, as follows: 
+• 
+quadrant NE is indicated by the digit “0”, 
+• 
+quadrant NW is indicated by the digit “1”, 

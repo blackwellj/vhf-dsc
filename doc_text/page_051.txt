@@ -1,0 +1,149 @@
+50 
+Rec.  ITU-R  M.493-16 
+ 
+TABLE A1-4.11 
+Expansion sequences 
+Rec. ITU-R M.821 expansion sequence 
+Type 
+Expansion data 
+specifier 
+(1) 
+Enhanced position 
+resolution 
+(4) 
+EOS 
+(1) 
+ECC 
+(1) 
+EOS 
+(2 identical) 
+expan1 
+100 
+Pos5 
+127 
+ECC 
+127 
+expan2 
+100 
+Pos5 
+117 
+ECC 
+117 
+expan3 
+100 
+Pos5 
+122 
+ECC 
+122 
+ 
+TABLE A1-5 
+Frequency or channel information 
+Frequency 
+0 
+1 
+2 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+(N/A) 
+The frequency in multiples of 100 Hz as indicated by the 
+figures for the digits HM, TM, M, H, T, U. This should be 
+used for MF, HF equipment except when using seven-digit 
+frequencies. 
+Channels 
+3 
+X 
+X 
+X 
+X 
+X 
+(N/A) 
+The HF/MF working channel number indicated by the values 
+of the digits TM, M, H, T and U. This should be used for 
+backward compatibility in receive only mode. 
+Frequency 
+4 
+4 
+4 
+0 
+1 
+2 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+The frequency in multiples of 10 Hz as indicated by the 
+figures for the digits TM, M, H, T, U, T1 and U1. This should 
+be used for MF, HF equipment when using seven-digit 
+frequencies. 
+Channels 
+8 
+X 
+X 
+X 
+X 
+X 
+(N/A) 
+Only used for Rec. ITU-R M.586 equipment. 
+9 
+0 
+X 
+(1) 
+X 
+X 
+X 
+(N/A) 
+The VHF working channel number indicated by the values of 
+the digits M, H, T and U. 
+ 
+HM 
+TM 
+M 
+H 
+T 
+U 
+T1 
+U1 
+ 
+Character 
+3 
+Character 
+2 
+Character 
+1(2) 
+Character 
+0 
+ 
+(1) If the M digit is 1 this indicates that the ship stations transmitting frequency is being used as a simplex 
+channel frequency for both ship and coast stations. If the M digit is 2 this indicates that the coast stations 
+transmitting frequency is being used as a simplex channel frequency for both ship and coast stations. If 
+the M digit is 0, this indicates the frequency being used is in accordance with RR Appendix 18 for both 
+single and two frequency channels. 
+(2) Character 1 is the last character transmitted except when using seven-digit frequencies. 
+ 

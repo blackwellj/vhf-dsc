@@ -1,0 +1,55 @@
+54 
+Rec.  ITU-R  M.493-16 
+ 
+3.2.1 
+Distress function for composing distress alert attempts other than the default distress alert 
+attempt where the operator is able to: 
+– 
+select the nature of distress (the factory default should be undesignated distress); 
+– 
+on MF and HF the communication mode (should be telephone); 
+– 
+on MF and HF select the method and frequencies of transmission (the factory default should 
+be the multi-frequency method on all six bands); 
+– 
+check the content of the position and time of position information and to manually enter this 
+information if not correct; 
+prior to initiating the sending of the distress alert attempt with the dedicated distress button. 
+3.2.2 
+Call function for composing non-distress DSC calls. 
+3.2.3 
+Distress alert relay on behalf of someone else function for composing and relaying the 
+occurrence of a distress event obtained by non-DSC means. 
+3.2.4 
+Cancel/esc/exit/or equivalent for returning to a previous menu level from any state of the 
+equipment. 
+3.2.5 
+Enter/accept/next/touch/press or equivalent for 
+accepting a menu item; or 
+going to the next step. 
+4 
+Display of messages in plain language 
+The headings and content of messages should be shown in plain language, for example:  
+– 
+“radiotelephone” instead of J3E; 
+– 
+“busy” instead of “telecommand 2: 102”. 
+5 
+Transmission of digital selective calling messages 
+5.1 
+Digital selective calling call composition features 
+The facilities for choosing and composing DSC calls should be so arranged that it is possible for the 
+operator quickly and precisely to: 
+compose the content of the DSC call; 
+review and correct, if needed, the content before transmitting the DSC call. 
+5.2 
+Operational guidance to the operator 
+The operator should only be able to compose the types of DSC calls which are specified in 
+Tables A1-4.1 through A1-4.11 as indicated for each class of equipment.  
+The equipment should automatically propose the next step for composing the DSC call, for example, 
+when pressing the enter/accept/next/touch/press button or equivalent, if not visible from the context 
+or on the display. 
+5.3 
+Defaults 
+Where options for the items in the DSC call exist (see Annex 1, Tables A1-4.1 to A1-4.11), the factory 
+default values should be as follows: 

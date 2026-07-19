@@ -1,0 +1,69 @@
+ 
+Rec.  ITU-R  M.493-16 
+55 
+ 
+After the operator selects the option to compose a non-distress DSC call: 
+– 
+if the operator has the option to select a format (destination address) the default format should 
+be “individual (120)”; 
+– 
+if the format (destination address) is either individual (120), a group of ships (114), or 
+an automatic phone call (123), the default MMSI should be some internal indicator that the 
+MMSI is invalid and needs to be entered before transmission can occur; 
+– 
+if the format (destination address) is an area (102), the default area should be a circle of radius 
+500 nautical miles centred on the ship; 
+– 
+if the operator has the option to select a category of call (priority) the default category of call 
+should be “routine” unless the routine priority is not allowed (such as in an area or all-ships 
+DSC call) in which case it should be “safety”; 
+– 
+if the operator has the option to select the type of subsequent communication the default value 
+should be radiotelephony; 
+– 
+if the operator has the option to select a frequency or channel for the subsequent 
+communication the default value should be a non-distress frequency or channel consistent 
+with the means of subsequent communication and on MF/HF in the same band as the DSC 
+call transmission; 
+• 
+on MF/HF if the operator has the option to select the frequency of the DSC transmission, 
+default value should be 2 177 kHz; 
+• 
+on MF if the operator has the option to select the frequency of the DSC transmission, 
+default value should be 2 177 kHz; 
+• 
+on HF if the operator has the option to select the frequency of the DSC transmission, 
+default value should be in the 8 MHz band; 
+– 
+all other parameters, for example the position, self ID, time of position, and end of sequence 
+character, should be automatically entered by the equipment; 
+– 
+the category of call should not be “remembered” when the call composition option is selected 
+at a later time but should be reset to the factory default; this requirement does not mean the 
+equipment is unable to provide the operator with the option to send pre-composed, 
+customized DSC calls with a single action; 
+– 
+for example, if there is only a single “call” button, menu selection, or equivalent for initiating 
+a non-distress DSC call, the default DSC message should have format “individual” and 
+category of call “routine”. 
+After the operator selects the option to compose a distress alert relay on behalf of someone else 
+(DROBOSE): 
+– 
+if the operator has the option to select a format (destination address) the default format should 
+be “individual (120)”; 
+– 
+if the format (destination address) is individual (120), the default MMSI should be some internal 
+indicator that the MMSI is invalid and needs to be entered before transmission can occur; 
+– 
+if the format (destination address) is an area (102), the default area should be a circle of radius 
+500 nautical miles centred on the ship; 
+– 
+the default nature of distress should be “undesignated (107)”; 
+– 
+the default MMSI for the vessel in distress should be “unknown (five 126 s)”; 
+– 
+the default position and time of position should be unknown; 
+– 
+the default means of subsequent communication should be radiotelephony: 
+• 
+on MF/HF the default band of the DSC transmission should be on the 2 MHz band; 

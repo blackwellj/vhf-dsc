@@ -1,0 +1,45 @@
+ 
+Rec.  ITU-R  M.493-16 
+3 
+ 
+d) 
+that the narrow-band direct printing systems should comply with Recommendation 
+ITU-R M.625; 
+e) 
+that the DSC system should be applicable to the maritime mobile service, both for 
+international and national needs; 
+f) 
+that it is desirable that the DSC system fulfils the requirements of all types of vessels desiring 
+to use it; 
+g) 
+that after experience gained, a need exists to reduce unnecessary alarms and simplify 
+operation of shipborne equipment; 
+h) 
+that in certain applications there may be a need to disable DSC automatic channel switching 
+when there is a requirement for vessels to maintain continuous radio watch on a specific radio 
+telephony channel (e.g. port traffic control, bridge-to-bridge communications), 
+recommends 
+1 
+that devices or equipment which use DSC channels/frequencies should be in full compliance 
+with one of the defined classes within this Recommendation; 
+2 
+that the operator should only be able to compose the types of DSC messages which are 
+specified in Tables A1-4.1 through A1-4.11 as indicated for each class of equipment; 
+3 
+that DSC equipment should be designed in response to the operational requirements specified 
+within Recommendation ITU-R M.541; 
+4 
+that all DSC systems (Class A, Class D, Class E, Class H, Class M as well as coast-stations) 
+defined in this Recommendation should be designed in accordance with the characteristics given in 
+Annex 1; 
+5 
+that shipborne DSC equipment should be designed to provide a simplified user interface, 
+following the examples of good practice set out in Annexes 3 and 4;  
+6 
+that in a GMDSS coast radio station installation, sufficient geographical separation should 
+be provided between the DSC distress channel receiver antennas and any transmitting antennas within 
+the installation. This is to avoid any de-sensitization of the DSC distress channel receivers if any 
+transmitter is used at full power on any designated transmit frequency other than the DSC distress 
+frequencies. 
+ 
+ 

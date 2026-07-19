@@ -1,0 +1,172 @@
+ 
+Rec.  ITU-R  M.493-16 
+9 
+ 
+TABLE A1-3 (end) 
+Symbol 
+No. 
+Phasing 
+and unique 
+functions 
+Format specifie(1) 
+Category of 
+call(1) 
+Nature of 
+distress(1) 
+First 
+telecommand(1) 
+Second 
+telecommand(1) 
+112 
+ 
+Distress 
+Distress 
+ 
+Distress alert 
+relay 
+Pay-phone/public call 
+office(10) 
+113 
+ 
+ 
+ 
+ 
+F1B/J2B 
+TTY-FEC 
+Facsimile/data according 
+to Rec. ITU-R M.1081 
+114 
+ 
+Ships having 
+common interest 
+ 
+ 
+ 
+ 
+115 
+ 
+ 
+ 
+ 
+F1B/J2B 
+TTY-ARQ 
+(6) 
+116 
+ 
+All ships(7) 
+ 
+ 
+(6) 
+(6) 
+117 
+Ack. RQ 
+(EOS) 
+ 
+ 
+ 
+(6) 
+(6) 
+118 
+ 
+ 
+ 
+ 
+Test 
+(6) 
+119 
+ 
+ 
+ 
+ 
+(6) 
+(6) 
+120 
+ 
+Individual stations 
+ 
+ 
+(6) 
+No remaining ACS 
+sequential transmission 
+121 
+ 
+Reserved for 
+national 
+non-calling 
+purposes e.g. 
+Report 
+ITU-R M.1159 
+ 
+ 
+Ship position 
+or location 
+registration 
+updating 
+1 time remaining ACS 
+sequential transmission 
+122 
+Ack. BQ 
+(EOS) 
+ 
+ 
+ 
+(6) 
+2 times remaining ACS 
+sequential transmission 
+123 
+ 
+Individual 
+station 
+semi-automatic/ 
+automatic 
+service(10) 
+ 
+ 
+(6) 
+3 times remaining ACS 
+sequential transmission 
+124 
+ 
+(5) 
+ 
+ 
+(6) 
+4 times remaining ACS 
+sequential transmission 
+125 
+Phasing DX 
+position 
+ 
+ 
+ 
+(6) 
+5 times remaining ACS 
+sequential transmission 
+126 
+* 
+ 
+ 
+ 
+No information 
+No information 
+127 
+EOS 
+ 
+ 
+ 
+(6) 
+(6) 
+ACS: Automatic connection system 
+TP: Telephony 
+TTY: Direct printing 
+ARQ: Recommendation ITU-R M.625 equipment 
+(1) Unassigned symbols should be rejected. The DSC equipment should take no action. 
+(2) Currently unassigned when used with first telecommands other than symbol No. 104 – for future use. 
+(3) Used for selective call to a group of ships in a specified VTS area (Rec. ITU-R M.825). Reception of calls 
+having format specifier 103, for (or) category shall not activate any alarms on shipborne DSC controller. 
+Should not be used in any future expansion. 
+(4) Only used for automatic service. 
+(5) Used in the automatic VHF/UHF service (Rec. ITU-R M.586). Should not be used in any future expansion. 
+(6) Should not be used in any future expansion. 
+(7) All station call (Symbol No. 116) as format specifier is used in MF/HF and is limited to distress alert 
+acknowledgement, distress self-cancel and distress alert relay acknowledgement (see Table A1-4.2). 

@@ -1,0 +1,45 @@
+ 
+Rec.  ITU-R  M.493-16 
+23 
+ 
+DSC calls received which are not of the category of call distress and urgency should sound an audible 
+indication (see § 2.3) to inform the operator of the reception. 
+13.2 
+Inactivity timer 
+During normal operation, the handheld equipment should include an inactivity timer to return the 
+DSC system display to default or standby mode if the operator is in a menu where DSC call reception 
+is disabled and does not make any selections or changes for a number of minutes. The range of 
+minutes should be adjustable from 1 to 10 in the configuration of the handheld VHF. 
+13.3 
+Display 
+The presentation of information on the display of the handheld VHF should support readability from 
+typical user positions under all ambient light conditions and operational requirements2. It should have 
+the means to display, in plain language, the information contained in the received call. 
+13.4 
+Maritime mobile service identity/maritime identity 
+Handheld DSC equipment should not transmit any DSC call until the MMSI or maritime identity 
+allocated to the handheld VHF by the relevant administration has been configured and stored in 
+the DSC equipment. Once stored, it should not be possible for the user to reprogram the identifier 
+without cooperation from the manufacturer or authorised entity. 
+The DSC equipment should display the identifier on start-up unless an identifier has not been 
+configured. If the identifier has not been configured, the equipment will display a warning that the unit 
+will not transmit any DSC calls until an identifier is entered. The equipment should stay in this state 
+until the operator confirms he has read the display and input an identifier. 
+The identifier should be displayed in standby mode and available to be displayed in the menu system 
+of the handheld VHF. 
+13.5 
+Automatic channel switching 
+Automatic switching to a subsequent communications channel on receipt of a DSC call may be 
+implemented on VHF equipment. Prior to an automatic switch to the proposed frequency or channel, 
+the user should accept the change, which should be carried out after the acknowledgement. 
+Automatic switching to a subsequent communications channel on receipt of a DSC call might in some 
+cases disrupt important ongoing communications. Where such capability exists, a means for disabling 
+that function should therefore be provided for all calls. 
+The handheld VHF should revert to automatic channel switching after a power off and power ON 
+sequence has been carried out. 
+14 
+Handheld VHF digital selective calling equipment with electronic position fixing 
+systems (Class H) 
+The DSC equipment must provide an internal GNSS receiver and use those capabilities.  
+ 
+2  See IMO MSC. 191(79) for further details. 

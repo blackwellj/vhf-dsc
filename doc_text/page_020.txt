@@ -1,0 +1,54 @@
+ 
+Rec.  ITU-R  M.493-16 
+19 
+ 
+which should be rapidly self-closing when unattended. The initiation of a distress alert should at least 
+require two independent actions. 
+11.3 
+Calls with format specifier “distress” or category of call “distress”, “urgency” and “safety” 
+should be initiated manually only. This applies also for ships equipped for automatic DSC operation. 
+For automatic repetition of distress alerts see Recommendation ITU-R M.541. 
+11.4 
+Immediately following a distress alert a DSC expansion message giving enhanced position 
+resolution according to Recommendation ITU-R M.821 should be transmitted in the following 
+manner. 
+For a single frequency distress alert attempt the expansion message should be transmitted 
+immediately after the last of five consecutive distress alerts. 
+For a multi-frequency distress alert attempt the expansion message should be transmitted immediately 
+after each distress alert. 
+The resending of the distress alert attempt should comply to § 3.2.4. 
+12 
+Shipborne human machine interface  
+12.1 
+Shipborne audible digital selective calling alarm and audible indication 
+12.1.1 Shipborne DSC alarms should start softly and increase in volume if not silenced by the 
+operator. This will give the operator the opportunity to confirm the reception of the alarm without 
+interrupting the ship’s current communications by silencing the alarm sound DSC calls received 
+which are not of the category of call distress and urgency should sound an audible indication 
+(see § 2.3) to inform the operator of the reception. 
+12.1.2 Category of distress calls, which consists out of distress alert, distress acknowledgement, 
+distress alert relay and the distress alert relay acknowledgement. 
+– 
+The DSC distress alert, and distress alert relay should have an alarm consisting of a repetition 
+of the 2 200 Hz tone for 250 ms followed by a 1 300 Hz tone for 250 ms (two-tone alarm). 
+– 
+DSC distress alert acknowledgement and DSC distress alert relay acknowledgement should 
+initiate an alarm consisting of a repetition of the 2 200 Hz tone for 500 ms followed by a 
+1 300 Hz tone for 500 ms (two-tone acknowledgement alarm). 
+These alarms occurs at the initiation of the received distress DSC automated procedure. The 
+characteristics of this alarm should not be able to be altered. 
+12.1.3  Category of urgency calls which consists out of urgency and urgency acknowledgement. 
+– 
+The DSC urgency alarm consisting of a repetition of the 2 200 Hz tone for 250 ms followed 
+by 250 ms period of silence. 
+– 
+The DSC urgency acknowledgement alarm consisting of a repetition of the 2 200 Hz tone for 
+500 ms followed by a 500 ms period of silence. 
+These alarms occur at the initiation of the received non-distress DSC automated procedure when the 
+category of call of the initiating DSC message is “urgency”. The characteristics of this alarm should 
+not be able to be altered. 
+12.1.4 Normally only the first occurrence of a received DSC Distress as well as DSC Urgency calls. 
+The display should be updated in accordance with the actual reported position, but this change of 
+information should not initiate a repetition of the original alert. 
+12.1.5  All received DSC calls that do not sound a DSC distress or DSC urgency alarm as specified 
+in A4-3.1.1 should sound a brief, audible indication (see § 2.3) to inform the operator of the reception. 

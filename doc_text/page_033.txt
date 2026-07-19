@@ -1,0 +1,55 @@
+32 
+Rec.  ITU-R  M.493-16 
+ 
+Legend for Tables A1-4.1 to A1-4.11 
+Symbol/expression 
+Meaning 
+⚫ 
+Required 
+◼ 
+Required for backward compatibility 
+ — 
+Not allowed 
+Symbols 100-127 
+Symbols in accordance with Table A1-3 
+Area 
+Coded in accordance with Annex 1, § 5.3 
+Frequency 
+Coded in accordance with Annex 1, § 8.3.2 
+MMSI 
+Coded in accordance with Annex 1, § 5.2 
+ID 
+Coded in accordance with Annex 1, § 5.2 
+Pos1 
+Coded in accordance with Annex 1, § 8.1.2 
+Pos2 
+Coded in accordance with Annex 1, § 8.3.2.3 
+Pos3 
+Coded in accordance with Annex 1, § 8.3.2.3 
+Pos4 
+Coded in accordance with Annex 1, § 8.3.2.3 
+Pos5 
+Coded in accordance with Recommendation ITU-R M.821 
+UTC 
+Coded in accordance with Annex 1, § 8.1.3 
+n/a 
+This field is not included in this call 
+ECC 
+Coded in accordance with Annex 1, § 10.2 
+EOS 
+Coded in accordance with Annex 1, § 9 
+expan1 
+Expansion sequence 1 
+expan2 
+Expansion sequence 2 
+expan3 
+Expansion sequence 3 
+ 
+ 
+ 
+ 
+ 
+Does not apply 
+NOTE 1 – For Class A all functions are identical for VHF and MF.  
+ 
+ 

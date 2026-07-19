@@ -1,0 +1,64 @@
+12 
+Rec.  ITU-R  M.493-16 
+ 
+maritime identity as defined in Recommendation ITU-R M.585. The sequence consists of characters 
+coded in accordance with Table A1-2 (see Note 1). 
+NOTE 1 – According to Recommendation ITU-R M.585 and RR Article 19, maritime mobile service 
+identities are formed of a series of nine digits, consisting of three digits of the maritime identification digits 
+(MID) and six more digits. 
+These identities are included in the address and self-identification parts of the call sequence and are transmitted 
+as five characters C5C4C3C2C1, comprising the ten digits of: 
+ 
+ 
+ 
+(X1, X2) (X3, X4) (X5, X6) (X7, X8) and (X9, X10) 
+ 
+respectively, whereas digit X10 is always the digit 0 unless the equipment is also designed in accordance with 
+Recommendation ITU-R M.1080. 
+Example: 
+MID X4 X5 X6 X7 X8 X9 being the ship station identity is transmitted by the DSC equipment as: 
+ 
+ 
+ 
+(M, I) (D, X4) (X5, X6) (X7, X8) (X9, 0) 
+ 
+5.3 
+For a selective call directed to a group of ships in a particular geographic area a numerical 
+geographic coordinates address consisting of ten digits (i.e. 5 characters), is constructed as follows 
+(see Fig. A1-6 and Note 1): 
+NOTE 1 – In order to comply with commonly accepted practice, the order of entry and read-out should be: 
+first latitude and then longitude. 
+1 
+the designated geographic area will be a rectangle in Mercator projection; 
+2 
+the upper left-hand (i.e. North-West) corner of the rectangle is the reference point for the 
+area; 
+3 
+the first digit indicates the azimuth sector in which the reference point is located, as follows: 
+– 
+quadrant NE is indicated by the digit “0”, 
+– 
+quadrant NW is indicated by the digit “1”, 
+– 
+quadrant SE is indicated by the digit “2”, 
+– 
+quadrant SW is indicated by the digit “3”; 
+4 
+the second and third digits indicate the latitude of the reference point in tens and units of 
+degrees; 
+5 
+the fourth, fifth and sixth digits indicate the longitude of the reference point in hundreds, tens 
+and units of degrees; 
+6 
+the seventh and eighth digits indicate the vertical (i.e. North-to-South) side of the rectangle, 
+, in tens and units of degrees; 
+7 
+the ninth and tenth digits indicate the horizontal (i.e. West-to-East) side of the rectangle, , 
+in tens and units of degrees. 
+6 
+Category of call 
+The “category of call” information is coded as shown in Table A1-3 and defines the degree of priority 
+of the call sequence. 
+6.1 
+For a “distress” alert the priority is defined by the format specifier and no category of call 
+information is included in the call sequence. 

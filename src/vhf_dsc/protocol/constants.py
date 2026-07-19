@@ -1,0 +1,67 @@
+"""ITU-R M.493-16 constants for VHF DSC.
+
+All values from ITU-R M.493-16 (12/2023).
+"""
+
+# VHF DSC physical layer (Section 1.3.2)
+VHF_MARK_FREQ = 1300
+VHF_SPACE_FREQ = 2100
+VHF_BAUD_RATE = 1200
+VHF_CHANNEL_70_FREQ = 156.525e6
+
+# Timing
+BIT_DURATION = 1.0 / VHF_BAUD_RATE
+CHARACTER_DURATION = 10 * BIT_DURATION
+
+# Dot pattern (Section 3.4)
+DOT_PATTERN_BITS_VHF = 20
+DOT_PATTERN_BITS_HF_MF = 200
+
+# Phasing (Section 3.2)
+PHASING_DX_SYMBOL = 125
+PHASING_RX_SYMBOLS = [111, 110, 109, 108, 107, 106, 105, 104]
+PHASING_DX_COUNT = 6
+
+# Time diversity (Section 1.2.1)
+TIME_DIVERSITY_SPREAD = 4
+
+# TX timing
+TX_DELAY_MS = 200
+TX_TRAILER_MS = 100
+
+# Distress alert retry (Section 11)
+DISTRESS_RETRY_INTERVAL_S = 240
+MAX_DISTRESS_RETRIES = 5
+COAST_ACK_DELAY_S = 165
+
+# Internal processing
+INTERNAL_SAMPLE_RATE = 16000
+GOERTZEL_THRESHOLD = 0.6
+SQUELCH_THRESHOLD = 0.01
+
+# Character set
+CHARSET_SIZE = 128
+
+# MMSI
+MMSI_LENGTH = 9
+MMSI_CHARS = 5
+ALL_SHIPS_MMSI = "000000000"
+
+# Position
+DISTRESS_COORD_DIGITS = 10
+TIME_DIGITS = 4
+
+# Special symbols
+SYM_NO_INFO = 126
+SYM_EOS = 127
+SYM_PHASING_DX = 125
+
+# VHF working channels (Section 8.3.2.2.2)
+# HM digit = 9 indicates VHF channel
+# M digit = 1: ship Tx simplex, M digit = 2: coast Tx simplex
+VHF_WORKING_CHANNELS = {
+    6: 156.300e6,
+    8: 156.400e6,
+    72: 156.625e6,
+    77: 156.875e6,
+}

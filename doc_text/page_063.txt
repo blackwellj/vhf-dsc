@@ -1,0 +1,52 @@
+62 
+Rec.  ITU-R  M.493-16 
+ 
+The operator should be able to resend a duplicate of the first acknowledgement in automated 
+procedures that have subsequent communications. 
+3.2.2 
+Tasks of automated procedures initiated by sending a non-distress digital selective 
+calling call 
+3.2.2.1 
+Display of elapsed time 
+The elapsed time since sending the initial DSC call should be displayed or after the automated 
+procedure has received a requested acknowledgment, the elapsed time since acknowledgement should 
+be displayed. Receiving repeat acknowledgments should not affect the time display. 
+3.2.2.2 
+Resending the initial digital selective calling call 
+If no acknowledgement is requested the option to resend the initial DSC call should remain available 
+until the procedure is terminated. 
+If an acknowledgement is requested the option to resend the initial DSC call should remain available 
+until the acknowledgment has been received. 
+3.2.2.3 
+Handling the reception of a delayed acknowledgement 
+If an acknowledgement appropriate to this automated procedure is received but the operator has 
+terminated the automated procedure prematurely, the appropriate automated procedure should be 
+reconstructed based on the acknowledgement and the operator informed of the situation. 
+3.2.3 
+Tasks of automated procedures initiated by receiving a distress digital selective calling 
+call or sending a distress alert relay on behalf of someone else 
+3.2.3.1 
+Display of elapsed time 
+The elapsed time since receiving the initial DSC call should be displayed or after the automated 
+procedure has been acknowledged, the elapsed time since acknowledgement should be displayed. 
+Receiving repeat acknowledgments should not affect the time display. 
+3.2.3.2 
+Determining operator options 
+On HF the operator should have the option to set the general receiver and transmitter to any one of 
+the six distress frequencies of subsequent communication. 
+The option to send a distress alert relay should always be available until the automated procedure is 
+terminated. 
+3.2.3.3 
+Distress alert acknowledgments and distress alert relay acknowledgement options 
+These options should not be made available until a DSC call has been received that can respond to 
+the acknowledgement. 
+These options should be available immediately after reception of the appropriate DSC calls and not 
+wait until certain conditions for their use, such as time limits, are fulfilled. 
+Once these options are available, they should remain available until the automated procedure is 
+terminated. 
+3.2.3.4 
+Digital selective calling call composition 
+The automated procedure should automatically compose distress alert relays, distress alert 
+acknowledgments and distress alert relay acknowledgments based upon the received DSC calls. 
+The distress information should be taken from the distress DSC call which has the latest UTC time 
+stamp. 

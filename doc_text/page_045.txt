@@ -1,0 +1,123 @@
+44 
+Rec.  ITU-R  M.493-16 
+ 
+TABLE A1-4.8 
+Routine group calls 
+Frequency 
+band 
+Type of com 
+Applicable to 
+Technical format of call sequence 
+Ship 
+station 
+Class A 
+Ship 
+station 
+Class D 
+Ship 
+station 
+Class E 
+Hand-
+held 
+Class H 
+MOB 
+Device  
+Class M 
+Open and 
+Closed 
+Loop 
+Coast 
+station 
+Format 
+specifier 
+(2 identical) 
+Address 
+(5) 
+Category 
+of call 
+(1) 
+Self-ID 
+(5) 
+Message 
+EOS  
+(1) 
+ECC  
+(1) 
+EOS  
+(2 identical) 
+1 
+2 
+1st tele-
+command 
+(1) 
+2nd tele-
+command 
+(1) 
+Frequency 
+(6) 
+Tx Rx Tx Rx Tx Rx Tx Rx 
+Tx 
+Rx Tx Rx 
+VHF 
+All mode RT 
+⚫ ⚫ ⚫ ⚫   ⚫ ⚫ — — ⚫ ⚫ 
+114 
+MMSI 
+100 
+Self-ID 
+100 
+126 
+Frequency 
+127 
+ECC 
+127 
+Duplex RT(1) 
+— ◼ — —   — — — 
+— 
+— ◼ 
+114 
+MMSI 
+100 
+Self-ID 
+101 
+126 
+Frequency 
+127 
+ECC 
+127 
+MF/HF 
+J3E RT 
+⚫ ⚫  
+ 
+⚫ ⚫  
+ 
+ 
+ ⚫ ⚫ 
+114 
+MMSI 
+100 
+Self-ID 
+109 
+126 
+Frequency 
+127 
+ECC 
+127 
+F1B FEC 
+⚫ ⚫   — —  
+ 
+ 
+ ⚫ ⚫ 
+114 
+MMSI 
+100 
+Self-ID 
+113 
+126 
+Frequency 
+127 
+ECC 
+127 
+(1) See § 8.3.1. 
+ 
+ 

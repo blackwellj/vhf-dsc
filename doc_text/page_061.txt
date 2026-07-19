@@ -1,0 +1,51 @@
+60 
+Rec.  ITU-R  M.493-16 
+ 
+3.1.4 
+Displaying operator options 
+Options should only be provided at those times the option is appropriate. 
+3.1.5 
+Handling digital selective calling calls not pertinent to the active procedure 
+The received DSC call is either allocated to the correct automated procedure running in 
+the background on hold or initiates a new automated procedure on hold.  
+3.1.6 
+Displaying warnings 
+Warnings should be displayed when the operator attempts to do anything that does not follow 
+the guidelines given by ITU and IMO. The operator should have the option to go back to the stage of 
+the automated procedure where the action was taken that caused the warning. 
+3.1.7 
+Handling digital selective calling calls containing errors  
+A DSC call with errors is problematic to an automated procedure if the set of information characters 
+in the DSC call is identical as defined in the “definitions” section to the set of information characters 
+normally used to determine the usage and correct them as appropriate. 
+Automated procedures initiated by DSC calls with critical errors should sound the same alarm or 
+audible indication (see §2.3) they would sound if the DSC call were received error free but the alarm 
+should self-terminate.  
+Automated procedures are encouraged to utilize subsequent DSC calls pertinent to the automated 
+procedure to reduce the number of receive errors in the set of information characters that are important 
+to the automated procedure. In no case should the reception of subsequent DSC calls increase the 
+number of errors in the set of information characters important to the automated procedure. 
+No automated procedure should allow the transmission of further DSC calls with errors. 
+If critical errors prevent an automated procedure from setting up an operator option or performing 
+any automated action, that option should be disabled or that action not performed. 
+Automated procedures should not be considered acknowledged until all the critical errors in the set 
+of acknowledgement information characters have been received correctly or corrected by repeat 
+reception. 
+Information that is normally displayed that contains errors should be displayed to the full extent 
+possible; for example, digits in the MMSI or position information that are received correctly should 
+be displayed in their correct positions and those that are not should be indicated by some special error 
+symbol. 
+3.1.8 
+Transmission of digital selective calling messages 
+Transmission of DSC calls should use a prioritized wait scheme. If the channel is not free, and the 
+DSC call is a distress alert, the alert should be transmitted as soon as the channel becomes free or 
+after 10 s on MF or HF or 1 s on VHF, whichever occurs first. For all other DSC calls, the automated 
+procedure should wait for the channel to become free and then delay transmission of the DSC call for 
+a specified wait time. Distress DSC calls (except for alerts), urgency, safety, routine and test DSC 
+calls should wait one, two, three, and four “fixed” units of time plus a random addition described 
+below, respectively, before attempting to transmit. Transmission occurs if and only if the channel is 
+still free after this wait time has elapsed, otherwise the process is repeated. The fixed “unit” of time 
+should be 100 ms on MF and HF and 50 ms on VHF. The randomly generated component should be 
+some positive integer with resolution in milliseconds between zero and the fixed interval. On MF/HF 
+the channel is considered free if the receiver hardware or DSP software is unable to recognize the 
+DSC tones.  

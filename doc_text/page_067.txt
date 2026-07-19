@@ -1,0 +1,43 @@
+66 
+Rec.  ITU-R  M.493-16 
+ 
+3.3.2 
+Sending distress automated procedure 
+When initiating a sending distress automated procedure, automatic immediate termination of all other 
+automated procedures (if any) is encouraged but not required. 
+3.3.3 
+Operator options 
+The operator should be able to freely navigate between the automated procedures except when 
+engaged in an unacknowledged sending distress automated procedure. 
+When the operator makes any one of the automated procedures on hold active, the automated 
+procedure that was active (if any) should automatically go on hold. 
+3.3.4 
+Unacknowledged poll, test, or position request automated procedures received on hold 
+If any of these automated procedures is set to automatically acknowledge, it should automatically 
+acknowledge and self-terminate as soon as all remaining automated procedures are on hold. 
+3.4 
+Warnings 
+Warnings should be provided when the operator attempts to do the following: 
+– 
+send a distress alert relay before three minutes have elapsed since the automated procedure 
+started, 
+– 
+send a non-individually addressed distress alert relay, 
+– 
+send a distress alert acknowledgement (requires coast station permission), 
+– 
+send an all stations (116 format) distress alert relay acknowledgement (should be sent by 
+coast station only), 
+– 
+send an acknowledgement to a DSC message containing no distress information that is not 
+individually addressed,  
+– 
+cancel a distress alert, 
+– 
+send any DSC message after the objective of the automated procedure has been obtained, 
+– 
+terminate the automated procedure before the objective has been reached, 
+– 
+terminate the automated procedure if engaged in subsequent communications. 
+ 
+ 

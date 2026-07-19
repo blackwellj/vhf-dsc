@@ -1,0 +1,41 @@
+24 
+Rec.  ITU-R  M.493-16 
+ 
+15 
+Position request operation for Class D, Class E and Class H 
+The Position Request Acknowledgement function should be capable of being deactivated by the user 
+in order to ensure privacy. However, after transmission of a distress alert, the position request 
+acknowledgment of that particular radio should be activated automatically and then stay active until 
+reset by the user. The Position Request Acknowledgement should be sent automatically by the 
+equipment if requested. This would ensure that search and rescue entities are able to request the 
+position of the vessel in distress even after a Distress Acknowledgement has been received by the 
+equipment.  
+16 
+Man overboard devices using VHF digital selective calling (Class M) 
+Man overboard (MOB) devices using VHF digital selective calling (Class M) are Group A 
+autonomous maritime radio devices. These devices incorporate DSC as well as AIS functionality. 
+The functionalities of the operational procedures of the devices are described in Recommendation 
+ITU-R M.2135. The related DSC functionality is described in the following sections. 
+16.1 
+Open and closed loop operation 
+MOB devices using VHF DSC is capable of operating as an open loop/all station device (see § 16.4) 
+or as a closed loop/designated station device (see § 16.5) only, as described in this Recommendation.  
+16.2 
+Distress self-cancel operation 
+MOB devices using VHF digital selective calling (Class M) should be capable of transmitting a 
+distress self-cancel message, as described in § 8.6 and Table A1-4.2. 
+16.3 
+Action on receipt of acknowledgment messages 
+If after activation the MOB device receives a DSC distress alert acknowledgement message, 
+formatted in accordance with Table A1-4.2, or a DSC distress alert relay acknowledgment message, 
+formatted in accordance with Table A1-4.4 as response to the related alerting, the DSC transmitter 
+shall be switched off and provide an indication of the reception of the acknowledgment message. 
+16.4 
+Open loop man overboard devices  
+Calls from and to open loop MOB devices using VHF DSC are defined in Tables A1-4.1 and A1-4.2. 
+On initial activation, the open loop MOB device transmits a DSC call formatted as a distress alert as 
+specified in Table A1-4.1. The appropriate acknowledgement is in accordance with Table A1-4.2. 
+The nature of distress field shall be set to symbol 110 (man overboard) and the subsequent 
+communications field set to symbol 126 (no information). The position (message 2) and time 
+(message 3) fields in the initial DSC message is filled by the digits 9 and 8 respectively, in accordance 
+with §§ 8.2.3 and 8.2.4. In subsequent messages these fields should be filled with appropriate data. 

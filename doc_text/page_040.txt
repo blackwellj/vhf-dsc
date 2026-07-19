@@ -1,0 +1,231 @@
+ 
+Rec.  ITU-R  M.493-16 
+39 
+ 
+TABLE A1-4.4 
+Distress alert relay acknowledgements 
+Frequency 
+band 
+Type of com 
+ 
+ 
+Applicable to 
+Technical format of call sequence 
+ 
+ 
+Ship 
+station 
+Class A 
+Ship 
+station 
+Class D 
+Ship 
+station 
+Class E 
+Hand-
+held 
+Class H 
+MOB 
+Device  
+Class M 
+Closed 
+Loop 
+Coast 
+station 
+Format 
+specifier 
+(2 iden-
+tical) 
+Address 
+(5) 
+Cate-
+gory  
+of call  
+(1) 
+Self-
+ID 
+(5) 
+Tele 
+command 
+(1) 
+Message 
+EOS 
+(1) 
+ECC 
+(1) 
+EOS 
+(2 iden-
+tical) 
+ 
+Rec. ITU-R 
+M.821 
+expansion 
+sequence* 
+(9) 
+0 
+1 
+2 
+3 
+4 
+Distress 
+ID 
+(5) 
+Nature of 
+distress 
+(1) 
+Distress 
+coordinates
+(5) 
+Time 
+(2) 
+Subse-
+quent 
+commu-
+nica- 
+tions 
+(1) 
+Tx Rx Tx Rx Tx Rx Tx Rx Tx Rx Tx Rx 
+VHF 
+Individual 
+(RT) 
+⚫ ⚫ ⚫ ⚫  
+ — ⚫ — ⚫ ⚫ ⚫ 
+120 
+ID 
+112 
+Self-
+ID 
+112 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+100 
+122 ECC 
+122 
+ 
+expan3 
+ 
+Group 
+(MOB) 
+⚫ ⚫ ⚫ 
+⚫  
+ — ⚫ — ⚫ 
+⚫ ⚫ 
+114 
+ID 
+112 
+Self-
+ID 
+112 
+Distress 
+ID 
+110 
+Pos1 
+UTC 
+126 
+122 ECC 
+122 
+ 
+expan3 
+ 
+Individual 
+(MoB) 
+⚫ 
+⚫ ⚫ 
+⚫  
+ — — — 
+⚫ 
+⚫ ⚫ 
+120 
+ID 
+112 
+Self-
+ID 
+112 
+Distress 
+ID 
+110 
+Pos1 
+UTC 
+126 
+122  ECC 
+122 
+ 
+Expan3 
+ 
+All ships 
+(RT) 
+— ⚫ — ⚫  
+ — — — — ⚫ ⚫ 
+116 
+n/a 
+112 
+Self-
+ID 
+112 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+100 
+122 ECC 
+122 
+ 
+expan3 
+MF/HF 
+Individual 
+(RT) 
+⚫ ⚫  
+ ⚫ ⚫  
+ 
+ 
+ ⚫ ⚫ 
+120 
+ID 
+112 
+Self-
+ID 
+112 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+109 
+122 ECC 
+122 
+ 
+expan3 
+ 
+All ships 
+(RT) 
+— ◼  
+ — ⚫  
+ 
+ 
+ ⚫ ⚫ 
+116 
+n/a 
+112 
+Self-
+ID 
+112 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+109 
+122 ECC 
+122 
+ 
+expan3 
+The message should match the received distress 
+alert relay call information. 
+* 
+Expansion sequence see Table A1-4.11. 
+ 
+ 

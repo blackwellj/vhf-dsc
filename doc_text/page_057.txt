@@ -1,0 +1,55 @@
+56 
+Rec.  ITU-R  M.493-16 
+ 
+• 
+on MF the default band of the DSC transmission should be on the 2 MHz band; 
+• 
+on HF the default band of the DSC transmission should be on the 8 MHz band; 
+– 
+all other parameters, for example, the self- ID, the distress alert relay telecommand 1 
+parameter, the category (distress), and end of sequence character should be automatically 
+entered by the equipment; 
+– 
+the format, MMSI of the vessel in distress, the nature of distress, the position and time of 
+position should not be “remembered” when the DROBOSE composition option is selected at 
+a later time but should be reset to the defaults. 
+5.4 
+Other items 
+If the called station is a ship station or a group of ship stations the equipment should request input of 
+a channel number (frequency in case of MF). The equipment should assist the operator by suggesting 
+a suitable inter-ship channel; on VHF for example channel 6. 
+Automated HF subsequent communication channel selection for non-distress DSC messages. There 
+is a simplex set and duplex set (contains the distress channels) for HF for both voice (3 000 Hz) and 
+data (500 Hz) communication modes. Selection of the appropriate channel from these sets should 
+follow the following steps: 
+– 
+The band of the communication channel should be the band of the DSC call. 
+– 
+The telecommand 1 parameter determines the choice of voice or data channels. 
+– 
+DSC calls directed to a coast station (i.e. MMSI commencing 00) should let the coast station 
+decide. 
+– 
+All other DSC calls should select a channel from the simplex frequencies. 
+Use of the distress channels should be avoided and for routine communications use of the distress 
+channels should not be allowed. 
+ 
+Annex 4 
+ 
+Automated procedures for simplified operation in shipborne equipment 
+1 
+General 
+The equipment software should allow the operator to only compose the types of DSC calls which are 
+specified in Tables A1-4.1 to A1-4.11. These tables indicate which DSC calls are applicable for each 
+class of DSC equipment.  
+Automated procedures are the incorporation of ITU-R recommended DSC operational procedures 
+into equipment software. 
+The equipment should initiate (start) one of five automated procedures whenever the equipment 
+becomes engaged in a new communication event. Four of these automated procedures handle 
+events initiated by sent and received DSC calls and the fifth automated procedure handles 
+radiotelephony established by non-DSC means. One of these five automated procedures is 
+initiated by: 
+a) 
+sending a distress alert, 
+b) 
+receiving a DSC message containing distress information, 

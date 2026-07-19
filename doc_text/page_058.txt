@@ -1,0 +1,63 @@
+ 
+Rec.  ITU-R  M.493-16 
+57 
+ 
+c) 
+sending an individually addressed distress alert relay containing distress information, 
+d) 
+sending distress alert relay on behalf of someone else, 
+e) 
+sending a DSC message containing no distress information, 
+f) 
+receiving a DSC message containing no distress information, 
+g) 
+engaging in traffic initiated by non-DSC means. 
+NOTE – ACS sending and receiving are included in e) and f). 
+Once initiated by any of the events listed in a)-g), the automated procedure should handle all the tasks 
+required to satisfy the objectives of the initiating event. These tasks should include the handling of 
+any subsequent DSC messages that may be pertinent (relevant) to the objectives of the automated 
+procedure and appropriately updating the automated procedure, providing the operator with any 
+possible options, and keeping the operator informed of the progress until either the operator 
+terminates the automated procedure or conditions warrant that the automated procedure self 
+terminates. Automated procedures should be able to be run in parallel. Whereas all DSC automated 
+procedures continuously monitor the watch receiver only one active automated procedure has control 
+of the transmitter and general receiver. The reception of any DSC message not pertinent to an 
+automated procedure should not disrupt that procedure but should be appropriately allocated to the 
+appropriate ongoing automated procedure or initiate a new automated procedure. 
+2 
+Definitions 
+2.1 
+acknowledged: when used to describe an automated procedure it indicates that the objective 
+of the initial DSC call has been achieved. 
+2.2  
+active: the term used to describe an automated procedure which has control of the general 
+receiver and transmitter and is thus able to engage in subsequent communications and receive DSC 
+calls on both the watch receiver and general receiver. 
+2.3 
+audible indication: the term used to describe a brief self-terminating sound which is repeated 
+once every 30 seconds until confirmation or self-terminating after 5 minutes indicating the reception 
+of a DSC call of a category other than distress or urgency or a repetition of a call of categories distress 
+or urgency already received. 
+2.4 
+automated procedure: the term given to describe the set of actions necessary to complete 
+the objective of an initiating DSC call or non-DSC communication event. Four DSC automated 
+procedures are designed to process these. They are the receiving of distress DSC calls, the receiving 
+of non-distress DSC calls, the sending of distress DSC alert attempts and the sending of non-distress 
+DSC calls. In addition a fifth procedure is designed to handle non-DSC communication events. 
+These automated procedures are called: 
+– 
+Received distress automated procedure 
+– 
+Sending distress automated procedure 
+– 
+Received non-distress automated procedure 
+– 
+Sending non-distress automated procedure 
+– 
+Communications automated procedure. 
+2.5 
+critical errors: a set of information characters obtained from one or more received DSC calls 
+is considered to have critical errors if the automated procedure needs information characters from that 
+set in order to proceed or perform any task, but the required information characters are in error 
+(for example, an acknowledgement cannot be composed to an individual DSC call that has errors in 
+the sender’s MMSI). 

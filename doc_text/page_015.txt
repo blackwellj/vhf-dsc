@@ -1,0 +1,78 @@
+14 
+Rec.  ITU-R  M.493-16 
+ 
+• 
+quadrant SE is indicated by the digit “2”, 
+• 
+quadrant SW is indicated by the digit “3”. 
+– 
+The next four figures indicate the latitude in degrees and minutes (the first two digits indicate 
+the degrees and the last two digits indicate the minutes of the latitude). 
+– 
+The next five figures indicate the longitude in degrees and minutes (the first three digits 
+indicate the degrees and the last two digits indicate the minutes of the longitude). 
+– 
+If “distress coordinates” cannot be included, or if the position information has not been 
+updated for 23½ h, the 10 digits following the “nature of distress” should be automatically 
+transmitted as the digit 9 repeated 10 times. 
+8.1.3 
+Message 3 
+Message 3 is the time indication coordinated universal time (UTC) when the coordinates were valid 
+consisting of four digits coded on the principles described in Table A1-2, in pairs starting from the 
+first and second digits. 
+– 
+The first two digits indicate the time in hours. 
+– 
+The third and fourth digits indicate the part of the hours in minutes. 
+– 
+If the time cannot be included the four time indicating digits should be transmitted 
+automatically as “8 8 8 8”. 
+8.1.4 
+Message 4  
+Message 4 is a single character to indicate the type of communication (telephone or FEC teleprinter) 
+which is preferred by the station in distress for subsequent exchange of distress traffic. This character 
+is coded as shown in Table A1-3 first telecommand. 
+8.2 
+Distress alert relay, distress alert relay acknowledgement, distress acknowledgement 
+For a distress alert relay, distress alert relay acknowledgement, distress acknowledgement 
+(see Tables A1-4.2, A1-4.3 and A1-4.4) the distress information is contained in five messages in the 
+following order: 
+8.2.1 
+Message 0 
+Message 0 is the maritime identity of the unit in distress as defined in Recommendation ITU-R M.585. 
+8.2.2 
+Message 1 
+Message 1 is the “nature of distress” message, coded as shown in Table A1-3, i.e.: 
+– 
+100 
+fire, explosion; 
+– 
+101 
+flooding; 
+– 
+102 
+collision; 
+– 
+103 
+grounding; 
+– 
+104 
+listing, in danger of capsizing; 
+– 
+105 
+sinking; 
+– 
+106 
+disabled and adrift; 
+– 
+107 
+undesignated distress; 
+– 
+108 
+abandoning ship; 
+– 
+109 
+piracy/armed robbery attack; 
+– 
+110 
+man overboard. 

@@ -1,0 +1,67 @@
+ 
+Rec.  ITU-R  M.493-16 
+5 
+ 
+Annex 1 
+ 
+General purpose equipment characteristics 
+1 
+General 
+1.1 
+The system is a synchronous system using characters composed from a ten-bit error-detecting 
+code as listed in Table A1-1. 
+1.1.1 
+The first seven bits of the ten-bit code of Table A1-1 are information bits. Bits 8, 9 and 
+10 indicate, in the form of a binary number, the number of B elements that occur in the seven 
+information bits, a Y element being a binary number 1 and a B element a binary number 0. For 
+example, a BYY sequence for bits 8, 9 and 10 indicates 3 (0  4 + 1  2 + 1  1) B elements in the 
+associated seven information bit sequence; and a YYB sequence indicates 6 (1  4 + 1  2 + 0  1) 
+B elements in the associated seven information bit sequence. The order of transmission for the 
+information bits is least significant bit first but for the check bits it is most significant bit first. 
+1.2 
+Time diversity is provided in the call sequence as follows: 
+1.2.1 
+Apart from the phasing characters, each character is transmitted twice in a time-spread mode; 
+the first transmission (DX) of a specific character is followed by the transmission of four other 
+characters before the re-transmission (RX) of that specific character takes place, allowing for a time-
+diversity reception interval of: 
+– 
+400 ms for HF and MF channels, and 
+– 
+33⅓ ms for VHF radio-telephone channels. 
+1.3 
+The classes of emission, frequency shifts and modulation rates are as follows: 
+1.3.1 
+F1B or J2B 170 Hz and modulation rate of 100 (bit/s) * (1 ± 30 * 10−6) for use on HF and 
+MF DSC calling channels. When frequency-shift keying is effected by applying audio signals to the 
+input of single-sideband transmitters (J2B), the centre of the audio-frequency spectrum offered to the 
+transmitter is 1 700 Hz. When a DSC call is transmitted on HF and MF working channels for public 
+correspondence, the class of emission is J2B. In this case, audio tones with frequencies 
+1 700 Hz  85 Hz and modulation rate 100 (bit/s) * (1 ± 30 * 10−6) are used in order for the DSC call 
+to be transmitted. 
+1.3.2 
+Frequency modulation with a pre-emphasis of 6 dB/octave (phase modulation) with 
+frequency-shift of the modulating sub-carrier for use on VHF channels: 
+– 
+frequency-shift between 1 300 and 2 100 Hz; the sub-carrier being at 1 700 Hz; 
+– 
+the frequency tolerance of the 1 300 and 2 100 Hz tones is  10 Hz; 
+– 
+the modulation rate is 1 200 (bit/s) * (1 ± 30 * 10−6); 
+– 
+the index of modulation is 2.0  10%. 
+1.3.3 
+The radio-frequency tolerances of new designs of both transmitters and receivers in the MF 
+and HF bands should be: 
+– 
+coast station:  10 Hz, 
+– 
+ship station:  10 Hz, 
+– 
+receiver bandwidth: should not exceed 300 Hz. 
+1.4 
+The higher frequency corresponds to the B-state and the lower frequency corresponds to the 
+Y-state of the signal elements. 
+1.5 
+The information in the call is presented as a sequence of seven-bit combinations constituting 
+a primary code. 

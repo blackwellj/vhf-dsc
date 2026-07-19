@@ -1,0 +1,53 @@
+16 
+Rec.  ITU-R  M.493-16 
+ 
+– 
+in ACS call sequence, if the first telecommand is a request, the second telecommand signal 
+should be symbol No. 120 to 125 in accordance with number of remaining ACS sequential 
+transmission (see Table A1-4.9.2). 
+8.3.2 
+Message 2 
+Message 2 may contain two “channel or frequency message” elements, each of which basically 
+consists of three characters, “character 1”, “character 2” and “character 3”, indicating the proposed 
+working frequency (in the F1B/J2B mode the assigned frequency should be used) in multiples of 
+100 Hz or the channel number (coded in accordance with Table A1-5) or the ship’s position. The first 
+frequency element (the Rx field) in the call indicates the called station receive frequency and the 
+second frequency element (the Tx field) indicates the called station transmit frequency. In 
+acknowledgements the Rx and Tx fields indicate the receive and transmit frequency of the 
+acknowledging station respectively (see also Fig. A1-2 and Note 1). 
+NOTE 1 – If only one channel or frequency message element is used, this indicates the called station receive 
+channel or frequency or a two-frequency (paired) channel. A second channel or frequency message element 
+may be used to designate the called station transmit channel or frequency. If the calling station indicates only 
+the called station receive frequency (for broadcast mode transmissions) then the symbol No. 126 repeated three 
+times (see Note 2) should be transmitted instead of the called station transmit channel or frequency message 
+element. If no “channel or frequency message” elements are used, the symbol No. 126 is transmitted six times. 
+For calls using the automatic VHF service (see Table A1-4.10.1) then only one “channel or frequency 
+message” element is transmitted which indicates the paired channel number. In the absence of this element the 
+symbol No. 126 should be transmitted three times. 
+NOTE 2 – In the F1B/J2B mode (FEC or ARQ), if using seven-digit frequency as the working frequency, 
+Message 2 may contain two frequency message elements as mentioned above, but each of which consists of 
+four characters, “character 0”, “character 1”, “character 2” and “character 3” in multiples of 10 Hz (coded in 
+accordance with Table A1-5). Additionally if the calling station indicates only the called station receive 
+frequency of seven-digit (for broadcast mode transmissions) then the symbol No. 126 repeated four times 
+should be transmitted instead of the called station transmit frequency message element. 
+8.3.2.1 
+Frequency information 
+The frequency (in the F1B/J2B mode the assigned frequency should be used) in multiples of 100 Hz 
+or 10 Hz (see Note 2 above) may only be indicated as such when the frequency is below 30 MHz. 
+The three characters provide for the required six decimal digits. Character 1 represents the units (U) 
+and tens (T) of 100 Hz, character 2 the hundreds (H) and thousands (M) and character 3 the tens of 
+thousands (TM) and hundreds of thousands (HM) of 100 Hz. For MF/HF DSC, use frequency 
+selection mode, vice channel selection mode, to ensure international interoperability. Also, when 
+using seven-digit frequencies, the four characters provide for the required seven decimal digits. 
+Character 0 represents the units (U1) and tens (T1) of 10 Hz, character 1 the units (U) and tens (T) of 
+1 kHz, character 2 the hundreds (H) and thousands (M) and character 3 the tens of thousands (TM) 
+of 1 kHz. However note that this four-characters information is only for use of seven-digit frequencies 
+in the F1B/J2B, i.e. it does not affect the messages for the J3E TP mode and for the F1B/J2B mode 
+using six-digit frequencies to ensure interoperability. 
+8.3.2.2 
+Channel information 
+8.3.2.2.1 HF and MF channels 
+If the HM digit is 3, this indicates that the number represented by the digits TM, M, H, T, U, T1 and 
+U1 is the HF/MF working channel number (either single frequency or two frequency channels). This 
+mode should only be used for decoding received calls, to ensure interoperability with older 
+equipment. 

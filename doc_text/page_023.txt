@@ -1,0 +1,50 @@
+22 
+Rec.  ITU-R  M.493-16 
+ 
+12.11 
+Automatic connection system function on MF/HF (Class A and Class E) 
+ACS aims to establish a communication link between ship station and ship/coast station by 
+automatically selecting a working frequency. 
+DSC equipment should be provided with a visual indication that automatic frequency switching by 
+ACS function is enabled. 
+12.12 
+Implementation of the distress self-cancel procedure  
+After activation a distress alert the equipment should provide on top level an option to initiate the 
+transmission of a distress self-cancel message as specified in Table A1-4.1 in case that the distress 
+alert has been initiated by mistake. 
+The action of switching off a DSC equipment that has previously sent a distress alert as specified in 
+Table A1-4.1 and that has not been acknowledged, shall cause the DSC equipment to transmit the 
+distress self-cancel message. 
+The equipment should use the distress alert self-cancel procedure as described in § 3.2.4.4. 
+13 
+Handheld human machine interface 
+13.1 
+Audible digital selective calling alarms and audible indications 
+13.1.1 All calls to the handheld VHF should activate an audible alarm. 
+13.1.2 Category of distress calls which consists out of distress alert, distress acknowledgement, 
+distress alert relay and the distress alert relay acknowledgement.  
+– 
+The DSC distress alert, and distress alert relay should have an alarm consisting of a repetition 
+of the 2 200 Hz tone for 250 ms followed by a 1 300 Hz tone for 250 ms (two-tone alarm).  
+– 
+DSC distress alert acknowledgement and DSC distress alert relay acknowledgement should 
+initiate an alarm consisting of a repetition of the 2 200 Hz tone for 500 ms followed by a 
+1 300 Hz tone for 500 ms (two-tone acknowledgement alarm).  
+These alarms occur at the initiation of the received distress DSC automated procedure. The 
+characteristics of this alarm should not be able to be altered. 
+13.1.3 Category of urgency calls which consists out of urgency and urgency acknowledgement. 
+– 
+The DSC urgency alarm consisting of a repetition of the 2 200 Hz tone for 250 ms followed 
+by 250 ms period of silence.  
+– 
+The DSC urgency acknowledgement alarm consisting of a repetition of the 2 200 Hz tone for 
+500 ms followed by a 500 ms period of silence.  
+These alarms occur at the initiation of the received non-distress DSC automated procedure when the 
+category of call of the initiating DSC call is “urgency”. The characteristics of this alarm should not 
+be able to be altered. 
+13.1.4  Only the first occurrence of a received DSC distress or DSC urgency call should sound the 
+alarms. 
+The display should be updated in accordance with the actual reported position but this change of 
+information should not initiate a repetition of the original alert. 
+13.1.5  All received DSC calls that do not sound an alarm as specified in § 3.1.1 should sound an 
+audible indication (see § 2.3) to inform the operator of the reception. 

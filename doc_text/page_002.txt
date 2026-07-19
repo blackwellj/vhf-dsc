@@ -1,0 +1,63 @@
+ 
+Rec.  ITU-R  M.493-16 
+1 
+ 
+RECOMMENDATION  ITU-R  M.493-16 
+Digital selective-calling system for use in the maritime mobile service 
+(1974-1978-1982-1986-1990-1992-1994-1995-1997-1997-2000-2004-2007-2009-2015-2019-2023) 
+Scope 
+This Recommendation describes the digital selective-calling (DSC) system for use in the maritime mobile 
+service covering general purpose and simplified versions of DSC equipment. A description of a generalized 
+user interface as well as an automated procedure for the operation of shipborne equipment are also included. 
+Keywords 
+Alert, announcement, class, digital selective calling, distress, global maritime distress and safety 
+system, maritime 
+Abbreviations/Glossary 
+ACS 
+Automatic connection system 
+AIS 
+Automatic identification system 
+ARQ 
+Automatic repeat request 
+DSC 
+Digital selective calling 
+ECC 
+Error check character 
+EOS 
+End of sequence 
+FEC 
+Forward error correction 
+GNSS 
+Global navigation satellite system 
+GMDSS 
+Global maritime distress and safety system 
+HF 
+High frequency (band number 7, 3-30 MHz) 
+IEC 
+International Electrotechnical Commission 
+IMO 
+International Maritime Organization 
+MF 
+Medium frequency (band number 6; 300-3 000 kHz) 
+MID 
+Maritime identification digits  
+MMSI 
+Maritime mobile service identity 
+MOB 
+Man overboard 
+MSC 
+Maritime safety committee 
+n/a 
+This field is not included in this call 
+NM 
+Nautical mile (1 NM = 1852 m) 
+RT 
+Radiotelephony 
+RX 
+Retransmission 
+Rx 
+Receive 
+SOLAS 
+International Convention for the Safety of Life at Sea 
+TP 
+Telephony 

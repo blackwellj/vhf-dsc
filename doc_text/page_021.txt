@@ -1,0 +1,47 @@
+20 
+Rec.  ITU-R  M.493-16 
+ 
+12.1.6 For HF and MF distress calls, the DSC distress alarms should activate only when a call of 
+category of distress is received and the reported position of distress is within 500 NM (926 km) of 
+the receiving vessel’s position, or if the distress position is in the polar areas (latitude greater than 
+70 N or 70 S). The alarm should also activate when the call is received and the distance between 
+the vessel in distress and the receiving vessel cannot be determined.  
+12.1.7 For geographic area calls, the DSC distress as well as DSC urgency alarms appropriate to the 
+category of call it should activate when the receiving station’s position is within the area specified by 
+the call or the receiving station’s position is not known.  
+12.1.8 The DSC distress alarm should not be activated where duplicate distress alert relay calls are 
+received within one hour. A duplicate distress alert relay call is one having format specifier all ships 
+or geographic area that contains identical message information, as defined in § 8.1 and an identical 
+distress maritime mobile service identity (MMSI). 
+12.2 
+Inactivity timer 
+During normal operation, the equipment should include an inactivity timer to return the DSC system 
+display to default or standby mode if the operator is in a menu where DSC call reception is disabled 
+and does not make any selections or changes for 10 min. 
+12.3 
+Display 
+The presentation of information on the display should support readability from typical user positions 
+when operating the equipment under all ambient light conditions and operational requirements likely 
+to be experienced on the bridge of a ship1.  
+It should have the means to display, in plain language, the information contained in the received call. 
+For Class A DSC equipment, the display should have a minimum of 160 characters in two or more 
+lines. 
+12.4 
+Maritime mobile service identity 
+DSC equipment should not transmit any DSC call until own ship’s MMSI allocated to the ship by the 
+relevant administration has been configured and stored in the DSC equipment. Once stored, it should 
+only be possible for an authorised user to change the MMSI with cooperation from the manufacturer 
+or the authorized entity. 
+The DSC equipment should display own ship’s MMSI on start-up unless the MMSI has not been 
+configured. If the MMSI has not been configured, the equipment will display a warning that the unit 
+will not transmit any DSC calls until own ship’s MMSI is entered. The equipment should stay in this 
+state until the operator confirms he has read the display and input own ship’s MMSI. 
+The MMSI should be readily displayed on the human machine interface when the DSC equipment 
+is on. 
+12.5 
+Automatic channel switching function on VHF 
+Automatic switching to a subsequent communications channel on receipt of a DSC call may be 
+implemented on VHF equipment. Prior to an automatic switch to the proposed frequency or channel, 
+the user should accept the change, which should be carried out after the acknowledgement. 
+ 
+1  See IMO MSC. 191(79) for further details. 

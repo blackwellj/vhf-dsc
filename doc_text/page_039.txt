@@ -1,0 +1,173 @@
+38 
+Rec.  ITU-R  M.493-16 
+ 
+TABLE A1-4.3 (end) 
+Distress alert relays 
+ 
+Type of com 
+ 
+ 
+Applicable to 
+Technical format of call sequence 
+ 
+ 
+ 
+Ship 
+station 
+Class A 
+Ship 
+station 
+Class D 
+Ship 
+station 
+Class E 
+Hand-
+held  
+Class H 
+MOB 
+Device  
+Class M 
+Open 
+and 
+Closed 
+Loop 
+Coast 
+station 
+Format 
+specifier 
+(2 iden-
+tical) 
+Address 
+(5) 
+Cate-
+gory  
+of call 
+(1) 
+Self-
+ID 
+(5) 
+Tele-
+command 
+(1) 
+Message 
+EOS 
+(1) 
+ECC 
+(1) 
+EOS 
+(2 iden-
+tical) 
+ 
+Rec. ITU-R 
+M.821 
+expansion 
+sequence* 
+(9) 
+ 
+0 
+1 
+2 
+3 
+4 
+ 
+Frequency 
+band 
+Distress 
+ID 
+(5) 
+Nature of 
+distress 
+(1) 
+Distress 
+coordinates
+(5) 
+Time 
+(2) 
+Subse-
+quent 
+com-
+muni-
+cations 
+(1) 
+ 
+Tx Rx Tx Rx Tx Rx Tx Rx Tx Rx Tx Rx 
+ 
+MF/HF 
+Individual 
+(RT) 
+⚫ ⚫   — ⚫     ⚫ ⚫ 
+120 
+MMSI 
+112 
+Self-
+ID 
+112 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+109 
+117 ECC 
+117 
+ 
+expan2 
+Geographic 
+area (RT) 
+⚫ ⚫   — ⚫     ⚫ ⚫ 
+102 
+Zone 
+112 
+Self-
+ID 
+112 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+109 
+127 ECC 
+127 
+ 
+expan1 
+All ships (RT) — ◼   — ◼     — ◼ 
+116 
+n/a 
+112 
+Self-
+ID 
+112 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+109 
+127 ECC 
+127 
+ 
+expan1 
+ 
+ 
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The message should match the received distress 
+alert information, except for manually generated 
+distress alert relays observed or notified by non-
+DSC means. 
+ 
+ 
+ 
+ 
+ 
+* 
+Expansion sequence see Table A1-4.11. 

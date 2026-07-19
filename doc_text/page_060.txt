@@ -1,0 +1,55 @@
+ 
+Rec.  ITU-R  M.493-16 
+59 
+ 
+2.23 
+pertinent to the automated procedure: an expression used primarily with reference to DSC 
+messages to indicate that the message has something to do with the procedure and is therefore 
+“handled” by the procedure. A DSC message is pertinent to an automated procedure if the set of 
+information characters in the DSC message has the correct values. 
+2.24 
+standby: the term used to indicate that the equipment is not handling an automated 
+procedure, either active or on hold, but is able to receive DSC calls. 
+2.25 
+two-tone alarm: an alarm consisting of a repetition of the 2 200 Hz tone for 250 ms followed 
+by a 1 300 Hz tone for 250 ms. This alarm occurs at the initiation of the received distress DSC 
+automated procedure. The characteristics of this alarm should not be able to be altered. 
+2.26 
+urgency alarm: an alarm consisting of a repetition of the 2 200 Hz tone for 250 ms followed 
+by 250 ms period of silence. This alarm occurs at the initiation of the received non-distress DSC 
+automated procedure when the category of the initiating DSC message is “urgency”. The 
+characteristics of this alarm should not be able to be altered. 
+2.27 
+watch receiver: this unit is the separate receiver in DSC radios that continuously monitors 
+the DSC distress frequencies on MF/HF, 2 187.5 kHz on MF, and channel 70 on VHF. On MF/HF it 
+is sometimes referred to as the scanning receiver. 
+3 
+Tasks of automated procedures 
+3.1 
+Tasks common to all automated procedures handling digital selective calling calls 
+3.1.1 
+Handling alarms or audible indications 
+The sounding of any DSC alarm or audible indication (see § 2.3) should simultaneously display the 
+reason for the alarm as well as for the audible indication and the means to silence it. 
+Alarms should sound appropriate to the automated procedure when a received category of DSC call 
+either initiates or acknowledges the automated procedure with the two-tone alarm and respective DSC 
+acknowledgement alarm being reserved for the initiation of the received distress procedure. The DSC 
+urgency alarm and urgency acknowledgement alarm sound being reserved for the initiation of the 
+received non-distress procedure when the category of call of the initiating DSC message is “urgency” 
+and respectively for “urgency acknowledgement”. 
+For each incident, only the first occurrence of a respective received DSC call should sound the alarms. 
+All received DSC calls that do not sound an alarm as specified in § 3.1.1 should sound an audible 
+indication (see § 2.3) to inform the operator of the reception. 
+3.1.2 
+Displaying stages of the automated procedure 
+The automated procedure should display the stages and/or activity in order to indicate the progress of 
+the procedure. 
+3.1.3 
+Tuning the radio 
+Tuning of the general receiver and transmitter for reception or transmission of required 
+acknowledgments, repeat transmissions, distress alert relays, or subsequent communications should 
+be handled automatically. 
+Any automated tuning action that could potentially disrupt ongoing subsequent communications 
+should provide the operator with at least a 10 s warning. The operator should then be provided with 
+the opportunity to pause the action. In the absence of operator intervention the automated action 
+should proceed. 

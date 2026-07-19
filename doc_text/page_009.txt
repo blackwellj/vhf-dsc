@@ -1,0 +1,179 @@
+8 
+Rec.  ITU-R  M.493-16 
+ 
+TABLE A1-2 
+Packing table for decimal numbers into ten-bit characters 
+The digits for the 
+Thousands 
+of millions 
+D2 
+Hundreds 
+of millions 
+D1 
+Tens of 
+millions 
+D2 
+Millions 
+D1 
+Hundreds of 
+thousands 
+D2 
+Tens of 
+thousands 
+D1 
+Thousands 
+D2 
+Hundreds 
+D1 
+Tens 
+D2 
+Units 
+D1 
+Character 5 
+Character 4 
+Character 3 
+Character 2 
+Character 1 
+NOTE 1 – Character 1 is the last character transmitted. 
+The digit sequence D2-D1 varies from 00 to 99 inclusive in each character (character 1 to 5 inclusive). The character that represents a 
+particular two-decimal figure is transmitted as the symbol number (see Table A1-1) that is identical to that particular two-decimal 
+figure.  
+When the number consists of an odd number of decimal digits, a zero shall be added in front of the most significant position to provide 
+an integral number of ten-bit characters. 
+ 
+TABLE A1-3 
+Use of symbol Nos 100 to 127 
+Symbol 
+No. 
+Phasing 
+and unique 
+functions 
+Format specifie(1) 
+Category of 
+call(1) 
+Nature of 
+distress(1) 
+First 
+telecommand(1) 
+Second 
+telecommand(1) 
+100 
+ 
+ 
+Routine 
+Fire, explosion 
+F3E/G3E 
+All modes TP 
+No reason given(2) 
+101 
+ 
+ 
+ 
+Flooding 
+F3E/G3E 
+duplex TP 
+Congestion at maritime 
+switching centre 
+102 
+ 
+Geographical area 
+ 
+Collision 
+ 
+Busy(2) 
+103 
+ 
+(3) 
+(3) 
+Grounding 
+Polling 
+Queue indication(2) 
+104 
+Phasing  
+RX-0 
+position 
+ 
+ 
+Listing, in 
+danger of 
+capsizing 
+Unable to comply 
+Station barred(2) 
+105 
+Phasing  
+RX-1 
+position 
+ 
+ 
+Sinking 
+End of call(4) 
+No operator available(2) 
+106 
+Phasing  
+RX-2 
+position 
+ 
+(6) 
+Disabled and 
+adrift 
+Data 
+Operator temporarily 
+unavailable(2) 
+107 
+Phasing  
+RX-3 
+position 
+ 
+ 
+Undesignated 
+distress 
+ 
+Equipment disabled(2) 
+108 
+Phasing  
+RX-4 
+position 
+ 
+Safety 
+Abandoning 
+ship 
+ 
+Unable to use proposed 
+channel(2) 
+109 
+Phasing  
+RX-5 
+position 
+ 
+ 
+Piracy/armed 
+robbery attack 
+J3E TP 
+Unable to use proposed 
+mode(2) 
+110 
+Phasing  
+RX-6 
+position 
+(5) 
+Urgency 
+Man overboard 
+Distress 
+acknowledgement 
+Ships and aircraft of 
+States not parties to an 
+armed conflict(8) 
+111 
+Phasing  
+RX-7 
+position 
+ 
+ 
+ 
+(6) 
+Medical transports 
+(as defined in 1949 
+Geneva Conventions and 
+additional Protocols)(9) 
+ 
+ 

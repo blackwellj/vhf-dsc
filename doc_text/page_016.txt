@@ -1,0 +1,62 @@
+ 
+Rec.  ITU-R  M.493-16 
+15 
+ 
+8.2.3 
+Message 2 
+Message 2 is the “distress coordinates” message, consisting of ten digits indicating the location of the 
+vessel in distress, coded on the principles described in Table A1-2, in pairs starting from the first and 
+second digits (see Note 1 to § 5.3): 
+– 
+The first digit indicates the quadrant in which the incident has occurred, as follows: 
+– 
+quadrant NE is indicated by the digit “0”, 
+– 
+quadrant NW is indicated by the digit “1”, 
+– 
+quadrant SE is indicated by the digit “2”, 
+– 
+quadrant SW is indicated by the digit “3”. 
+– 
+The next four figures indicate the latitude in degrees and minutes (the first two digits indicate 
+the degrees and the last two digits indicate the minutes of the latitude). 
+– 
+The next five figures indicate the longitude in degrees and minutes (the first three digits 
+indicate the degrees and the last two digits indicate the minutes of the longitude). 
+If “distress coordinates” cannot be included, or if the position information has not been updated 
+for 23½ h, the 10 digits following the “nature of distress” should be automatically transmitted as the 
+digit 9 repeated 10 times. 
+8.2.4 
+Message 3 
+Message 3 is the time indication (UTC) when the coordinates were valid consisting of four digits 
+coded on the principles described in Table A1-2, in pairs starting from the first and second digits. 
+– 
+The first two digits indicate the time in hours. 
+– 
+The third and fourth digits indicate the part of the hours in minutes. 
+– 
+If the time cannot be included the four time indicating digits should be transmitted 
+automatically as “8 8 8 8”. 
+8.2.5 
+Message 4 
+Message 4 is a single character to indicate the type of communication (radiotelephone) which is 
+preferred by the station in distress for subsequent exchange of distress traffic. This character is coded 
+as shown in Table A1-3 first telecommand. 
+8.3 
+Other types of calls  
+For other types of calls (see Table A1-4.5 through A1-4.11 and Figs 3 and 4) messages are included 
+in the following order: 
+8.3.1 
+Message 1 
+Message 1 is the “telecommand” information and consists of two characters (first and second 
+telecommand) coded as shown in Table A1-3: 
+– 
+if no information additional to that conveyed by the first telecommand character is required, 
+then the second telecommand signal should be symbol No. 126 (no information) 
+(see Table A1-3); 
+– 
+if no telecommand information is used, symbol No. 126 is transmitted twice; 
+– 
+if the telecommand 1 is “F3E/G3E duplex TP” (symbol 101) in a request, which can be 
+complied with, the telecommand 1 “F3E/G3E all modes TP” (symbol 100) should be used in 
+the acknowledgement; 

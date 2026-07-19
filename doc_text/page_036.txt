@@ -1,0 +1,188 @@
+ 
+Rec.  ITU-R  M.493-16 
+35 
+ 
+TABLE A1-4.2 
+Distress acknowledgements 
+Frequency 
+band 
+Type of 
+com 
+Applicable to 
+Technical format of call sequence 
+ 
+ 
+Ship 
+station 
+Class A 
+Ship 
+station 
+Class D 
+Ship 
+station 
+Class E 
+Hand- 
+held 
+Class H 
+MOB  
+Device 
+Class M  
+open loop 
+Coast 
+station 
+Format 
+specifier 
+(2 iden-
+tical) 
+Cate- 
+gory 
+(1) 
+Self-
+ID 
+(5) 
+Tele-
+command 
+(1) 
+Message 
+EOS 
+(1) 
+ECC 
+(1) 
+EOS 
+(2 iden-
+tical) 
+ 
+Rec. ITU-R 
+M.821 
+expansion 
+sequence* 
+(9) 
+0 
+1 
+2 
+3 
+4 
+ 
+Distress 
+ID 
+(5) 
+Nature of 
+distress 
+(1) 
+Distress 
+coordi-
+nates 
+(5) 
+Time 
+(2) 
+Subse-
+quent 
+commu-
+nications 
+(1) 
+ 
+Tx 
+Rx 
+Tx 
+Rx 
+Tx 
+Rx 
+Tx 
+Rx 
+Tx 
+Rx 
+Tx 
+Rx 
+ 
+VHF 
+Distress 
+acknowl-
+edgement 
+(RT) 
+⚫ 
+⚫ — 
+⚫ 
+ 
+ 
+— 
+⚫ 
+— 
+⚫ 
+⚫ 
+⚫ 
+116 
+112 Self-
+ID 
+110 
+Distress 
+ID 
+100 to 110 
+Pos1 
+UTC 
+100** 
+127 ECC 
+127 
+ 
+expan1 
+ 
+Distress 
+acknowl-
+edgement 
+(EPIRB) 
+⚫ 
+⚫ — 
+⚫ 
+ 
+ 
+— 
+⚫ 
+— 
+— 
+⚫ 
+⚫ 
+116 
+112 Self-
+ID 
+110 
+Distress 
+ID 
+112 
+Pos1 
+UTC 
+126 
+127 ECC 
+127 
+ 
+expan1 
+Distress 
+self-
+cancel 
+⚫ 
+⚫ 
+⚫ 
+⚫ 
+ 
+ 
+⚫ 
+⚫ 
+⚫ 
+— 
+— 
+⚫ 
+116 
+112 Self-
+ID 
+110 
+Self-ID 
+100 to 110 
+Pos1 
+UTC 
+100** 
+127 ECC 
+127 
+ 
+expan1 
+*  Expansion sequence see Table A1-4.11. 
+**  For Class M (see § 16), this field is set to 126; for other cases, this field is set to 100. 
+ 
+ 

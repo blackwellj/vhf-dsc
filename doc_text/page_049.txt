@@ -1,0 +1,172 @@
+48 
+Rec.  ITU-R  M.493-16 
+ 
+TABLE A1-4.10.1 
+Auto VHF (optional) 
+Type of com 
+Applicable to 
+Technical format of call sequence 
+Ship 
+station 
+Class A 
+Ship 
+station 
+Class D 
+Ship 
+station 
+Class E 
+Hand-
+held 
+Class H 
+MOB 
+Device 
+Class M 
+Open and 
+Closed 
+Loop 
+Coast 
+station 
+Format 
+specifier 
+(2 iden-
+tical) 
+Address 
+(5) 
+Category 
+of call 
+(1) 
+Self-ID 
+(5) 
+Message 
+EOS  
+(1) 
+ECC  
+(1) 
+EOS 
+(2 
+identical) 
+1 
+2 
+3 
+1st tele-
+command 
+(1) 
+2nd tele-
+command 
+(1) 
+Frequency 
+(3) 
+Number 
+(2-9) 
+Tx Rx Tx Rx Tx Rx Tx Rx Tx Rx 
+Tx 
+Rx 
+Request 
+⚫ ⚫ ⚫ ⚫  
+ — — — — 
+⚫ 
+⚫ 
+123 
+ID 
+100 
+Self-ID 
+100, 101, 
+106 
+126 
+Frequency 
+Number 
+117 
+ECC 
+117 
+Able to comply 
+acknowledgement 
+⚫ ⚫ ⚫ ⚫  
+ — — — — 
+⚫ 
+⚫ 
+123 
+ID 
+100 
+Self-ID 
+100, 101, 
+106 
+126 
+Frequency 
+Number 
+122 
+ECC 
+122 
+Start of call 
+(on working channel) 
+⚫ — ⚫ —  
+ — — — 
+— 
+— 
+⚫ 
+123 
+ID 
+100 
+Self-ID 
+100, 101, 
+106 
+126 
+Frequency 
+Number 
+127 
+ECC 
+127 
+Unable to comply 
+acknowledgement 
+⚫ ⚫ ⚫ ⚫  
+ — — — — 
+⚫ 
+⚫ 
+123 
+ID 
+100 
+Self-ID 
+104 
+100 to 109 Frequency 
+Number 
+122 
+ECC 
+122 
+End of call request 
+(on working channel) 
+⚫ — ⚫ —  
+ — — — 
+— 
+— 
+⚫ 
+123 
+ID 
+100 
+Self-ID 
+105 
+126 
+Frequency 
+Number 
+117 
+ECC 
+117 
+End of call 
+acknowledgement 
+(on working channel)(1) 
+— ⚫ — ⚫  
+ — — — — 
+⚫ 
+— 
+123 
+ID 
+100 
+Self-ID 
+105 
+126 
+Duration 
+Number 
+122 
+ECC 
+122 
+(1) Upon call completion the coast station may send the end of call acknowledgement without a request from the ship station. The EOS symbol being 127. 
+NOTE 1 – See Recommendation ITU-R M.689. 
+NOTE 2 – For Class D symbol 123 does not need to be displayed. 

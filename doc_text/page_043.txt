@@ -1,0 +1,222 @@
+42 
+Rec.  ITU-R  M.493-16 
+ 
+TABLE A1-4.7 
+Urgency and safety – Individual calls and their acknowledgements 
+ 
+Type of com 
+Applicable to 
+Technical format of call sequence 
+ 
+Rec. ITU-R 
+M.821 
+expansion 
+sequence* 
+(9) 
+ 
+Ship 
+station 
+Class A 
+Ship 
+station 
+Class D 
+Ship 
+station 
+Class E 
+Hand-
+held 
+Class H 
+MOB 
+Device 
+Class M 
+Open and 
+Closed 
+Loop 
+Coast 
+station 
+Format 
+specifier 
+(2 identical) 
+Address 
+(5) 
+Category 
+of call 
+(1) 
+Self-
+ID 
+(5) 
+Message 
+EOS  
+(1) 
+ECC  
+(1) 
+EOS  
+(2 identical) 
+ 
+ 
+1 
+2 
+3 
+ 
+Frequency 
+band 
+1st tele-
+command 
+(1) 
+2nd tele-
+command 
+(1) 
+Frequency 
+or pos 
+number 
+(6) or (8) 
+Time 
+(2) 
+ 
+Tx Rx Tx Rx Tx Rx Tx Rx Tx Rx Tx Rx 
+ 
+VHF 
+All modes RT 
+⚫ ⚫ — ⚫   — ⚫ — — ⚫ ⚫ 
+120 
+ID 
+108 or 
+110 
+Self-
+ID 
+100 
+126 
+Frequency 
+n/a 
+117 
+ECC 
+117 
+ 
+— 
+Duplex RT(1) 
+— ◼ — —   — — — 
+— 
+— ◼ 
+120 
+ID 
+108 or 
+110 
+Self-
+ID 
+101 
+126 
+Frequency 
+n/a 
+117 
+ECC 
+117 
+ 
+— 
+RT 
+acknowledgement 
+⚫ ⚫ ⚫ —   ⚫ — — — ⚫ ⚫ 
+120 
+ID 
+108 or 
+110 
+Self-
+ID 
+100 
+126 
+Frequency 
+n/a 
+122 
+ECC 
+122 
+ 
+— 
+Unable to comply 
+acknowledgement 
+⚫ ⚫ ⚫ —   ⚫ — — — ⚫ ⚫ 
+120 
+ID 
+108 or 
+110 
+Self-
+ID 
+104 
+100 to 109 Frequency 
+n/a 
+122 
+ECC 
+122 
+ 
+— 
+Position request 
+⚫ ⚫ ⚫ ⚫   ⚫ ⚫ — — ⚫ — 
+120 
+ID 
+108 
+Self-
+ID 
+121 
+126 
+Pos3 
+n/a 
+117 
+ECC 
+117 
+ 
+— 
+Position 
+acknowledgement 
+⚫ ⚫ ⚫ ⚫   ⚫ ⚫ — 
+— 
+— ⚫ 
+120 
+ID 
+108 
+Self-
+ID 
+121 
+126 
+Pos4 
+UTC 
+122 
+ECC 
+122 
+ 
+expan3 
+ 
+Test 
+⚫ ⚫ ⚫ ⚫   ⚫ ⚫ ⚫ — ⚫ ⚫ 
+120 
+ID 
+108 
+Self-
+ID 
+118 
+126 
+126 
+n/a 
+117 
+ECC 
+117 
+ 
+— 
+ 
+Test 
+acknowledgement 
+⚫ ⚫ ⚫ ⚫   ⚫ ⚫ — ⚫ ⚫ ⚫ 
+120 
+ID 
+108 
+Self-
+ID 
+118 
+126 
+126 
+n/a 
+122 
+ECC 
+122 
+ 
+— 
+*  Expansion sequence see Table A1-4.11. 
+ 
+ 

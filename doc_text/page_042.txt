@@ -1,0 +1,143 @@
+ 
+Rec.  ITU-R  M.493-16 
+41 
+ 
+TABLE A1-4.6 
+Urgency and safety – Geographic area calls 
+Frequency 
+band 
+Type of com 
+Applicable to 
+Technical format of call sequence 
+Ship 
+station 
+Class A 
+Ship 
+station 
+Class D 
+Ship 
+station 
+Class E 
+Hand-
+held 
+Class H 
+MOB 
+Device 
+Class M 
+Open and 
+Closed 
+Loop 
+Coast 
+station 
+Format 
+specifier 
+(2 identical) 
+Address 
+(5) 
+Category  
+of call 
+(1) 
+Self-ID  
+(5) 
+Message 
+EOS  
+(1) 
+ECC  
+(1) 
+EOS  
+(2 identical) 
+1 
+2 
+1st tele-
+command 
+(1) 
+2nd tele-
+command 
+(1) 
+Frequency 
+(6) or (8) 
+Tx Rx Tx Rx Tx Rx Tx Rx 
+Tx 
+Rx 
+Tx 
+Rx 
+MF/HF 
+J3E (RT) 
+⚫ ⚫  
+ ⚫ ⚫  
+ 
+ 
+ 
+⚫ 
+⚫ 
+102 
+Area 
+108 or 110 
+Self-ID  
+109 
+126 
+Frequency 
+127 
+ECC 
+127 
+ 
+F1B (FEC) 
+— ⚫  
+ — —  
+ 
+ 
+ 
+⚫ 
+— 
+102 
+Area 
+108 or 110 
+Self-ID 
+113 
+126 
+Frequency 
+127 
+ECC 
+127 
+ 
+Medical transports(1) 
+⚫ ⚫  
+ — —  
+ 
+ 
+ 
+— 
+⚫ 
+102 
+Area 
+110 
+Self-ID 
+109 
+111 
+Frequency 
+127 
+ECC 
+127 
+ 
+Ships and aircraft(2) 
+⚫ ⚫  
+ — —  
+ 
+ 
+ 
+— 
+⚫ 
+102 
+Area 
+110 
+Self-ID 
+109 
+110 
+Frequency 
+127 
+ECC 
+127 
+(1) See Table A1-3 Footnote (9). 
+(2)  See Table A1-3 Footnote (8). 
+ 
+ 

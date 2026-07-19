@@ -1,0 +1,24 @@
+6 
+Rec.  ITU-R  M.493-16 
+ 
+1.5.1 
+The seven information bits of the primary code express a symbol number from 00 to 127, as 
+shown in Table A1-1, and where: 
+– 
+the symbols from 00 to 99 are used to code two decimal figures according to Table A1-2; 
+– 
+the symbols from 100 to 127 are used to code service commands (see Table A1-3). 
+1.6 
+Where the distress alert repetitions described in § 11 apply, the following conditions are 
+considered necessary: 
+1.6.1 
+the transmitter encoder must provide repetitive transmission of the call sequence in 
+accordance with § 11; and 
+1.6.2 
+the receiver decoder should provide maximum utilization of the received signal, including 
+use of the error-check character and by using an iterative decoding process with adequate memory 
+provision. 
+1.7 
+When the transmission of a DSC distress alert is automatically repeated, ships’ DSC 
+equipment must be capable of automatically receiving a subsequent distress acknowledgement 
+(see Recommendation ITU-R M.541). 

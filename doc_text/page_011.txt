@@ -1,0 +1,61 @@
+10 
+Rec.  ITU-R  M.493-16 
+ 
+Footnotes relative to Table A1-3 (cont.): 
+(8) The telecommands for “Ships and aircraft of States not parties to an armed conflict” (as specified in 
+Resolution 18 (Rev.WRC-15) which are laid down in binding conventions and protocols and should not 
+be touched by any change to Rec. ITU-R M.493. 
+(9) The telecommand for “Medical transports (as defined in 1949 Geneva Conventions and additional 
+Protocols)” which is laid down in binding conventions and protocols and should not be touched by any 
+change to Rec. ITU-R M.493. 
+(10) The deletion of certain telecommands is a major change in the system, such as codes for the connection 
+the fixed network information about the worldwide implementation should be sought by sending a circular 
+letter to administrations. The result and further requests for the deletion should be brought to the attention 
+of the IMO. 
+“*” Symbol transmitted in place of unused message information. 
+ 
+2 
+Technical format of a call sequence 
+2.1 
+The technical format of the call sequence is: 
+ 
+Dot patter 
+See § 3 
+Phasing sequence 
+See § 3 
+Call content 
+See Tables A1-4.1 
+to A1-4.1.10.2 
+Closing sequence 
+See §§ 9, 10 and 
+Fig. A1-1 
+ 
+2.2 
+Examples of typical call sequences and the construction of the transmission format are given 
+in Figs A1-1 to A1-3. 
+2.3 
+The flow charts illustrating the operation of the DSC system are shown in Figs A1-4 and 
+A1-5. 
+3 
+Dot pattern and phasing 
+3.1 
+The phasing sequence provides information to the receiver to permit correct bit phasing and 
+unambiguous determination of the positions of the characters within a call sequence (see Note 1). 
+NOTE 1 – Acquisition of character synchronization should be achieved by means of character recognition 
+rather than, for example, by recognizing a change in the dot pattern, in order to reduce false synchronization 
+caused by a bit error in the dot pattern. 
+3.2 
+The phasing sequence consists of specific characters in the DX and RX positions transmitted 
+alternatively. Six DX characters are transmitted. 
+3.2.1 
+The phasing character in the DX position is symbol No. 125 of Table A1-1. 
+3.2.2 
+The phasing characters in the RX position specify the start of the information sequence 
+(i.e. the format specifier) and consist of the symbol Nos. 111, 110, 109, 108, 107, 106, 105 and 104 
+of Table A1-1, consecutively. 
+3.3 
+Phasing is considered to be achieved when two DXs and one RX, or two RXs and one DX, 
+or three RXs in the appropriate DX or RX positions, respectively, are successfully received. These 
+three phasing characters may be detected in either consecutive or non-consecutive positions but in 
+both cases all bits of the phasing sequence should be examined for a correct 3-character pattern. A call 
+should be rejected only if a correct pattern is not found anywhere within the phasing sequence. 

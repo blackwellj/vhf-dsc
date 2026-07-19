@@ -1,0 +1,192 @@
+40 
+Rec.  ITU-R  M.493-16 
+ 
+TABLE A1-4.5 
+Urgency and safety calls – All ships 
+Frequency 
+band 
+Type of com 
+Applicable to 
+Technical format of call sequence 
+Ship 
+station 
+Class A 
+Ship 
+station 
+Class D 
+Ship 
+station 
+Class E 
+Hand-held 
+Class H 
+MOB 
+Device 
+Class M 
+Open and 
+Closed Loop 
+Coast 
+station 
+Format 
+specifier 
+(2 identical) 
+Category 
+of call 
+(1) 
+Self-ID 
+(5) 
+Message 
+EOS 
+(1) 
+ECC 
+(1) 
+EOS 
+(2 identical) 
+1 
+2 
+1st tele-
+command 
+(1) 
+2nd tele-
+command 
+(1) 
+Frequency 
+(6) or (8) 
+Tx 
+Rx 
+Tx 
+Rx 
+Tx 
+Rx 
+Tx 
+Rx 
+Tx 
+Rx 
+Tx 
+Rx 
+VHF 
+All modes RT 
+⚫ 
+⚫ 
+⚫ 
+⚫ 
+ 
+ 
+— 
+⚫ 
+— — ⚫ 
+⚫ 
+116 
+108 or 110 Self-ID 
+100 
+126 
+Frequency 
+127 
+ECC 
+127 
+Duplex RT(1) 
+— 
+◼ 
+— 
+◼ 
+ 
+ 
+— 
+◼ 
+— 
+— 
+— 
+◼ 
+116 
+108 or 110 Self-ID 
+101 
+126 
+Frequency 
+127 
+ECC 
+127 
+Medical 
+transports(2) 
+⚫ 
+⚫ 
+— — 
+ 
+ 
+— — — 
+— 
+— 
+⚫ 
+116 
+110 
+Self-ID 
+100 
+111 
+Frequency 
+127 
+ECC 
+127 
+Ships and aircraft(3) 
+⚫ 
+⚫ 
+— — 
+ 
+ 
+— — — 
+— 
+— 
+⚫ 
+116 
+110 
+Self-ID 
+100 
+110 
+Frequency 
+127 
+ECC 
+127 
+MF/HF 
+J3E RT 
+— — 
+ 
+ 
+— — 
+ 
+ 
+ 
+ 
+— 
+◼ 
+116 
+108 or 110 Self-ID 
+109 
+126 
+Frequency 
+127 
+ECC 
+127 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(1) See § 8.3.1. 
+(2)  See Table A1-3 Footnote (9). 
+(3) See Table A1-3 Footnote (8). 
+ 
+ 

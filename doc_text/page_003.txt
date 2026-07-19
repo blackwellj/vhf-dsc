@@ -1,0 +1,51 @@
+2 
+Rec.  ITU-R  M.493-16 
+ 
+TTY 
+Direct Printing 
+Tx 
+Transmit 
+UTC 
+Coordinated universal time  
+VHF 
+Very high frequency (band number 8, 30-300 MHz) 
+Related ITU Recommendations, Reports 
+Recommendation ITU-R M.541 – Operational procedures for the use of digital selective-calling equipment in 
+the maritime mobile service 
+Recommendation ITU-R M.585 – Assignment and use of identities in the maritime mobile service 
+Recommendation ITU-R M.586 – Automated VHF/UHF maritime mobile telephone system 
+Recommendation ITU-R M.625 – Direct-printing telegraph equipment employing automatic identification in 
+the maritime mobile service 
+Recommendation ITU-R M.689 – International maritime VHF radiotelephone system with automatic facilities 
+based on DSC signalling format 
+Recommendation ITU-R M.821 – Optional expansion of the digital selective-calling system for use in the 
+maritime mobile service 
+Recommendation ITU-R M.822 – Calling-channel loading for digital selective calling (DSC) for the maritime 
+mobile service 
+Recommendation ITU-R M.825 – Characteristics of a transponder system using digital selective calling 
+techniques for use with vessel traffic services and ship-to-ship identification 
+Recommendation ITU-R M.1081 – Automatic HF facsimile and data system for maritime mobile users 
+Recommendation ITU-R M.1082 – International maritime MF/HF radiotelephone system with automatic 
+facilities based on digital selective calling signalling format 
+Recommendation ITU-R M.1084 – Interim solutions for improved efficiency in the use of the band 
+156-174 MHz by stations in the maritime mobile service 
+Recommendation ITU-R M.1371 – Technical characteristics for an automatic identification system using time-
+division multiple access in the VHF maritime mobile band 
+Report ITU-R M.1159 – Characteristics of an automatic identification system for VHF and UHF transmitting 
+stations in the maritime mobile service 
+Report ITU-R M.1161 – Use of MF/HF DSC for automatic connection of calls in the maritime-mobile service 
+MF and HF bands to the public switched network 
+ 
+The ITU Radiocommunication Assembly, 
+considering 
+a) 
+that selective-calling in the shore-to-ship, ship-to-ship and ship-to-shore directions would 
+expedite the handling of traffic in the maritime mobile service; 
+b) 
+that the International Maritime Organization (IMO) has listed a number of operational 
+requirements that should be taken into account when designing a general purpose selective-calling 
+system; 
+c) 
+that Chapter IV of the International Convention for the Safety of Life at Sea (SOLAS), 1974, 
+as amended, requires the use of digital selective calling (DSC) for distress alerting and safety calling 
+in the global maritime distress and safety system (GMDSS); 
