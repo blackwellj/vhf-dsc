@@ -31,7 +31,7 @@ def _read_mp3(filepath: str) -> tuple[np.ndarray, int]:
     audio = audio.set_channels(1)
     sample_rate = audio.frame_rate
     samples = np.array(audio.get_array_of_samples(), dtype=np.float32)
-    # Normalise to [-1, 1] based on bit depth
+    # Normalize to [-1, 1] based on bit depth
     max_val = float(1 << (audio.sample_width * 8 - 1))
     samples /= max_val
     return samples, sample_rate
