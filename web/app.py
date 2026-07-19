@@ -124,6 +124,7 @@ async def index():
             const socketUrl = `${protocol}://${location.host}/stream/ws`;
             const feed = document.getElementById("live-feed");
             const status = document.getElementById("stream-status");
+            const MAX_RECONNECT_DELAY_MS = 10000;
             let socket = null;
             let retries = 0;
 
@@ -145,7 +146,7 @@ async def index():
                     status.textContent = "Live feed disconnected. Reconnecting...";
                     pushLine("Live feed disconnected.");
                     retries += 1;
-                    const waitMs = Math.min(10000, retries * 1000);
+                    const waitMs = Math.min(MAX_RECONNECT_DELAY_MS, retries * 1000);
                     setTimeout(connect, waitMs);
                 };
             }

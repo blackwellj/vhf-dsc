@@ -4,7 +4,7 @@ import io
 
 from fastapi import APIRouter
 from fastapi.responses import HTMLResponse, StreamingResponse
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from vhf_dsc.encoder import DSCModulator, TestMessageGenerator
 from vhf_dsc.io.wav import write_wav_normalized
@@ -107,7 +107,7 @@ NATURE_MAP = {
 
 class EncodeRequest(BaseModel):
     msg_type: str = "test"
-    mmsi: str = "234567890"
+    mmsi: str = Field(default="234567890", pattern=r"^\d{9}$")
     lat: float = 51.5074
     lon: float = -0.1278
     time_utc: str = "1200"
