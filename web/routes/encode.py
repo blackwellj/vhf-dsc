@@ -4,7 +4,7 @@ import io
 
 from fastapi import APIRouter
 from fastapi.responses import HTMLResponse, StreamingResponse
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, field_validator
 
 from vhf_dsc.encoder import DSCModulator, TestMessageGenerator
 from vhf_dsc.io.wav import write_wav_normalized
@@ -107,7 +107,7 @@ NATURE_MAP = {
 
 class EncodeRequest(BaseModel):
     msg_type: str = "test"
-    mmsi: str = Field(default="234567890", pattern=r"^\d{9}$")
+    mmsi: str = "234567890"
     lat: float = 51.5074
     lon: float = -0.1278
     time_utc: str = "1200"
@@ -118,7 +118,12 @@ class EncodeRequest(BaseModel):
     @field_validator("mmsi", mode="before")
     @classmethod
     def normalize_mmsi(cls, value: str) -> str:
-        return value.strip() if isinstance(value, str) else value
+        if not isinstance(value, str):
+            raise ValueError("MMSI must be a string")
+        normalized = value.strip()
+        if len(normalized) != 9 or not normalized.isdigit():
+            raise ValueError("MMSI must be exactly 9 digits")
+        return normalized
 
 
 @router.post("/generate")
