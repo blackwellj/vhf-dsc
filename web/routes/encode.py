@@ -17,27 +17,83 @@ router = APIRouter(prefix="/encode", tags=["encode"])
 async def encode_page():
     return """
     <!DOCTYPE html>
-    <html>
+    <html lang="en">
     <head><title>DSC Encoder</title></head>
     <body>
-        <h1>Generate DSC Test Messages</h1>
-        <form action="/encode/generate" method="post">
-            <label>Message Type:</label>
-            <select name="msg_type">
-                <option value="distress">Distress</option>
-                <option value="safety">Safety</option>
-                <option value="urgency">Urgency</option>
-                <option value="routine">Routine</option>
-                <option value="test">Test</option>
-            </select><br>
-            <label>MMSI:</label>
-            <input type="text" name="mmsi" value="234567890"><br>
-            <label>Latitude:</label>
-            <input type="number" name="lat" value="51.5074" step="0.0001"><br>
-            <label>Longitude:</label>
-            <input type="number" name="lon" value="-0.1278" step="0.0001"><br>
-            <button type="submit">Generate WAV</button>
-        </form>
+        <style>
+            body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
+            .card { border: 1px solid #d9e2ec; border-radius: 12px; padding: 1.25rem; }
+            h1 { margin-top: 0; }
+            form { display: grid; gap: 0.75rem; }
+            label { font-weight: 600; display: grid; gap: 0.35rem; }
+            input, select, button { padding: 0.6rem; border-radius: 8px; border: 1px solid #bcccdc; font: inherit; }
+            button { background: #0f5bd8; color: white; border-color: #0f5bd8; cursor: pointer; }
+            button:hover { background: #0d4db8; }
+            #status { margin-top: 0.75rem; color: #486581; font-size: 0.95rem; }
+            a { color: #0f5bd8; text-decoration: none; font-weight: 600; }
+        </style>
+        <div class="card">
+            <h1>Generate DSC Test Message (.wav)</h1>
+            <form id="encode-form">
+                <label>Message Type
+                    <select name="msg_type">
+                        <option value="distress">Distress</option>
+                        <option value="safety">Safety</option>
+                        <option value="urgency">Urgency</option>
+                        <option value="routine">Routine</option>
+                        <option value="test">Test</option>
+                    </select>
+                </label>
+                <label>MMSI
+                    <input type="text" name="mmsi" value="234567890" pattern="\\d{9}" required>
+                </label>
+                <label>Latitude
+                    <input type="number" name="lat" value="51.5074" step="0.0001">
+                </label>
+                <label>Longitude
+                    <input type="number" name="lon" value="-0.1278" step="0.0001">
+                </label>
+                <button type="submit">Generate and Download WAV</button>
+            </form>
+            <p id="status">Ready.</p>
+            <a href="/">Back to dashboard</a>
+        </div>
+        <script>
+            const form = document.getElementById("encode-form");
+            const status = document.getElementById("status");
+
+            form.addEventListener("submit", async (event) => {
+                event.preventDefault();
+                status.textContent = "Generating .wav file...";
+                const payload = Object.fromEntries(new FormData(form).entries());
+                payload.lat = Number(payload.lat);
+                payload.lon = Number(payload.lon);
+
+                try {
+                    const response = await fetch("/encode/generate", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(payload),
+                    });
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}`);
+                    }
+                    const blob = await response.blob();
+                    const msgType = payload.msg_type || "test";
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement("a");
+                    link.href = url;
+                    link.download = `dsc_${msgType}.wav`;
+                    document.body.appendChild(link);
+                    link.click();
+                    link.remove();
+                    URL.revokeObjectURL(url);
+                    status.textContent = "Download started.";
+                } catch (error) {
+                    status.textContent = `Generation failed: ${error.message}`;
+                }
+            });
+        </script>
     </body>
     </html>
     """

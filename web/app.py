@@ -31,41 +31,117 @@ async def index():
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>VHF DSC Encoder/Decoder</title>
         <style>
-            body { font-family: system-ui, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-            h1 { color: #1a1a2e; }
-            .card { border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+            :root {
+                color-scheme: light dark;
+                --bg: #f7f9fc;
+                --card: #ffffff;
+                --text: #102a43;
+                --muted: #486581;
+                --accent: #0f5bd8;
+                --border: #d9e2ec;
+            }
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --bg: #0f172a;
+                    --card: #111c36;
+                    --text: #e6edf7;
+                    --muted: #9fb3c8;
+                    --accent: #7fb3ff;
+                    --border: #243b53;
+                }
+            }
+            body {
+                font-family: system-ui, sans-serif;
+                max-width: 960px;
+                margin: 2rem auto;
+                padding: 0 1rem;
+                background: var(--bg);
+                color: var(--text);
+            }
+            h1 { margin-bottom: 0.5rem; }
+            .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+            .card {
+                border: 1px solid var(--border);
+                border-radius: 12px;
+                padding: 1.25rem;
+                background: var(--card);
+            }
             .card h2 { margin-top: 0; }
-            a { color: #0066cc; text-decoration: none; }
+            a { color: var(--accent); text-decoration: none; font-weight: 600; }
             a:hover { text-decoration: underline; }
-            .status { display: inline-block; padding: 0.25rem 0.5rem; border-radius: 4px; background: #d4edda; color: #155724; }
+            .status {
+                display: inline-block;
+                padding: 0.25rem 0.6rem;
+                border-radius: 999px;
+                background: #d9fbe5;
+                color: #11653a;
+                font-size: 0.85rem;
+                font-weight: 700;
+            }
+            #live-feed {
+                max-height: 280px;
+                overflow: auto;
+                background: #030712;
+                color: #d1fae5;
+                border-radius: 8px;
+                padding: 0.75rem;
+                font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+                font-size: 0.8rem;
+                margin-top: 0.75rem;
+                white-space: pre-wrap;
+                word-break: break-word;
+            }
+            .hint { color: var(--muted); font-size: 0.9rem; }
         </style>
     </head>
     <body>
         <h1>VHF DSC Encoder/Decoder</h1>
         <p><span class="status">ITU-R M.493-16 Compliant</span></p>
+        <p class="hint">Encode DSC test audio, decode uploaded recordings, and watch live decoded traffic.</p>
 
-        <div class="card">
-            <h2>Decode</h2>
-            <p>Upload audio files (WAV, raw) for DSC message decoding.</p>
-            <a href="/decode/">Go to Decoder &rarr;</a>
+        <div class="grid">
+            <div class="card">
+                <h2>Decode</h2>
+                <p>Upload audio files (WAV, raw, IQ) for DSC decoding.</p>
+                <a href="/decode/">Go to Decoder &rarr;</a>
+            </div>
+            <div class="card">
+                <h2>Encode</h2>
+                <p>Generate DSC test messages and download .wav output.</p>
+                <a href="/encode/">Go to Encoder &rarr;</a>
+            </div>
+            <div class="card">
+                <h2>API</h2>
+                <p>REST API documentation is available at <a href="/docs">/docs</a>.</p>
+            </div>
+            <div class="card">
+                <h2>Live Feed</h2>
+                <p id="stream-status" class="hint">Connecting to WebSocket...</p>
+                <div id="live-feed">Waiting for live decoded messages...</div>
+            </div>
         </div>
+        <script>
+            const protocol = location.protocol === "https:" ? "wss" : "ws";
+            const socket = new WebSocket(`${protocol}://${location.host}/stream/ws`);
+            const feed = document.getElementById("live-feed");
+            const status = document.getElementById("stream-status");
 
-        <div class="card">
-            <h2>Encode</h2>
-            <p>Generate DSC test messages as WAV audio files.</p>
-            <a href="/encode/">Go to Encoder &rarr;</a>
-        </div>
+            function pushLine(text) {
+                const stamp = new Date().toLocaleTimeString();
+                feed.textContent = `[${stamp}] ${text}\n` + feed.textContent;
+            }
 
-        <div class="card">
-            <h2>Live Monitor</h2>
-            <p>Connect via WebSocket for real-time DSC message monitoring.</p>
-            <p>WebSocket: <code>ws://localhost:8000/stream/ws</code></p>
-        </div>
-
-        <div class="card">
-            <h2>API</h2>
-            <p>REST API documentation available at <a href="/docs">/docs</a></p>
-        </div>
+            socket.onopen = () => {
+                status.textContent = "Connected to live feed.";
+                pushLine("Live feed connected.");
+            };
+            socket.onmessage = (event) => pushLine(event.data);
+            socket.onerror = () => status.textContent = "Live feed connection error.";
+            socket.onclose = () => {
+                status.textContent = "Live feed disconnected.";
+                pushLine("Live feed disconnected.");
+            };
+        </script>
     </body>
     </html>
     """
