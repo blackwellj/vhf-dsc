@@ -131,7 +131,7 @@ async def decode_page():
     <body>
         <div class="nav"><a href="/">&larr; Dashboard</a></div>
         <h1>Decode DSC Audio</h1>
-        <p class="sub">Upload a WAV, raw, or IQ audio file to extract DSC messages.</p>
+        <p class="sub">Upload a WAV, MP3, raw, or IQ audio file to extract DSC messages.</p>
         <div class="card">
             <div class="drop-zone" id="drop">
                 <svg class="icon" width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -140,7 +140,7 @@ async def decode_page():
                 </svg>
                 <div>Drop audio file here or <strong>click to browse</strong></div>
                 <div class="fname" id="fname"></div>
-                <input type="file" id="filein" accept=".wav,.raw,.iq">
+                <input type="file" id="filein" accept=".wav,.mp3,.raw,.iq">
             </div>
             <button id="btn" disabled>Decode File</button>
             <div class="alert" id="alert">Select a file to begin.</div>

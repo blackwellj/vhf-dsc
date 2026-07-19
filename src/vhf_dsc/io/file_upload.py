@@ -12,7 +12,29 @@ from .wav import read_wav
 from .raw import read_real
 from ..protocol.constants import INTERNAL_SAMPLE_RATE
 
-ALLOWED_EXTENSIONS = {".wav", ".raw", ".iq", ".bin"}
+ALLOWED_EXTENSIONS = {".wav", ".raw", ".iq", ".bin", ".mp3"}
+
+
+def _read_mp3(filepath: str) -> tuple[np.ndarray, int]:
+    """Decode an MP3 file to float32 samples using pydub.
+
+    Args:
+        filepath: Path to MP3 file
+
+    Returns:
+        Tuple of (samples_float32, sample_rate)
+    """
+    from pydub import AudioSegment  # type: ignore[import]
+
+    audio = AudioSegment.from_mp3(filepath)
+    # Convert to mono
+    audio = audio.set_channels(1)
+    sample_rate = audio.frame_rate
+    samples = np.array(audio.get_array_of_samples(), dtype=np.float32)
+    # Normalise to [-1, 1] based on bit depth
+    max_val = float(1 << (audio.sample_width * 8 - 1))
+    samples /= max_val
+    return samples, sample_rate
 
 
 class FileUploadHandler:
@@ -61,6 +83,8 @@ class FileUploadHandler:
 
         if ext == ".wav":
             return read_wav(filepath)
+        elif ext == ".mp3":
+            return _read_mp3(filepath)
         elif ext in (".raw", ".bin"):
             samples = read_real(filepath)
             return samples, INTERNAL_SAMPLE_RATE
